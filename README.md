@@ -16,7 +16,7 @@
 
 - Copy .zshrc from github to your home directory
 
-    [redi-b/dotfiles](https://github.com/redi-b/dotfiles/tree/master/.config/zsh)
+    https://github.com/redi-b/dotfiles/tree/master/.config/zsh
 
 - Logout and re-login to apply the changes
 
@@ -104,6 +104,6 @@
 
     You can install different themes if you don't want to configure you bar yourself
 
-    (https://github.com/adi1090x/polybar-themes)
+    https://github.com/adi1090x/polybar-themes
 
     There are steps on the github page above to install the themes. After installation you can edit your dwm/config.h to use polybar instead of the default one. Make sure you have installed the dwm-anybar patch.
