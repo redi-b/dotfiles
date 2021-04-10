@@ -7,18 +7,18 @@
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-- **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
+    - **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
 
-    ```bash
-    $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-    $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-    ```
+        ```bash
+        $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+        $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+        ```
 
-- **Copy .zshrc to your home directory**
+    - **Copy .zshrc to your home directory**
 
-    https://github.com/redi-b/dotfiles/tree/master/.config/zsh
+        https://github.com/redi-b/dotfiles/tree/master/.config/zsh
 
-- **Logout and re-login to apply the changes**
+    - **Logout and re-login to apply the changes**
 
 ---
 
