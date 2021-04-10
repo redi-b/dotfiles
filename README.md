@@ -37,7 +37,7 @@
     To apply a patch, run:
 
     ```bash
-    $ path < dwm-{remaining-filename}.diff
+    $ patch < dwm-{remaining-filename}.diff
     $ sudo make install
     ```
 
