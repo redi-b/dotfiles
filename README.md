@@ -1,6 +1,6 @@
 # Setup
 
-- **Install zsh & oh-my-zsh**
+- ## Install zsh & oh-my-zsh
 
     ```bash
     $ sudo pacman -S zsh
@@ -14,7 +14,7 @@
     $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
     ```
 
-- **Copy .zshrc from github to your home directory**
+- **Copy .zshrc to your home directory**
 
     https://github.com/redi-b/dotfiles/tree/master/.config/zsh
 
@@ -22,7 +22,7 @@
 
 ---
 
-- **Apply dwm patches**
+- ## **Apply dwm patches**
 
     Some parts or the whole patch may fail to apply, in that case you can manually apply them by checking which parts failed in the "filename.extenstion.rej" which will be created when you apply a patch according to the file.
 
@@ -71,7 +71,7 @@
 
     ---
 
-- **Some useful scripts**
+- ## **Some useful scripts**
 
     https://github.com/redi-b/dotfiles/tree/master/scripts
 
@@ -96,7 +96,7 @@
 
 ---
 
-- **Install polybar (optional)**
+- ## **Install polybar (optional)**
 
     Get the ```polybar``` package from AUR
 
