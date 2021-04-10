@@ -1,0 +1,16 @@
+#!/bin/bash
+
+commands=("launcher" "powermenu") # "networkmenu" "colors" "styles")
+helpc="
+The available arguments are:
+	 launcher
+	 powermenu
+"
+if [[ $1 == "" ]]; then
+	. $HOME/menulauncher/launcher.sh;
+elif [[ " ${commands[@]} " =~ " $1 " ]]; then
+	. $HOME/menulauncher/$1.sh;
+else
+	echo "$1 is not a valid argument!";
+	echo "$helpc";
+fi
