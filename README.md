@@ -40,64 +40,63 @@
     $ path < dwm-{remaining-filename}.diff
     ```
 
-    1. dwm-swapfocus
+    1. ```dwm-swapfocus```
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/swapfocus/)
+        https://dwm.suckless.org/patches/swapfocus/
 
-    2. dwm-actualfullscreen
+    2. ```dwm-actualfullscreen```
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/actualfullscreen/)
+        https://dwm.suckless.org/patches/actualfullscreen/
 
-    3. dwm-anybar - this is important if you plan to use a bar other than the default one
+    3. ```dwm-anybar``` - this is important if you plan to use a bar other than the default one
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/anybar/)
+        https://dwm.suckless.org/patches/anybar/
 
-    4. dwm-cyclelayouts
+    4. ```dwm-cyclelayouts```
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/cyclelayouts/)
+        https://dwm.suckless.org/patches/cyclelayouts/
 
-    5. dwm-ewmhtags - this is important to get information about workspace/desktop (especially when using a different bar)
+    5. ```dwm-ewmhtags``` - this is important to get information about workspace/desktop (especially when using a different bar)
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/ewmhtags/)
+        https://dwm.suckless.org/patches/ewmhtags/
 
-    6. dwm-movestack
+    6. ```dwm-movestack```
+        https://dwm.suckless.org/patches/movestack/
 
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/movestack/)
+    7. ```dwm-fullgaps``` | ```dwm-fullgaps-toggle```
 
-    7. dwm-fullgaps / dwm-fullgaps-toggle
-
-        [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/fullgaps/)
+        https://dwm.suckless.org/patches/fullgaps/
 
     ---
 
-    - [ ]  Some useful scripts
+- Some useful scripts
 
-        [redi-b/dotfiles](https://github.com/redi-b/dotfiles/tree/master/scripts)
+    https://github.com/redi-b/dotfiles/tree/master/scripts
 
-        Add the directory to path to use them.
+    Add the directory to path to use them.
 
-        Add this line to your .bashrc or .zshrc and reopen terminal:
+    Add this line to your ```.bashrc``` or ```.zshrc``` and reopen terminal:
+
+    ```bash
+    export PATH="/path/to/directory/:$PATH"
+    ```
+
+    Replace with path of the directory containing the scripts.
+
+    ### Dependencies
+
+    - You need to download the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder and save it in your home directory to use the ```menulauncher``` command
+    - The ```searchpkg``` command uses ```fzf```
 
         ```bash
-        export PATH="/path/to/directory/:$PATH"
+        $ sudo pacman -S fzf
         ```
-
-        Replace with path of the directory containing the scripts.
-
-        ### Dependencies
-
-        - You need to download the menulauncher folder and ave it in your home directory to use the "menulauncher" command
-        - The "searchpkg" command uses "fzf"
-
-            ```bash
-            $ sudo pacman -S fzf
-            ```
 
 ---
 
 - Install polybar (optional)
 
-    Get the polybar package from AUR
+    Get the ```polybar``` package from AUR
 
     ```bash
     $ yay -S polybar
@@ -105,6 +104,6 @@
 
     You can install different themes if you don't want to configure you bar yourself
 
-    [adi1090x/polybar-themes](https://github.com/adi1090x/polybar-themes)
+    (https://github.com/adi1090x/polybar-themes)
 
-    There are steps on the link above to install the themes. After installation you can edit your dwm/config.h to use polybar instead of the default one. Make sure you have installed the dwm-anybar patch.
+    There are steps on the github page above to install the themes. After installation you can edit your dwm/config.h to use polybar instead of the default one. Make sure you have installed the dwm-anybar patch.
