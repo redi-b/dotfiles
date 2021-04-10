@@ -1,26 +1,20 @@
-# dotfiles
-
 # Setup
 
----
-
-- Open a terminal
-
-- [ ]  Install zsh & oh-my-zsh
+- Install zsh & oh-my-zsh
 
     ```bash
     $ sudo pacman -S zsh
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-- [ ]  Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)
+- Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)
 
     ```bash
     $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
     $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
     ```
 
-- [ ]  Copy .zshrc from github to your home directory
+- Copy .zshrc from github to your home directory
 
     [redi-b/dotfiles](https://github.com/redi-b/dotfiles/tree/master/.config/zsh)
 
@@ -28,7 +22,7 @@
 
 ---
 
-- [ ]  Apply dwm patches
+- Apply dwm patches
 
     Some parts or the whole patch may fail to apply, in that case you can manually apply them by checking which parts failed in the "filename.extenstion.rej" which will be created when you apply a patch according to the file.
 
@@ -38,18 +32,17 @@
     $ sudo make install
     ```
 
+    After saving the diff files make sure to copy them to the "dwm" folder.
+
     To apply a patch, save the diff file and run the commands below.
 
-    After saving the diff files make sure to copy them to the "dwm" folder.
+    ```bash
+    $ path < dwm-{remaining-filename}.diff
+    ```
 
     1. dwm-swapfocus
 
         [dwm - dynamic window manager | suckless.org software that sucks less](https://dwm.suckless.org/patches/swapfocus/)
-
-        ```bash
-        $ patch < dwm-swapfocus{remaining-filename}.diff
-        $ 
-        ```
 
     2. dwm-actualfullscreen
 
@@ -102,7 +95,7 @@
 
 ---
 
-- [ ]  Install polybar (optional)
+- Install polybar (optional)
 
     Get the polybar package from AUR
 
