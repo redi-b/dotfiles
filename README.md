@@ -1,28 +1,28 @@
 # Setup
 
-- **Install zsh & oh-my-zsh**
+- ## Install zsh & oh-my-zsh
 
     ```bash
     $ sudo pacman -S zsh
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-- **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
+    - **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
 
-    ```bash
-    $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-    $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-    ```
+        ```bash
+        $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+        $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+        ```
 
-- **Copy .zshrc from github to your home directory**
+    - **Copy .zshrc to your home directory**
 
-    https://github.com/redi-b/dotfiles/tree/master/.config/zsh
+        https://github.com/redi-b/dotfiles/tree/master/.config/zsh
 
-- **Logout and re-login to apply the changes**
+    - **Logout and re-login to apply the changes**
 
 ---
 
-- **Apply dwm patches**
+- ## **Apply dwm patches**
 
     Some parts or the whole patch may fail to apply, in that case you can manually apply them by checking which parts failed in the "filename.extenstion.rej" which will be created when you apply a patch according to the file.
 
@@ -37,7 +37,7 @@
     To apply a patch, run:
 
     ```bash
-    $ path < dwm-{remaining-filename}.diff
+    $ patch < dwm-{remaining-filename}.diff
     $ sudo make install
     ```
 
@@ -71,7 +71,7 @@
 
     ---
 
-- **Some useful scripts**
+- ## **Some useful scripts**
 
     https://github.com/redi-b/dotfiles/tree/master/scripts
 
@@ -96,7 +96,7 @@
 
 ---
 
-- **Install polybar (optional)**
+- ## **Install polybar (optional)**
 
     Get the ```polybar``` package from AUR
 
