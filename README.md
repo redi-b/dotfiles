@@ -22,24 +22,7 @@
 
 ---
 
-- ## **Apply dwm patches**
-
-    Some parts or the whole patch may fail to apply, in that case you can manually apply them by checking which parts failed in the "filename.extenstion.rej" which will be created when you apply a patch according to the file.
-
-    NOTE: Making backups of the files is recommended in case something gets messed up. You can just create a folder called backups and copy each file before applying a patch. And don't forget to manually apply the parts that failed, otherwise the patch will not work and it may also mess up your dwm setup. If you can't manage to apply the patch manually, simply restore the backup you made and run this command:
-
-    ```bash
-    $ sudo make install
-    ```
-
-    After saving the diff files make sure to copy them to the "dwm" folder.
-
-    To apply a patch, run:
-
-    ```bash
-    $ patch < dwm-{remaining-filename}.diff
-    $ sudo make install
-    ```
+- ## **dwm patches**
 
     1. ```dwm-swapfocus```
 
@@ -53,10 +36,6 @@
 
         https://dwm.suckless.org/patches/anybar/
 
-    4. ```dwm-cyclelayouts```
-
-        https://dwm.suckless.org/patches/cyclelayouts/
-
     5. ```dwm-ewmhtags``` - this is important to get information about workspace/desktop (especially when using a different bar)
 
         https://dwm.suckless.org/patches/ewmhtags/
@@ -65,9 +44,9 @@
   
         https://dwm.suckless.org/patches/movestack/
 
-    7. ```dwm-fullgaps``` | ```dwm-fullgaps-toggle```
+    7. ```dwm-vanitygaps```
 
-        https://dwm.suckless.org/patches/fullgaps/
+        https://dwm.suckless.org/patches/vanitygaps/
 
     ---
 
@@ -109,3 +88,64 @@
     https://github.com/adi1090x/polybar-themes
 
     There are steps on the github page above to install the themes. After installation you can edit your dwm/config.h to use polybar instead of the default one. Make sure you have installed the dwm-anybar patch.
+  
+---
+
+- ## **Packages / Applications**
+    
+    - alsa-utils (pacman)
+    - ark (pacman)
+    - breeze-icons (pacman)
+    - clang (pacman)
+    - cmake (pacman)
+    - cmatrix (pacman)
+    - cowsay (pacman)
+    - dunst (pacman)
+    - eww-git (aur)
+    - feh (pacman)
+    - figlet (pacman)
+    - fortune-mod (pacman)
+    - freedownloadmanager (pacman)
+    - fzf (pacman)
+    - google-chrome (aur)
+    - kvantum-theme-qogir (aur)
+    - lxappearance (pacman)
+    - maim (pacman)
+    - mpv (pacman)
+    - mtools (pacman)
+    - neofetch (pacman)
+    - neovim (pacman)
+    - nodejs (pacman)
+    - noto-fonts (pacman)
+    - npm (pacman)
+    - os-prober (pacman)
+    - pavucontrol (pacman)
+    - pcmanfm (pacman)
+    - polybar (aur)
+    - pulseaudio (pacman)
+    - python (pacman)
+    - python-pip (pacman)
+    - python-pynvim (pacman)
+    - qogir-gtk-theme (aur)
+    - qt5ct (pacman)
+    - rofi (pacman)
+    - rustup (pacman)
+    - spotify (aur)
+    - subversion (pacman)
+    - sxiv (pacman)
+    - telegram-desktop (aur)
+    - tmux (pacman)
+    - ttf-hack (pacman)
+    - vim 
+    - visual-studio-code-bin (aur)
+    - vlc (pacman)
+    - wget (pacman)
+    - xorg-xev (pacman)
+    - xorg-xinit (pacman)
+    - xorg-xmodmap (pacman)
+    - xorg-xprop (pacman)
+    - xorg-xrandr (pacman)
+    - yay (aur)
+    - zathura (pacman)
+    - zathura-pdf-mupdf (pacman)
+    - zsh (pacman)
