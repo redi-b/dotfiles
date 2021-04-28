@@ -1,0 +1,76 @@
+<eww>
+    <definitions>
+        <def name="profile">
+            <box orientation="v" space-evenly="true">
+                <box class="pfp"/>
+                <box class="username">r/Unixporn</box>
+            </box>
+        </def>
+        <def name="date">
+            <box orientation="v" space-evenly="true">
+                <box orientation="h" class="time">
+                    <box class="hour">{{hour}}</box>
+                    <box class="semicolon">:</box>
+                    <box class="minute">{{minute}}</box>
+                </box>
+                <box class="day">{{day}}</box>
+            </box>
+        </def>
+        <def name="player">
+            <box orientation="h" space-evenly="true">
+                <box class="song-art" style="background-image: url('{{art}}');">{{song_art}}</box>
+                <box class="song-data" orientation="v" space-evenly="false">
+                    <box class="song-title">{{song_title}}</box>
+                    <box class="player-btn" orientation="h" halign="center">
+                        <button onclick="playerctl previous"></button>
+                        <button class="pause-play" onclick="playerctl play-pause">{{player_status}}</button>
+                        <button onclick="playerctl next"></button>
+                    </box>
+                </box>
+            </box>
+        </def>
+        <def name="background">
+            <box/>
+        </def>
+    </definitions>
+
+    <variables>
+        <!-- DATE VARS -->
+        <script-var name="minute" interval="10s">date "+%M"</script-var>
+        <script-var name="hour" interval="5m">date "+%H"</script-var>
+        <script-var name="day" interval="12h">~/.config/eww/scripts/getDay</script-var>
+
+        <!-- PLAYER VARS -->
+        <script-var name="art" interval="5s">~/.config/eww/scripts/echoSongArt</script-var>
+        <script-var name="song_art" interval="5s">~/.config/eww/scripts/getSongArt</script-var>
+        <script-var name="song_title" interval="2s">~/.config/eww/scripts/getSongTitle</script-var>
+        <script-var name="player_status" interval="1s">~/.config/eww/scripts/getPlayerStatus</script-var>
+    </variables>
+
+    <windows>
+      <window name="background">
+          <geometry x="30px" y="30px" width="350px" height="540px"/>
+          <widget>
+              <background/>
+          </widget>
+      </window>
+        <window name="profile">
+            <geometry x="50px" y="40px" width="310px" height="240px"/>
+            <widget>
+                <profile/>
+            </widget>
+        </window>
+        <window name="date">
+            <geometry x="50px" y="295px" width="310px" height="100px"/>
+            <widget>
+                <date/>
+            </widget>
+        </window>
+        <window name="player">
+            <geometry x="50px" y="440px" width="310px" height="110px"/>
+            <widget>
+                <player/>
+            </widget>
+        </window>
+    </windows>
+</eww>
