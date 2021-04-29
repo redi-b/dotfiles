@@ -93,59 +93,59 @@
 
 - ## **Packages / Applications**
     
-    - ```alsa-utils``` (pacman)
-    - ```ark``` (pacman)
-    - ```breeze-icons``` (pacman)
-    - ```clang``` (pacman)
-    - ```cmake``` (pacman)
-    - ```cmatrix``` (pacman)
-    - ```cowsay``` (pacman)
-    - ```dunst``` (pacman)
-    - ```eww-git``` (aur)
-    - ```feh``` (pacman)
-    - ```figlet``` (pacman)
-    - ```fortune-mod``` (pacman)
-    - ```freedownloadmanager``` (pacman)
-    - ```fzf``` (pacman)
-    - ```google-chrome``` (aur)
-    - ```kvantum-theme-qogir``` (aur)
-    - ```lxappearance``` (pacman)
-    - ```maim``` (pacman)
-    - ```mpv``` (pacman)
-    - ```mtools``` (pacman)
-    - ```neofetch``` (pacman)
-    - ```neovim``` (pacman)
-    - ```nodejs``` (pacman)
-    - ```noto-fonts``` (pacman)
-    - ```npm``` (pacman)
-    - ```os-prober``` (pacman)
-    - ```pavucontrol``` (pacman)
-    - ```pcmanfm``` (pacman)
-    - ```polybar``` (aur)
-    - ```pulseaudio``` (pacman)
-    - ```python``` (pacman)
-    - ```python-pip``` (pacman)
-    - ```python-pynvim``` (pacman)
-    - ```qogir-gtk-theme``` (aur)
-    - ```qt5ct``` (pacman)
-    - ```rofi``` (pacman)
-    - ```rustup``` (pacman)
-    - ```spotify``` (aur)
-    - ```subversion``` (pacman)
-    - ```sxiv``` (pacman)
-    - ```telegram-desktop``` (aur)
-    - ```tmux``` (pacman)
-    - ```ttf-hack``` (pacman)
-    - ```vim``` (pacman)
-    - ```visual-studio-code-bin``` (aur)
-    - ```vlc``` (pacman)
-    - ```wget``` (pacman)
-    - ```xorg-xev``` (pacman)
-    - ```xorg-xinit``` (pacman)
-    - ```xorg-xmodmap``` (pacman)
-    - ```xorg-xprop``` (pacman)
-    - ```xorg-xrandr``` (pacman)
-    - ```yay``` (aur)
-    - ```zathura``` (pacman)
-    - ```zathura-pdf-mupdf``` (pacman)
-    - ```zsh``` (pacman)
+    - ```alsa-utils``` 
+    - ```ark``` 
+    - ```breeze-icons``` 
+    - ```clang``` 
+    - ```cmake``` 
+    - ```cmatrix``` 
+    - ```cowsay``` 
+    - ```dunst``` 
+    - <code>eww-git<sup>AUR</sup></code>
+    - ```feh``` 
+    - ```figlet``` 
+    - ```fortune-mod``` 
+    - ```freedownloadmanager``` 
+    - ```fzf``` 
+    - <code>google-chrome<sup>AUR</sup></code>
+    - <code>kvantum-theme-qogir<sup>AUR</sup></code>
+    - ```lxappearance``` 
+    - ```maim``` 
+    - ```mpv``` 
+    - ```mtools``` 
+    - ```neofetch``` 
+    - ```neovim``` 
+    - ```nodejs``` 
+    - ```noto-fonts``` 
+    - ```npm``` 
+    - ```os-prober``` 
+    - ```pavucontrol``` 
+    - ```pcmanfm``` 
+    - <code>polybar<sup>AUR</sup></code>
+    - ```pulseaudio``` 
+    - ```python``` 
+    - ```python-pip``` 
+    - ```python-pynvim``` 
+    - <code>qogir-gtk-theme<sup>AUR</sup></code>
+    - ```qt5ct``` 
+    - ```rofi``` 
+    - ```rustup``` 
+    - <code>spotify<sup>AUR</sup></code>
+    - ```subversion``` 
+    - ```sxiv``` 
+    - <code>telegram-desktop<sup>AUR</sup></code>
+    - ```tmux``` 
+    - ```ttf-hack``` 
+    - ```vim``` 
+    - <code>visual-studio-code-bin<sup>AUR</sup></code>
+    - ```vlc``` 
+    - ```wget``` 
+    - ```xorg-xev``` 
+    - ```xorg-xinit``` 
+    - ```xorg-xmodmap``` 
+    - ```xorg-xprop``` 
+    - ```xorg-xrandr``` 
+    - <code>yay<sup>AUR</sup></code>
+    - ```zathura``` 
+    - ```zathura-pdf-mupdf``` 
+    - ```zsh``` 
