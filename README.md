@@ -64,7 +64,7 @@
 
     ### Dependencies
     
-    - ```rofi``` is used by all of the launchers
+    - ```rofi``` is used by both [menulauncher](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher) and [emojipick](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
 
     - You need to download the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder and save it in your home directory to use the ```menulauncher``` command
     - You need to download the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory to use the ```emojipick``` command
