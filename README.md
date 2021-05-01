@@ -3,16 +3,19 @@
 
 ## Setup
 
-**You need the following things**
-- NOTE: some of them may have other dependencies
+**Software**
 
-   - [dwm](https://dwm.suckless.org) - window manager
-   - [dmenu](https://dwm.suckless.org) - menu launcher
-   - [rofi](https://github.com/davatorium/rofi) - menu launcher (but with more features)
-   - [st](https://st.suckless.org) - terminal
-   - [neovim](https://github.com/neovim/neovim) - editor
-   - [xclip](https://github.com/astrand/xclip) - clipboard interface
-   - [maim](https://github.com/naelstrof/maim) - screenshots
+   - OS - [Arch Linux](https://archlinux.org)
+   - WM - [dwm](https://dwm.suckless.org)
+   - Terminal - [st](https://st.suckless.org)
+   - Shell - [zsh](https://zsh.org)
+   - Lanucher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
+   - Editor - [neovim](https://github.com/neovim/neovim)
+   - File Manager - [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM)
+   - Clipboard Interface - [xclip](https://github.com/astrand/xclip)
+   - Screenshot - [scrot](https://github.com/resurrecting-open-source-projects/scrot)
+   - Notifications - [dunst](https://github.com/dunst-project/dunst)
+   - Music Player - [mocp](https://github.com/jonsafari/mocp)
 
 ---
 
