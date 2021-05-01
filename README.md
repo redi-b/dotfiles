@@ -63,10 +63,12 @@
     ```
 
     ### Dependencies
+    
+    - ```rofi``` is used by all of the launchers
 
     - You need to download the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder and save it in your home directory to use the ```menulauncher``` command
     - You need to download the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory to use the ```emojipick``` command
-    - ```python3``` is used by [setbg](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg) to generate a random number
+    - ```feh``` is used by [setbg](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg) to set the wallpaper
 
     - ```fzf``` is used by [searchpkg](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg) 
 
