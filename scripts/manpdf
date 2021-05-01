@@ -1,5 +1,4 @@
 #!/bin/bash
 
-import co
 man -k . | awk '{print $1}' | dmenu -x 380 -y 130 -z 600 -p "Manuals " | xargs man -Tpdf | zathura -
 
