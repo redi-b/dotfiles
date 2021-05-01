@@ -1,9 +1,8 @@
 ![screenshots](https://user-images.githubusercontent.com/66169993/116791389-967bb880-aac2-11eb-9167-2a5ce5932ef8.png)
 
+# Setup
 
-## Setup
-
-**Software**
+## Software
 
    - OS - [Arch Linux](https://archlinux.org)
    - WM - [dwm](https://dwm.suckless.org)
