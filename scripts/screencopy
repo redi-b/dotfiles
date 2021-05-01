@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot" "Copied to Clipboard" -i flameshot
+scrot --select --silent '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot" "Copied to Clipboard" -i flameshot
