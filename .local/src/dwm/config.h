@@ -13,7 +13,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ". ~/.config/polybar/launch.sh --forest"; /* Alternate bar launch command */
-static const char *fonts[]          = { "monospace:size=9" };
+static const char *fonts[]          = { "monospace:size=9", "Noto Color Emoji:size=9" };
 static const char dmenufont[]       = "Droid Sans Mono:size=9";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -156,6 +156,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_o,      spawn,          SHCMD("menulauncher") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("unmuteh") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("emojipick") },
+	{ MODKEY,                       XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 };
 
 /* button definitions */

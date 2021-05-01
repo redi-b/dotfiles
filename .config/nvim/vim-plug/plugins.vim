@@ -16,7 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " One-dark Theme
     Plug 'joshdick/onedark.vim'
-    " Airline
+    " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     " Colorizer
@@ -29,6 +29,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto Complete (asynccomplete)
     Plug 'prabirshrestha/asyncomplete.vim'
     Plug 'prabirshrestha/asyncomplete-lsp.vim'
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 
 call plug#end()
