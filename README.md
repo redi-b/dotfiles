@@ -62,15 +62,16 @@
     export PATH="/path/to/directory/:$PATH"
     ```
 
-    Replace with path of the directory containing the scripts.
-
     ### Dependencies
 
     - You need to download the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder and save it in your home directory to use the ```menulauncher``` command
-    - The ```searchpkg``` command uses ```fzf```
-
+    - You need to download the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory to use the ```emojipick``` command
+    - ```python3``` is used by [setbg](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg) to generate a random number
+    - ```fzf``` is used by [searchpkg](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
+    - ```maim``` is used by [maimcopy](https://github.com/redi-b/dotfiles/tree/master/scripts/maimcopy) and [maimsave](https://github.com/redi-b/dotfiles/tree/master/scripts/maimsave) to take screenshots
+    - To use the [manpdf](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf) command you need to intall ```zathura``` and a pdf reader (```zathura-pdf-mupdf``` in this case). Then update your manual database ( which is used to run the ```apropos``` or ```man -k``` commands
         ```bash
-        $ sudo pacman -S fzf
+        $ sudo mandb
         ```
 
 ---
