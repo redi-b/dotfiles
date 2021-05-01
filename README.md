@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/66169993/116790215-ce333200-aabb-11eb-9cf7-d71e2c8df6f1.png)
+
 # Setup
 
 ## dwm patches
