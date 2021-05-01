@@ -1,9 +1,4 @@
-![image](https://user-images.githubusercontent.com/66169993/116790369-6cbf9300-aabc-11eb-896e-50cfa12ac155.png)
-![image](https://user-images.githubusercontent.com/66169993/116790463-f1aaac80-aabc-11eb-9740-bf0259f9eb5f.png)
-![image](https://user-images.githubusercontent.com/66169993/116790550-56660700-aabd-11eb-9b9a-d2780534f93e.png)
-![image](https://user-images.githubusercontent.com/66169993/116790562-7c8ba700-aabd-11eb-8f7c-0ac7db878666.png)
-![image](https://user-images.githubusercontent.com/66169993/116790571-8d3c1d00-aabd-11eb-974c-0c91b705adf6.png)
-
+![screenshots](https://user-images.githubusercontent.com/66169993/116790922-9a5a0b80-aabf-11eb-85fe-9a920def3709.png)
 
 
 # Setup
