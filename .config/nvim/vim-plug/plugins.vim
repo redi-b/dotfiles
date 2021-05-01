@@ -35,6 +35,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     " Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    " Commenter
+    Plug 'preservim/nerdcommenter'
 
 
 call plug#end()
