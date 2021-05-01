@@ -15,7 +15,7 @@ configuration {
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
-	hide-scrollbar: 				true;
+	hide-scrollbar: 				false;
 	sidebar-mode: 					false;
 }
 
@@ -68,7 +68,7 @@ inputbar {
 listview {
     background-color:               @al;
     padding:                        10px 10px 10px 10px;
-    columns:                        2;
+    columns:                        1;
     lines:                          7;
     spacing:                        5px;
     cycle:                          true;
