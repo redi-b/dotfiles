@@ -1,27 +1,5 @@
 # Setup
 
-## Install zsh & oh-my-zsh
-
-   ```bash
-   $ sudo pacman -S zsh
-   $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-   ```
-
-   **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
-   
-   ```bash
-   $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-   $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-   ```
-
-   **Copy .zshrc to your home directory**
-
-   https://github.com/redi-b/dotfiles/tree/master/.zshrc
-
-   **Logout and re-login to apply the changes**
-
----
-
 ## dwm patches
 
 1. ```dwm-swapfocus```
@@ -61,6 +39,7 @@ Add this line to your ```.bashrc``` or ```.zshrc``` and reopen terminal:
 ```bash
 export PATH="/path/to/directory/:$PATH"
 ```
+   - NOTE: These scripts might be used in the dwm build.
 
    ### Dependencies
 
@@ -84,6 +63,28 @@ export PATH="/path/to/directory/:$PATH"
        ```bash
        $ sudo mandb
        ```
+
+---
+
+## Install zsh & oh-my-zsh (optional)
+
+   ```bash
+   $ sudo pacman -S zsh
+   $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+   ```
+
+   **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
+   
+   ```bash
+   $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   ```
+
+   **Copy .zshrc to your home directory**
+
+   https://github.com/redi-b/dotfiles/tree/master/.zshrc
+
+   **Logout and re-login to apply the changes**
 
 ---
 
