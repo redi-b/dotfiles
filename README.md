@@ -2,7 +2,7 @@
 
 # Setup
 
-## Software
+## Softwares
 
    - OS - [Arch Linux](https://archlinux.org)
    - WM - [dwm](https://dwm.suckless.org)
@@ -84,7 +84,7 @@ export PATH="/path/to/directory/:$PATH"
 
 ---
 
-## Install zsh & oh-my-zsh (optional)
+## Install zsh & oh-my-zsh
 
    ```bash
    $ sudo pacman -S zsh
@@ -106,9 +106,9 @@ export PATH="/path/to/directory/:$PATH"
 
 ---
 
-## Install polybar (optional)
+## Install polybar
 
-   Get the <code>polybar<sup>AUR</sup></code> package (<code>polybar-dwm-module<sup>AUR</sup></code> is preferred if you are using dwm)
+   Get the <code>polybar<sup>AUR</sup></code> package (<code>polybar-dwm-module<sup>AUR</sup></code> for dwm)
 
    ```bash
    $ yay -S polybar
