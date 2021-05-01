@@ -120,7 +120,7 @@ export PATH="/path/to/directory/:$PATH"
 
 ---
 
-## Packages / Applications
+## Packages / Applications installed
 
 <details>
    <summary>It's a long list ;)</summary>
