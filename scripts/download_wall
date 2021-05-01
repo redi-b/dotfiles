@@ -1,0 +1,16 @@
+#!/bin/bash
+
+keywords=("night" "scenery" "dark" "neon")
+
+RANDOM=$$$(date +%s)
+keyword=${keywords[$RANDOM % ${#keywords[@]} ]}
+echo $keyword
+
+URL="https://source.unsplash.com/featured/1920x1280/?$keyword"
+
+dir=$HOME/wallpapers
+[[ ! -d $dir ]] && mkdir -p $dir 
+wno=$(($(ls wallpapers | wc -l) + 1))
+filename="$dir/wall$wno.jpg"
+
+wget $URL -O $filename --no-verbose 

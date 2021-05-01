@@ -1,7 +1,9 @@
 #!/bin/bash
 
 wallno=$(ls $HOME/wallpapers | wc -l)	# get number of wallpapers available
-randno=$(python3 -S -c "import random; print(random.randint(1, $wallno))")	# generate a random number between 1 and $wallno
+
+RANDOM=$$$(date +%s)
+randno=$((($RANDOM % $wallno) + 1))
 
 bg="$HOME/wallpapers/wall$randno.jpg"
 feh --bg-scale "$bg" 

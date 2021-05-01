@@ -157,7 +157,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("unmuteh") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("emojipick") },
-	{ MODKEY,                       XK_l,      spawn,          SHCMD("betterlockscreen -l") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 };
 
 /* button definitions */
