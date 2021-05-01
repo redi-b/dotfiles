@@ -1,26 +1,7 @@
+![screenshots](https://user-images.githubusercontent.com/66169993/116791389-967bb880-aac2-11eb-9167-2a5ce5932ef8.png)
+
+
 # Setup
-
-## Install zsh & oh-my-zsh
-
-   ```bash
-   $ sudo pacman -S zsh
-   $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-   ```
-
-   **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
-   
-   ```bash
-   $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-   $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-   ```
-
-   **Copy .zshrc to your home directory**
-
-   https://github.com/redi-b/dotfiles/tree/master/.zshrc
-
-   **Logout and re-login to apply the changes**
-
----
 
 ## dwm patches
 
@@ -61,6 +42,7 @@ Add this line to your ```.bashrc``` or ```.zshrc``` and reopen terminal:
 ```bash
 export PATH="/path/to/directory/:$PATH"
 ```
+   - NOTE: These scripts might be used in the dwm build.
 
    ### Dependencies
 
@@ -87,6 +69,28 @@ export PATH="/path/to/directory/:$PATH"
 
 ---
 
+## Install zsh & oh-my-zsh (optional)
+
+   ```bash
+   $ sudo pacman -S zsh
+   $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+   ```
+
+   **Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
+   
+   ```bash
+   $ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   ```
+
+   **Copy .zshrc to your home directory**
+
+   https://github.com/redi-b/dotfiles/tree/master/.zshrc
+
+   **Logout and re-login to apply the changes**
+
+---
+
 ## Install polybar (optional)
 
    Get the <code>polybar<sup>AUR</sup></code> package (<code>polybar-dwm-module<sup>AUR</sup></code> is preferred if you are using dwm)
@@ -104,60 +108,65 @@ export PATH="/path/to/directory/:$PATH"
 ---
 
 ## Packages / Applications
-    
-- ```alsa-utils``` 
-- ```ark``` 
-- ```breeze-icons``` 
-- ```clang``` 
-- ```cmake``` 
-- ```cmatrix``` 
-- ```cowsay``` 
-- ```dunst``` 
-- <code>eww-git<sup>AUR</sup></code>
-- ```feh``` 
-- ```figlet``` 
-- ```fortune-mod``` 
-- ```freedownloadmanager``` 
-- ```fzf``` 
-- <code>google-chrome<sup>AUR</sup></code>
-- <code>kvantum-theme-qogir<sup>AUR</sup></code>
-- ```lxappearance``` 
-- ```maim``` 
-- ```mpv``` 
-- ```mtools``` 
-- ```neofetch``` 
-- ```neovim``` 
-- ```nodejs``` 
-- ```noto-fonts``` 
-- ```npm``` 
-- ```os-prober``` 
-- ```pavucontrol``` 
-- ```pcmanfm``` 
-- <code>polybar<sup>AUR</sup></code>
-- ```pulseaudio``` 
-- ```python``` 
-- ```python-pip``` 
-- ```python-pynvim``` 
-- <code>qogir-gtk-theme<sup>AUR</sup></code>
-- ```qt5ct``` 
-- ```rofi``` 
-- ```rustup``` 
-- <code>spotify<sup>AUR</sup></code>
-- ```subversion``` 
-- ```sxiv``` 
-- <code>telegram-desktop<sup>AUR</sup></code>
-- ```tmux``` 
-- ```ttf-hack``` 
-- ```vim``` 
-- <code>visual-studio-code-bin<sup>AUR</sup></code>
-- ```vlc``` 
-- ```wget``` 
-- ```xorg-xev``` 
-- ```xorg-xinit``` 
-- ```xorg-xmodmap``` 
-- ```xorg-xprop``` 
-- ```xorg-xrandr``` 
-- <code>yay<sup>AUR</sup></code>
-- ```zathura``` 
-- ```zathura-pdf-mupdf``` 
-- ```zsh``` 
+
+<details>
+   <summary>It's a long list ;)</summary>
+
+   - ```alsa-utils``` 
+   - ```ark``` 
+   - ```breeze-icons``` 
+   - ```clang``` 
+   - ```cmake``` 
+   - ```cmatrix``` 
+   - ```cowsay``` 
+   - ```dunst``` 
+   - <code>eww-git<sup>AUR</sup></code>
+   - ```feh``` 
+   - ```figlet``` 
+   - ```fortune-mod``` 
+   - ```freedownloadmanager``` 
+   - ```fzf``` 
+   - <code>google-chrome<sup>AUR</sup></code>
+   - <code>kvantum-theme-qogir<sup>AUR</sup></code>
+   - ```lxappearance``` 
+   - ```maim``` 
+   - ```mpv``` 
+   - ```mtools``` 
+   - ```neofetch``` 
+   - ```neovim``` 
+   - ```nodejs``` 
+   - ```noto-fonts``` 
+   - ```npm``` 
+   - ```os-prober``` 
+   - ```pavucontrol``` 
+   - ```pcmanfm``` 
+   - <code>polybar<sup>AUR</sup></code>
+   - ```pulseaudio``` 
+   - ```python``` 
+   - ```python-pip``` 
+   - ```python-pynvim``` 
+   - <code>qogir-gtk-theme<sup>AUR</sup></code>
+   - ```qt5ct``` 
+   - ```rofi``` 
+   - ```rustup``` 
+   - <code>spotify<sup>AUR</sup></code>
+   - ```subversion``` 
+   - ```sxiv``` 
+   - <code>telegram-desktop<sup>AUR</sup></code>
+   - ```tmux``` 
+   - ```ttf-hack``` 
+   - ```vim``` 
+   - <code>visual-studio-code-bin<sup>AUR</sup></code>
+   - ```vlc``` 
+   - ```wget``` 
+   - ```xorg-xev``` 
+   - ```xorg-xinit``` 
+   - ```xorg-xmodmap``` 
+   - ```xorg-xprop``` 
+   - ```xorg-xrandr``` 
+   - <code>yay<sup>AUR</sup></code>
+   - ```zathura``` 
+   - ```zathura-pdf-mupdf``` 
+   - ```zsh``` 
+
+</details>
