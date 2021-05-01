@@ -1,7 +1,20 @@
 ![screenshots](https://user-images.githubusercontent.com/66169993/116791389-967bb880-aac2-11eb-9167-2a5ce5932ef8.png)
 
 
-# Setup
+## Setup
+
+**You need the following things**
+- NOTE: some of them may have other dependencies
+
+   - dwm - window manager
+   - dmenu - menu launcher
+   - rofi - menu launcher (but with more features)
+   - st - terminal
+   - neovim - editor
+   - xclip - clipboard interface
+   - maim - screenshots
+
+---
 
 ## dwm patches
 
