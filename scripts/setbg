@@ -3,7 +3,7 @@
 wallno=$(ls $HOME/wallpapers | wc -l)	# get number of wallpapers available
 
 RANDOM=$$$(date +%s)
-randno=$((($RANDOM % $wallno) + 1))
+randno=$(( ($RANDOM % $wallno) + 1 ))
 
 bg="$HOME/wallpapers/wall$randno.jpg"
 feh --bg-scale "$bg" 
