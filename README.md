@@ -6,13 +6,13 @@
 **You need the following things**
 - NOTE: some of them may have other dependencies
 
-   - dwm - window manager
-   - dmenu - menu launcher
-   - rofi - menu launcher (but with more features)
-   - st - terminal
-   - neovim - editor
-   - xclip - clipboard interface
-   - maim - screenshots
+   - [dwm](https://dwm.suckless.org) - window manager
+   - [dmenu](https://dwm.suckless.org) - menu launcher
+   - [rofi](https://github.com/davatorium/rofi) - menu launcher (but with more features)
+   - [st](https://st.suckless.org) - terminal
+   - [neovim](https://github.com/neovim/neovim) - editor
+   - [xclip](https://github.com/astrand/xclip) - clipboard interface
+   - [maim](https://github.com/naelstrof/maim) - screenshots
 
 ---
 
