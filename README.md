@@ -1,5 +1,4 @@
-![screenshots](https://user-images.githubusercontent.com/66169993/116790922-9a5a0b80-aabf-11eb-85fe-9a920def3709.png)
-![image](https://user-images.githubusercontent.com/66169993/116791333-34bb4e80-aac2-11eb-9ccd-47a805b68e86.png)
+![screenshots](https://user-images.githubusercontent.com/66169993/116791389-967bb880-aac2-11eb-9167-2a5ce5932ef8.png)
 
 
 # Setup
