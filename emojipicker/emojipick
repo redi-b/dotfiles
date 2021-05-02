@@ -16,7 +16,7 @@ font_size="9"
 favorites=~/.myemojis
 
 # 1=Yes, 0=No
-use_rofi=0
+use_rofi=1
 copy_to_clipboard=1
 show_notification=1
 print_emoji=1
