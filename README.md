@@ -98,10 +98,6 @@ export PATH="/path/to/directory/:$PATH"
    $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
    ```
 
-   **Copy .zshrc to your home directory**
-
-   https://github.com/redi-b/dotfiles/tree/master/.zshrc
-
    **Logout and re-login to apply the changes**
 
 ---
