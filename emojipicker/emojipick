@@ -16,7 +16,7 @@ font_size="9"
 favorites=~/.myemojis
 
 # 1=Yes, 0=No
-use_rofi=1
+use_rofi=0
 copy_to_clipboard=1
 show_notification=1
 print_emoji=1
@@ -28,7 +28,7 @@ then
     dmenu_app='rofi -dmenu -theme ~/emojipicker/launcher.rasi -font'
     font="$font_family $font_size"
 else
-    dmenu_app='dmenu -l 15 -x 380 -y 120 -z 600 -h 22 -fn'
+    dmenu_app='dmenu -l 15 -x 380 -y 180 -z 600 -h 28 -fn'
     font="$font_family-$font_size"
 fi
 
