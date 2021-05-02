@@ -6,6 +6,8 @@
 
    - OS - [Arch Linux](https://archlinux.org)
    - WM - [dwm](https://dwm.suckless.org)
+   - Bar - [Polybar](https://github.com/polybar/polybar)
+         with [polybar-themes](https://github.com/adi1090x/polybar-themes) (modified)
    - Terminal - [st](https://st.suckless.org)
    - Shell - [zsh](https://zsh.org)
    - Lanucher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
