@@ -1,0 +1,3 @@
+#!/bin/bash
+
+eww windows | grep "*">/dev/null && eww close-all || eww open-many date profile player notification
