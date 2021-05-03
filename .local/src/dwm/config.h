@@ -161,6 +161,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screencopy") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("screenshot") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("ewwtoggle") },
 };
 
 /* button definitions */

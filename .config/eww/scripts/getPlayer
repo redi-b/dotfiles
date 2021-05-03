@@ -1,0 +1,6 @@
+#!/bin/bash
+
+playerctl metadata | grep -i "spotify" >/dev/null && echo "Spotify"
+playerctl metadata | grep -i "chromium">/dev/null && echo "Google Chrome"
+playerctl metadata | grep -i "vlc" >/dev/null && echo "VLC"
+

@@ -8,16 +8,19 @@ window {
 }
 
 .background {
-    background-color:  #121212;
+    background-color: #4d4f68;
 }
 
  .background, .player, .profile, .date, {
-    background-color: #121212;
+    // background-color: #4d4f68;
+    background-color: #282936;
+
     border-radius: 0px;
+    border: 1px solid #BDBDBD;
 }
 
 .profile {
-    background-color: #EBEEF0;
+    background-color: #282936;
 }
 
 .titlebar {
@@ -30,34 +33,41 @@ window {
 }
 
 .pfp {
-    background-image: url("/home/k/.config/eww/Profile.png");
-    background-size: 100px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 105px;
-    margin-right: 105px;
+    background-image: url("/home/rediet/.config/eww/images/profile.png");
+    background-size: 75px;
 
-    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 19px;
+    margin-right: 85px;
+
+    border-radius: 50px;
 }
 
 .username {
-    margin-top: -45px;
+    margin-top: -5px;
+    margin-right: 100px;
 
-    color: #313333;
+    color: #AAC9CE;
     font-size: 20px;
     font-weight: 900;
 }
 
 
 .time {
-    margin: 15px 65px -20px 65px;
+    margin: 15px 65px -20px 85px;
     font-size: 50px;
 }
 
 .semicolon {
     margin: 0px;
     margin-top: -5px;
+    margin-right: 20px;
     color: #A0C3CA;
+}
+
+.minute {
+    margin-left: -40px;
 }
 
 .day {
@@ -73,7 +83,7 @@ window {
     font-size: 12px;
     font-weight: bold;
 
-    margin: 25px 0px 0px -35px;
+    margin: 20px 0px 0px -75px;
 }
 
 .song-title {
@@ -84,8 +94,17 @@ window {
     padding-right: 30px;
 }
 
+.song-artist {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+
+    padding-right: 30px;
+}
+
 .player-btn {
-    padding: 25px 25px 5px;
+    padding: 20px 25px 5px;
+    font-size: 12px;
 
     margin-top: -5px;
 }
@@ -94,12 +113,13 @@ window {
     color: #EBEEF0;
 
     font-family: "Material Icons";
+    font-size: 16px;
 
     padding-right: 30px;
 }
 
 .player-btn button:hover {
-    color: #EBEEF0;
+    color: grey;
 }
 
 .player-btn pause-play button  {
@@ -107,12 +127,20 @@ window {
 }
 
 .song-art {
-    background-size: 85px;
+    background-size: 79px;
 
-    margin-top: 13px;
-    margin-bottom: 12px;
-    margin-left: 17px;
-    margin-right: 53px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 13px;
+    margin-right: 85px;
 
     border-radius: 6px;
+}
+
+.media-player {
+    font-size: 10px;
+    font-weight: 500;
+
+    margin-top: 5px;
+    margin-right: 70px;
 }

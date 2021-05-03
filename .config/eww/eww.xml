@@ -1,9 +1,9 @@
 <eww>
     <definitions>
         <def name="profile">
-            <box orientation="v" space-evenly="true">
+            <box orientation="h" space-evenly="true">
                 <box class="pfp"/>
-                <box class="username">r/Unixporn</box>
+                <box class="username">Rediet</box>
             </box>
         </def>
         <def name="date">
@@ -18,9 +18,13 @@
         </def>
         <def name="player">
             <box orientation="h" space-evenly="true">
-                <box class="song-art" style="background-image: url('{{art}}');">{{song_art}}</box>
+                <box orientation="v" space-evenly="false"> 
+                    <box class="media-player">{{media_player}}</box>
+                    <box class="song-art" style="background-image: url('{{art}}');" height="80">{{song_art}}</box>
+                </box>
                 <box class="song-data" orientation="v" space-evenly="false">
                     <box class="song-title">{{song_title}}</box>
+                    <box class="song-artist">{{song_artist}}</box>
                     <box class="player-btn" orientation="h" halign="center">
                         <button onclick="playerctl previous"></button>
                         <button class="pause-play" onclick="playerctl play-pause">{{player_status}}</button>
@@ -29,7 +33,7 @@
                 </box>
             </box>
         </def>
-        <def name="background">
+        <def name="notification">
             <box/>
         </def>
     </definitions>
@@ -44,32 +48,34 @@
         <script-var name="art" interval="5s">~/.config/eww/scripts/echoSongArt</script-var>
         <script-var name="song_art" interval="5s">~/.config/eww/scripts/getSongArt</script-var>
         <script-var name="song_title" interval="2s">~/.config/eww/scripts/getSongTitle</script-var>
+        <script-var name="song_artist" interval="2s">~/.config/eww/scripts/getSongArtist</script-var>
         <script-var name="player_status" interval="1s">~/.config/eww/scripts/getPlayerStatus</script-var>
+        <script-var name="media_player" interval="1s">~/.config/eww/scripts/getPlayer</script-var>
     </variables>
 
     <windows>
-      <window name="background">
-          <geometry x="30px" y="30px" width="350px" height="540px"/>
+      <window name="notification">
+          <geometry x="1005px" y="403px" width="355px" height="360px"/>
           <widget>
-              <background/>
+              <notification/>
           </widget>
       </window>
+        <window name="player">
+            <geometry x="1005px" y="288px" width="355px" height="110px"/>
+            <widget>
+                <player/>
+            </widget>
+        </window>
         <window name="profile">
-            <geometry x="50px" y="40px" width="310px" height="240px"/>
+            <geometry x="1005px" y="183px" width="355px" height="100px"/>
             <widget>
                 <profile/>
             </widget>
         </window>
         <window name="date">
-            <geometry x="50px" y="295px" width="310px" height="100px"/>
+            <geometry x="1005px" y="40px" width="355px" height="100px"/>
             <widget>
                 <date/>
-            </widget>
-        </window>
-        <window name="player">
-            <geometry x="50px" y="440px" width="310px" height="110px"/>
-            <widget>
-                <player/>
             </widget>
         </window>
     </windows>

@@ -1,11 +1,11 @@
 #!/bin/bash
 pattern='/\G[^\x00-\x7F]/gm'
-title=$(playerctl -p spotify metadata --format '{{ title}}')
+title=$(playerctl metadata --format '{{ title}}')
 count=$(echo -n "$title" | wc -c)
 if [ -z "$title" ]; then
 	echo "Not Playing";
 else
-	if [ "$count" -le 18 ]; then
+	if [ "$count" -le 35 ]; then
         echo $title
 	else
 		if [[ "$title" =~ [^\x10-\x7F] ]]; then
