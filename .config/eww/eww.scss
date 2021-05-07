@@ -7,11 +7,11 @@ window {
     font-family: "Inter";
 }
 
-.background {
+.notification{
     background-color: #4d4f68;
 }
 
- .background, .player, .profile, .date, {
+ .notification, .player, .profile, .date, {
     // background-color: #4d4f68;
     background-color: #282936;
 
@@ -39,14 +39,14 @@ window {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 19px;
-    margin-right: 85px;
+    margin-right: 80px;
 
     border-radius: 50px;
 }
 
 .username {
     margin-top: -5px;
-    margin-right: 100px;
+    margin-right: 110px;
 
     color: #AAC9CE;
     font-size: 20px;
@@ -143,4 +143,56 @@ window {
 
     margin-top: 5px;
     margin-right: 70px;
+}
+
+.vol-slider scale trough highlight {
+    all: unset;
+    background-color: #2196F3;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.label-vol-slider {
+    font-size: 16px;
+
+    margin-top: 0px;
+    margin-left: 12px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.vol-slider trough {
+    all: unset;
+    background-color: #4e4e4e;
+    border-radius: 50px;
+    min-height: 5px;
+    min-width: 310px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+
+.sys-btns {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.shutdown-btn ~ button:hover {
+  color: #D35D6E;
+}
+.shutdown-btn{
+  color: #D35D6E;
+}
+.shutdown-btn:hover{
+  color: #ffd5cd;
+}
+.reboot-btn{
+  color: #84afdb;
+}
+.lock-btn{
+  color: #ffd5cd;
+}
+.suspend-btn{
+  color: #c47eb7;
 }

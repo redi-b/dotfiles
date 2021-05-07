@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master) | cut -d'%' -f 1)
+
