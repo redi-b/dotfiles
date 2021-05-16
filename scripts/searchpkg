@@ -3,7 +3,9 @@
 if [[ ( $# == 0 || $1 == "pacman" ) ]]; then
   pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S;
 elif [ $1 == "yay" ]; then
-    yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S;
+  yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S;
+elif [ $1 == "paru" ]; then
+  paru -Slq | fzf -m --preview 'cat <(paru -Si {1}) <(paru -Fl {1} | awk "{print \$2}")' | xargs -ro  paru -S;
 else
   echo "Invalid argument!";
 fi
