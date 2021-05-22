@@ -13,4 +13,6 @@ dir=$HOME/wallpapers
 wno=$(($(ls wallpapers | wc -l) + 1))
 filename="$dir/wall$wno.jpg"
 
-wget $URL -O $filename --no-verbose 
+wget $URL -O $filename --quiet
+
+echo "Wallpaper downloaded -> $filename"
