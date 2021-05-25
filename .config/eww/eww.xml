@@ -23,7 +23,7 @@
                     <box class="song-art" style="background-image: url('{{art}}');" height="80">{{song_art}}</box>
                 </box>
                 <box class="song-data" orientation="v" space-evenly="false">
-                    <box class="song-title" tooltip="{{song_title_full}}">{{song_title}}</box>
+                    <box class="song-title" tooltip="{{song_title_full}} - {{ song_artist }}">{{song_title}}</box>
                     <box class="song-artist">{{song_artist}}</box>
                     <box class="player-btn" orientation="h" halign="center">
                         <button onclick="playerctl previous" tooltip="Previous"></button>
