@@ -126,6 +126,7 @@ typedef struct {
 	TCursor c;    /* cursor */
 	int ocx;      /* old cursor col */
 	int ocy;      /* old cursor row */
+	int histwcount;      /* how many lines have been written */
 	int top;      /* top    scroll limit */
 	int bot;      /* bottom scroll limit */
 	int mode;     /* terminal mode flags */
@@ -1099,7 +1100,8 @@ kscrollup(const Arg* a)
 	if (n < 0)
 		n = term.row + n;
 
-	if (term.scr <= HISTSIZE-n) {
+	if (term.scr < term.histwcount && \
+        term.scr <= HISTSIZE-n) {
 		term.scr += n;
 		selscroll(0, n);
 		tfulldirt();
@@ -1148,6 +1150,9 @@ tscrollup(int orig, int n, int copyhist)
 		term.hist[term.histi] = term.line[orig];
 		term.line[orig] = temp;
 	}
+
+	 if (term.histwcount < HISTSIZE)
+            term.histwcount++;
 
 	if (term.scr > 0 && term.scr < HISTSIZE)
 		term.scr = MIN(term.scr + n, HISTSIZE-1);
