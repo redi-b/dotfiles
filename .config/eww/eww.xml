@@ -33,7 +33,7 @@
                 </box>
             </box>
         </def>
-        <def name="notification">
+        <def name="misc">
             <box orientation="v" space-evenly="true">
                 <box orientation="h" class="vol-slider" space-evenly="false">
                     <box class="label-vol-slider"></box>
@@ -69,10 +69,10 @@
     </variables>
 
     <windows>
-      <window name="notification">
+      <window name="misc">
           <geometry x="1005px" y="403px" width="355px" height="360px"/>
           <widget>
-              <notification/>
+              <misc/>
           </widget>
       </window>
         <window name="player">

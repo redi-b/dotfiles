@@ -1,0 +1,9 @@
+#!/bin/bash
+
+keyword=$(xclip -out -selection primary)
+
+# notify-send "Duckduckgo" "Search for '$(keyword)'" -t 3000
+# firefox "https://duckduckgo.com/?q=$(echo $(keyword) | tr " " "+")"
+
+notify-send "Google" "Search for '$keyword'" -t 3000 --urgency normal
+firefox "https://google.com/search?q=$(echo $keyword | tr " " "+")"

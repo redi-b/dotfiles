@@ -1,4 +1,4 @@
 setbg &
 dunst &
 eww daemon &
-unmuteh &
+picom &

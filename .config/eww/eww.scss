@@ -3,43 +3,28 @@
 }
 
 window {
-    color: #88B9C4;
+    // color: #88B9C4;
+    color: #FFEE79;
     font-family: "Inter";
 }
 
-.notification{
-    background-color: #4d4f68;
-}
-
- .notification, .player, .profile, .date, {
+ .misc, .player, .profile, .date, {
     // background-color: #4d4f68;
-    background-color: #282936;
+    background-color: #121212;
 
-    border-radius: 0px;
-    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    border: 1px solid #005577;
 }
 
-.profile {
-    background-color: #282936;
-}
-
-.titlebar {
-    color: #AAC9CE;
-    font-size: 20px;
-    font-weight: bolder;
-
-    margin-top: -685px;
-    margin-left: -20px;
-}
 
 .pfp {
     background-image: url("/home/rediet/.config/eww/images/profile.png");
-    background-size: 75px;
+    background-size: 72px;
 
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 10px;
-    margin-left: 19px;
-    margin-right: 80px;
+    margin-left: 22px;
+    margin-right: 82px;
 
     border-radius: 50px;
 }
@@ -48,7 +33,6 @@ window {
     margin-top: -5px;
     margin-right: 110px;
 
-    color: #AAC9CE;
     font-size: 20px;
     font-weight: 900;
 }
@@ -63,7 +47,6 @@ window {
     margin: 0px;
     margin-top: -5px;
     margin-right: 20px;
-    color: #A0C3CA;
 }
 
 .minute {
@@ -76,7 +59,7 @@ window {
 
     font-size: 16px;
     font-weight: bold;
-    color: #A0A2A2;
+    // color: #FC2929;
 }
 
 .song-data {
@@ -127,7 +110,7 @@ window {
 }
 
 .song-art {
-    background-size: 79px;
+    background-size: 80px;
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -153,11 +136,12 @@ window {
 }
 
 .label-vol-slider {
-    font-size: 16px;
+    color: #2196F3;
+    font-size: 25px;
 
     margin-top: 0px;
-    margin-left: 12px;
-    margin-right: 5px;
+    margin-left: 30px;
+    margin-right: 10px;
     margin-bottom: 0px;
 }
 
@@ -166,7 +150,7 @@ window {
     background-color: #4e4e4e;
     border-radius: 50px;
     min-height: 5px;
-    min-width: 310px;
+    min-width: 250px;
     margin-top: 0px;
     margin-left: 10px;
     margin-right: 8px;
@@ -175,7 +159,6 @@ window {
 
 .sys-btns {
     font-size: 25px;
-    margin-bottom: 0px;
 }
 
 .shutdown-btn ~ button:hover {

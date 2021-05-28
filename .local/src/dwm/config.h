@@ -162,6 +162,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screencopy") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("screenshot") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("ewwtoggle") },
+	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD("search_selected") },
 };
 
 /* button definitions */
