@@ -1,4 +1,5 @@
-![screenshots](https://user-images.githubusercontent.com/66169993/116791389-967bb880-aac2-11eb-9167-2a5ce5932ef8.png)
+![screenshot](https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png)
+
 
 # Setup
 
@@ -6,6 +7,7 @@
 
    - OS - [Arch Linux](https://archlinux.org)
    - WM - [dwm](https://dwm.suckless.org)
+   - Compositor - [picom (picom-tyrone-git)](https://aur.archlinux.org/packages/picom-tryone-git/)
    - Bar - [Polybar](https://github.com/polybar/polybar)
          with [polybar-themes](https://github.com/adi1090x/polybar-themes) (modified)
    - Terminal - [st](https://st.suckless.org)
