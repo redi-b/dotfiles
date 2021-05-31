@@ -80,6 +80,9 @@ Downloads a random wallpaper from unsplash. You can modify the keywords it searc
 Launches an emojipicker. The launcher can be either rofi or dmenu.
 ```use_rofi=1``` or ```use_rofi=0```
 
+### Hotkey
+   - ```MOD + e```
+
 #### Dependencies
 
    - ```python3```   -  ```$ sudo pacman -S python3```
@@ -93,6 +96,9 @@ Launches an emojipicker. The launcher can be either rofi or dmenu.
 Toggles the eww widgets.
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
 
+### Hotkey
+   - ```MOD + w```
+
 #### Dependencies
 
    - <code>eww<sup>AUR</sup></code>
@@ -101,6 +107,9 @@ Toggles the eww widgets.
 
 #### Description
 Launches a dmenu which opens the selected app's manual in zathura
+
+### Hotkey
+   - ```MOD + v```
 
 #### Dependencies
    
@@ -120,6 +129,15 @@ Launches an application runner or system options.
 [Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)
 [Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/sys_launch.png)
 
+### Hotkey
+   - ```MOD + o``` - app launcher
+   - ```MOD + r``` - powermenu
+
+### Arguments
+   - ```launcher``` for app launcher
+   - ```powermenu``` for powermenu
+   - No argument defaults to ```launcher```
+
 #### Dependencies
 
    - ```rofi```   -  ```$ sudo pacman -S rofi```
@@ -131,6 +149,10 @@ Launches an application runner or system options.
 
 Screenshot whole screen and copy the selected class to clipboard
 
+### Hotkey
+   - ```MOD + Shift + p``` - screenshot
+   - ```MOD + Shift + s``` - screencopy
+
 #### Dependencies
 
    - ```scrot```  -  ```$ sudo pacman -S scrot```
@@ -140,6 +162,9 @@ Screenshot whole screen and copy the selected class to clipboard
 #### Description
 
 Googles the selected text in firefox
+
+### Hotkey
+   - ```Ctrl + Alt + s```
 
 #### Dependencies
 
