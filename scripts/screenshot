@@ -2,5 +2,6 @@
 
 [[ -d $HOME/Pictures/Screenshots ]] || mkdir -p $HOME/Pictures/Screenshots
 # maim -s ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send "Screenshot" "Saved to Pictures" -i flameshot
-scrot --silent $HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png && notify-send "Screenshot" "Saved to Pictures" -i flameshot
+file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png" 
+scrot --silent $file && notify-send "Screenshot" "Saved to Pictures" -i $file 
  
