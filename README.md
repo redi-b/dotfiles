@@ -18,7 +18,7 @@
 
 ---
 
-## dwm patches
+# dwm patches
 
 1. ```dwm-swapfocus```
 
@@ -61,26 +61,26 @@ export PATH="/path/to/directory/:$PATH"
 
 ## [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
 
-### Description
+#### Description
 
 Downloads a random wallpaper from unsplash. You can modify the keywords it searches for.
 
-### Dependencies
+#### Dependencies
 
    - ```wget```   -  ```$ sudo pacman -S wget```
 
 
 ## [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
 
-### Description
+#### Description
 
 Launches an emojipicker. The launcher can be either rofi or dmenu.
 ```use_rofi=1``` or ```use_rofi=0```
 
-### Hotkey
+#### Hotkey
    - ```MOD + e```
 
-### Dependencies
+#### Dependencies
 
    - ```python3```   -  ```$ sudo pacman -S python3```
    - ```rofi```   -   ```$ sudo pacman -S rofi```
@@ -88,27 +88,27 @@ Launches an emojipicker. The launcher can be either rofi or dmenu.
 
 ## [```ewwtoggle```](https://github.com/redi-b/dotfiles/tree/master/scripts/ewwtoggle)
 
-### Description
+#### Description
 
 Toggles the eww widgets.
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
 
-### Hotkey
+#### Hotkey
    - ```MOD + w```
 
-### Dependencies
+#### Dependencies
 
    - <code>eww<sup>AUR</sup></code>
 
 ## [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
 
-### Description
+#### Description
 Launches a dmenu which opens the selected app's manual in zathura
 
-### Hotkey
+#### Hotkey
    - ```MOD + v```
 
-### Dependencies
+#### Dependencies
    
    - ```zathura```   -  ```$ sudo pacman -S zathura```
    - ```zathura-pdf-mupdf```  -  ```$ sudo pacman -S zathura-pdf-mupdf```
@@ -120,37 +120,37 @@ $ sudo mandb
 
 ## [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
 
-### Description
+#### Description
 
 Launches an application runner or system options.
 [Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)
 [Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/sys_launch.png)
 
-### Hotkey
+#### Hotkey
    - ```MOD + o``` - app launcher
    - ```MOD + r``` - powermenu
 
-### Arguments
+#### Arguments
    - ```launcher``` for app launcher
    - ```powermenu``` for powermenu
    - No argument defaults to ```launcher```
 
-### Dependencies
+#### Dependencies
 
    - ```rofi```   -  ```$ sudo pacman -S rofi```
    - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
 ## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
 
-### Description
+#### Description
 
 Screenshot whole screen and copy the selected class to clipboard
 
-### Hotkey
+#### Hotkey
    - ```MOD + Shift + p``` - screenshot
    - ```MOD + Shift + s``` - screencopy
 
-### Dependencies
+#### Dependencies
 
    - ```scrot```  -  ```$ sudo pacman -S scrot```
 
@@ -160,26 +160,26 @@ Screenshot whole screen and copy the selected class to clipboard
 
 Googles the selected text in firefox
 
-### Hotkey
+#### Hotkey
    - ```Ctrl + Alt + s```
 
-### Dependencies
+#### Dependencies
 
    - ```xclip``` -  ```$ sudo pacman -S xclip```
 
 
 ## [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
 
-### Description
+#### Description
 
 Used to search for a package and install the selected one
 
-### Arguments
+#### Arguments
    - ```pacman```
    - ```yay``` or ```paru``` to search from the <sup>AUR</sup>
    - No argument defaults to ```pacman```
 
-## Dependencies
+### Dependencies
 
    - ```fzf``` -  ```$ sudo pacman -S fzf```
 
@@ -192,11 +192,11 @@ Used to search for a package and install the selected one
 
 ## [```setbg```](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg)
 
-### Description
+#### Description
 
 Sets a random background from the ```~/wallpapers``` directory
 
-## Dependencies
+### Dependencies
 
    - ```feh``` -  ```$ sudo pacman -S feh```
 
