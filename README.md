@@ -79,7 +79,7 @@ export PATH="/path/to/directory/:$PATH"
        ```
        - NOTE: Only run these commands once
 
-   - ```maim``` is used by [maimcopy](https://github.com/redi-b/dotfiles/tree/master/scripts/maimcopy) and [maimsave](https://github.com/redi-b/dotfiles/tree/master/scripts/maimsave) to take screenshots
+   - ```scrot``` is used by [screencopy](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy) and [screensave](https://github.com/redi-b/dotfiles/tree/master/scripts/screensave) to take screenshots
    - To use the [manpdf](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf) command you need to intall ```zathura``` and a pdf reader (```zathura-pdf-mupdf``` in this case). Then update your manual database ( which is used to run the ```apropos``` or ```man -k``` commands
 
        ```bash
