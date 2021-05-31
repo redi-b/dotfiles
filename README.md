@@ -1,9 +1,6 @@
 ![screenshot](https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png)
 
-
-# Setup
-
-## Softwares
+# Softwares
 
 - OS - [Arch Linux](https://archlinux.org)
 - WM - [dwm](https://dwm.suckless.org)
@@ -49,7 +46,7 @@ https://dwm.suckless.org/patches/vanitygaps/
 
 ---
 
-## Some useful scripts
+# Some useful scripts
 
 https://github.com/redi-b/dotfiles/tree/master/scripts
 
@@ -62,20 +59,20 @@ export PATH="/path/to/directory/:$PATH"
 ```
 - NOTE: Some scripts are used in dwm (to run them with keyboard shortcuts).
 
-### [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
+## [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
 
-#### Description
+### Description
 
 Downloads a random wallpaper from unsplash. You can modify the keywords it searches for.
 
-#### Dependencies
+### Dependencies
 
    - ```wget```   -  ```$ sudo pacman -S wget```
 
 
-### [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
+## [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
 
-#### Description
+### Description
 
 Launches an emojipicker. The launcher can be either rofi or dmenu.
 ```use_rofi=1``` or ```use_rofi=0```
@@ -83,15 +80,15 @@ Launches an emojipicker. The launcher can be either rofi or dmenu.
 ### Hotkey
    - ```MOD + e```
 
-#### Dependencies
+### Dependencies
 
    - ```python3```   -  ```$ sudo pacman -S python3```
    - ```rofi```   -   ```$ sudo pacman -S rofi```
    - Save the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory (or modify the script according to where you put this folder)
 
-### [```ewwtoggle```](https://github.com/redi-b/dotfiles/tree/master/scripts/ewwtoggle)
+## [```ewwtoggle```](https://github.com/redi-b/dotfiles/tree/master/scripts/ewwtoggle)
 
-#### Description
+### Description
 
 Toggles the eww widgets.
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
@@ -99,19 +96,19 @@ Toggles the eww widgets.
 ### Hotkey
    - ```MOD + w```
 
-#### Dependencies
+### Dependencies
 
    - <code>eww<sup>AUR</sup></code>
 
-### [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
+## [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
 
-#### Description
+### Description
 Launches a dmenu which opens the selected app's manual in zathura
 
 ### Hotkey
    - ```MOD + v```
 
-#### Dependencies
+### Dependencies
    
    - ```zathura```   -  ```$ sudo pacman -S zathura```
    - ```zathura-pdf-mupdf```  -  ```$ sudo pacman -S zathura-pdf-mupdf```
@@ -121,9 +118,9 @@ Launches a dmenu which opens the selected app's manual in zathura
 $ sudo mandb
 ```
 
-### [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
+## [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
 
-#### Description
+### Description
 
 Launches an application runner or system options.
 [Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)
@@ -138,14 +135,14 @@ Launches an application runner or system options.
    - ```powermenu``` for powermenu
    - No argument defaults to ```launcher```
 
-#### Dependencies
+### Dependencies
 
    - ```rofi```   -  ```$ sudo pacman -S rofi```
    - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
-### [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
+## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
 
-#### Description
+### Description
 
 Screenshot whole screen and copy the selected class to clipboard
 
@@ -153,11 +150,11 @@ Screenshot whole screen and copy the selected class to clipboard
    - ```MOD + Shift + p``` - screenshot
    - ```MOD + Shift + s``` - screencopy
 
-#### Dependencies
+### Dependencies
 
    - ```scrot```  -  ```$ sudo pacman -S scrot```
 
-### [```search_selected```](https://github.com/redi-b/dotfiles/tree/master/scripts/search_selected)
+## [```search_selected```](https://github.com/redi-b/dotfiles/tree/master/scripts/search_selected)
 
 #### Description
 
@@ -166,14 +163,14 @@ Googles the selected text in firefox
 ### Hotkey
    - ```Ctrl + Alt + s```
 
-#### Dependencies
+### Dependencies
 
    - ```xclip``` -  ```$ sudo pacman -S xclip```
 
 
-### [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
+## [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
 
-#### Description
+### Description
 
 Used to search for a package and install the selected one
 
@@ -182,7 +179,7 @@ Used to search for a package and install the selected one
    - ```yay``` or ```paru``` to search from the <sup>AUR</sup>
    - No argument defaults to ```pacman```
 
-#### Dependencies
+## Dependencies
 
    - ```fzf``` -  ```$ sudo pacman -S fzf```
 
@@ -193,20 +190,20 @@ Used to search for a package and install the selected one
    - NOTE: Only run these commands once
 
 
-### [```setbg```](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg)
+## [```setbg```](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg)
 
-#### Description
+### Description
 
 Sets a random background from the ```~/wallpapers``` directory
 
-#### Dependencies
+## Dependencies
 
    - ```feh``` -  ```$ sudo pacman -S feh```
 
 
 ---
 
-## Install zsh & oh-my-zsh
+# Install zsh & oh-my-zsh
 
 ```bash
 $ sudo pacman -S zsh
@@ -224,7 +221,7 @@ $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM
 
 ---
 
-## Install polybar
+# Install polybar
 
 Get the <code>polybar<sup>AUR</sup></code> package (<code>polybar-dwm-module<sup>AUR</sup></code> for dwm)
 
@@ -240,7 +237,7 @@ There are steps on the github page above to install the themes. After installati
 
 ---
 
-## Packages / Applications installed
+# Packages / Applications installed
 
 <details>
 <summary>It's a long list ;)</summary>
