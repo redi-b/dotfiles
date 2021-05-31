@@ -32,11 +32,11 @@
 
     https://dwm.suckless.org/patches/actualfullscreen/
 
-3. ```dwm-anybar``` - this is important if you plan to use a bar other than the default one
+3. ```dwm-anybar``` (for polybar)
 
     https://dwm.suckless.org/patches/anybar/
 
-5. ```dwm-ewmhtags``` - this is important to get information about workspace/desktop (especially when using a different bar)
+5. ```dwm-ewmhtags``` - workspace/desktop information (for polybar)
 
     https://dwm.suckless.org/patches/ewmhtags/
 
@@ -61,17 +61,34 @@ Add this line to your ```.bashrc``` or ```.zshrc``` and reopen terminal:
 ```bash
 export PATH="/path/to/directory/:$PATH"
 ```
-   - NOTE: These scripts might be used in the dwm build.
+   - NOTE: Some scripts are used in dwm (to run them with keyboard shortcuts).
+   
+   ### [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
+   
+   #### Dependencies
 
-   ### Dependencies
+   - ```rofi```   -  ```$ sudo pacman -S rofi```
+   - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
-   - ```rofi``` is used by both [menulauncher](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher) and [emojipick](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
+   ### [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
+   
+   #### Dependencies
+   
+   - ```python3```   -  ```$ sudo pacman -S python3```
+   - ```rofi```   -   ```$ sudo pacman -S rofi```
+   - Save the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory (or modify the script according to where you put this folder)
 
-   - You need to download the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder and save it in your home directory to use the ```menulauncher``` command
-   - You need to download the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory to use the ```emojipick``` command
-   - ```feh``` is used by [setbg](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg) to set the wallpaper
+   ### [```setbg```](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg)
+   
+   #### Dependencies
+   
+   - ```feh``` -  ```$ sudo pacman -S feh```
+   
+   ### [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
+   
+   #### Dependencies
 
-   - ```fzf``` is used by [searchpkg](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg) 
+   - ```fzf``` -  ```$ sudo pacman -S fzf```
 
        ```bash
        $ sudo pacman -Fy
@@ -79,8 +96,19 @@ export PATH="/path/to/directory/:$PATH"
        ```
        - NOTE: Only run these commands once
 
-   - ```scrot``` is used by [screencopy](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy) and [screensave](https://github.com/redi-b/dotfiles/tree/master/scripts/screensave) to take screenshots
-   - To use the [manpdf](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf) command you need to intall ```zathura``` and a pdf reader (```zathura-pdf-mupdf``` in this case). Then update your manual database ( which is used to run the ```apropos``` or ```man -k``` commands
+   ### [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
+   
+   #### Dependencies
+
+   - ```scrot```  -  ```$ sudo pacman -S scrot```
+
+   ### [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
+   
+   #### Dependencies
+   
+   - ```zathura```   -  ```$ sudo pacman -S zathura```
+   - ```zathura-pdf-mupdf```  -  ```$ sudo pacman -S zathura-pdf-mupdf```
+   - Update your manual database (which is used to run the ```apropos``` or ```man -k``` commands)
 
        ```bash
        $ sudo mandb
