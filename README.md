@@ -75,7 +75,7 @@ Downloads a random wallpaper from unsplash. You can add or remove the keywords i
 #### Description
 
 Launches an emojipicker. The launcher can be either rofi or dmenu
-(```use_rofi=1``` or ```use_rofi=0```)
+(```use_rofi=1``` or ```use_rofi=0```)  
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/emoji_launch.png)
 
 #### Hotkey
@@ -91,7 +91,7 @@ Launches an emojipicker. The launcher can be either rofi or dmenu
 
 #### Description
 
-Toggles the eww widgets.
+Toggles the eww widgets.  
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
 
 #### Hotkey
@@ -123,8 +123,8 @@ $ sudo mandb
 
 #### Description
 
-Launches an application runner or system options.
-[Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)
+Launches an application runner or system options.  
+[Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)  
 [Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/sys_launch.png)
 
 #### Hotkey
@@ -173,7 +173,8 @@ Googles the selected text in firefox
 
 #### Description
 
-Used to search for a package and install the selected one
+Used to search for a package and install the selected one  
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/searchpkg.png)
 
 #### Arguments
    - ```pacman```
