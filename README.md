@@ -104,7 +104,8 @@ Toggles the eww widgets.
 ## [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
 
 #### Description
-Launches a dmenu which opens the selected app's manual in zathura
+Launches a dmenu which opens the selected app's manual in zathura  
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/zathura.png)
 
 #### Hotkey
    - ```MOD + v```
