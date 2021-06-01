@@ -74,8 +74,9 @@ Downloads a random wallpaper from unsplash. You can add or remove the keywords i
 
 #### Description
 
-Launches an emojipicker. The launcher can be either rofi or dmenu.
-```use_rofi=1``` or ```use_rofi=0```
+Launches an emojipicker. The launcher can be either rofi or dmenu
+(```use_rofi=1``` or ```use_rofi=0```)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/emoji_launch.png)
 
 #### Hotkey
    - ```MOD + e```
