@@ -63,7 +63,7 @@ export PATH="/path/to/directory/:$PATH"
 
 #### Description
 
-Downloads a random wallpaper from unsplash. You can modify the keywords it searches for.
+Downloads a random wallpaper from unsplash. You can add or remove the keywords it searches for.
 
 #### Dependencies
 
