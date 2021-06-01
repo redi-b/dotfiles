@@ -1,9 +1,12 @@
 #!/bin/bash
 
 keyword=$(xclip -out -selection primary)
+browser="firefox"
+# 1=google 2=duckduckgo
+search_engine=1
 
 # notify-send "Duckduckgo" "Search for '$(keyword)'" -t 3000
 # firefox "https://duckduckgo.com/?q=$(echo $(keyword) | tr " " "+")"
 
 notify-send "Google" "Search for '$keyword'" -t 3000 --urgency normal
-firefox "https://google.com/search?q=$(echo $keyword | tr " " "+")"
+$browser "https://google.com/search?q=$(echo $keyword | tr " " "+")"
