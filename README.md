@@ -179,7 +179,7 @@ Used to search for a package and install the selected one
    - ```yay``` or ```paru``` to search from the <sup>AUR</sup>
    - No argument defaults to ```pacman```
 
-### Dependencies
+#### Dependencies
 
    - ```fzf``` -  ```$ sudo pacman -S fzf```
 
@@ -196,7 +196,7 @@ Used to search for a package and install the selected one
 
 Sets a random background from the ```~/wallpapers``` directory
 
-### Dependencies
+#### Dependencies
 
    - ```feh``` -  ```$ sudo pacman -S feh```
 
