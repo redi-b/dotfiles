@@ -160,7 +160,8 @@ Screenshot whole screen and copy the selected class to clipboard
 
 #### Description
 
-Googles the selected text in firefox
+Googles the selected text
+(Can be changed to used duckduckgo and also use a different browser)
 
 #### Hotkey
    - ```Ctrl + Alt + s```
