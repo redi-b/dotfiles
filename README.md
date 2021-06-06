@@ -59,7 +59,7 @@ export PATH="/path/to/directory/:$PATH"
 - NOTE: Some scripts are used in dwm (to run them with keyboard shortcuts).
 
 <details>
-   <summary>List of scripts</summary>
+   <summary><b>List of scripts</b></summary>
 
 ## [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
 
