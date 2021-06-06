@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # windows=$(eww windows | grep "*" | cut -d'*' -f 2)
-eww windows | grep "*">/dev/null && eww close-all || eww open-many date profile player misc
+eww windows | grep "*">/dev/null && eww close-all || eww open-many profile player misc date

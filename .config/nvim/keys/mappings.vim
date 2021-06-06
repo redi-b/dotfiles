@@ -17,9 +17,11 @@ inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
+nnoremap <silent><TAB> :bnext<CR>
 " SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
+nnoremap <silent><S-TAB> :bprevious<CR>
+" ALT-TAB will delete buffer
+nnoremap <silent><M-TAB> :bdelete<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>

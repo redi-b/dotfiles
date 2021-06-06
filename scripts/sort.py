@@ -34,7 +34,7 @@ def check_changes():
                 continue
             # add to changes if the file should be renamed ( {"current_filename": "new_filename"} )
             # changes[prefix + str(fileidx[idx + 1]) + extension] = prefix = str(item + 1) + extension
-            changes[f"{prefix}{str(fileidx[idx + 1])}{extension}"] = ("wall" + str(item + 1) + ".jpg")
+            changes[f"{prefix}{str(fileidx[idx + 1])}{extension}"] = f"{prefix}{str(item + 1)}{extension}"
 
 # check for changes and start a loop that
 # applies the first changes, then clears it and

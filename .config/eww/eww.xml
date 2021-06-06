@@ -40,8 +40,8 @@
                     <scale min="0" max="101" value="{{volume_master}}" onchange="amixer sset Master {}%"/>
                 </box>
                 <box orientation="h" class="sys-btns" space-evenly="true">
-                    <button class="shutdown-btn" tooltip="Shutdown" onclick="~/.config/eww/scripts/shutdown.sh"></button> 
-                    <button class="reboot-btn" tooltip="Reboot" onclick="~/.config/eww/scripts/reboot.sh"></button>
+                    <button class="shutdown-btn" tooltip="Shutdown" onclick="~/.config/eww/scripts/shutdown"></button> 
+                    <button class="reboot-btn" tooltip="Reboot" onclick="~/.config/eww/scripts/reboot"></button>
                     <button class="lock-btn" tooltip="Lock" onclick="~/.config/eww/scripts/lockscreen"></button>
                     <button class="suspend-btn" tooltip="Suspend" onclick="~/.config/eww/scripts/suspend"></button>
                 </box>

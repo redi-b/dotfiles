@@ -37,6 +37,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
     " Commenter
     Plug 'preservim/nerdcommenter'
+    " Tabnine auto completion
+    " Plug 'codota/tabnine-vim'
+    " Icons
+    Plug 'ryanoasis/vim-devicons'
 
 
 call plug#end()

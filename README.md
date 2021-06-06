@@ -79,7 +79,7 @@ Launches an emojipicker. The launcher can be either rofi or dmenu
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/emoji_launch.png)
 
 #### Hotkey
-   - ```MOD + e```
+   - ```Mod + Shift + e```
 
 #### Dependencies
 
@@ -95,7 +95,7 @@ Toggles the eww widgets.
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
 
 #### Hotkey
-   - ```MOD + w```
+   - ```Mod + w```
 
 #### Dependencies
 
@@ -108,7 +108,7 @@ Launches a dmenu which opens the selected app's manual in zathura
 [Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/zathura.png)
 
 #### Hotkey
-   - ```MOD + v```
+   - ```Mod + v```
 
 #### Dependencies
    
@@ -129,8 +129,8 @@ Launches an application runner or system options.
 [Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/sys_launch.png)
 
 #### Hotkey
-   - ```MOD + o``` - app launcher
-   - ```MOD + r``` - powermenu
+   - ```Mod + o``` - app launcher
+   - ```Mod + r``` - powermenu
 
 #### Arguments
    - ```launcher``` for app launcher
@@ -149,8 +149,8 @@ Launches an application runner or system options.
 Screenshot whole screen and copy the selected class to clipboard
 
 #### Hotkey
-   - ```MOD + Shift + p``` - screenshot
-   - ```MOD + Shift + s``` - screencopy
+   - ```Mod + Shift + p``` - screenshot
+   - ```Mod + Shift + s``` - screencopy
 
 #### Dependencies
 

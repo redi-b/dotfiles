@@ -36,7 +36,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 2,            0,           -1 },
+	{ "Spotify",  NULL,       NULL,       1 << 3,            0,           -1 },
+	{ "xpad",     NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -155,14 +157,16 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioPrev,        spawn, SHCMD("playerctl previous") },
 	{ MODKEY,                       XK_o,      spawn,          SHCMD("menulauncher") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("unmuteh") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("emojipick") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("emojipick") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("manpdf") },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screencopy") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("screenshot") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("ewwtoggle") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD("search_selected") },
+	{ ControlMask|Mod1Mask,         XK_s,      spawn,          SHCMD("xpad") },
 };
 
 /* button definitions */
