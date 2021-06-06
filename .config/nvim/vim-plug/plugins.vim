@@ -41,6 +41,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'codota/tabnine-vim'
     " Icons
     Plug 'ryanoasis/vim-devicons'
+    " C++
+    Plug 'octol/vim-cpp-enhanced-highlight'
+    Plug 'rhysd/vim-clang-format'
+    Plug 'derekwyatt/vim-fswitch'
 
 
 call plug#end()

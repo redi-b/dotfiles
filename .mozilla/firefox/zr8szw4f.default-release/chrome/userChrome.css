@@ -25,8 +25,9 @@
   --mff-sidebar-color: #d3c6aa;
   --mff-tab-color: #d3c6aa;
   --mff-tab-pinned-bg: #2f383e;
-  --mff-tab-selected-bg: #a7c080;
-  --mff-tab-selected-fg: #2f383e;
+  /* --mff-tab-selected-bg: #a7c080; */
+  --mff-tab-selected-bg: #1588FF;
+  --mff-tab-selected-fg: #ffffff;
   --mff-tab-soundplaying-bg: #7faab3;
   --mff-urlbar-color: #fbf1c7;
   --mff-urlbar-focused-color: #d3c6aa;
@@ -240,9 +241,9 @@ width: 50% !important;
   font-size: var(--mff-urlbar-font-size) !important;
 }
 
-.urlbarView-favicon, .urlbarView-type-icon {
+/* .urlbarView-favicon, .urlbarView-type-icon {
   display: none !important;
-}
+} */
 
 #urlbar-input {
   font-size: var(--mff-urlbar-font-size) !important;
@@ -252,8 +253,12 @@ width: 50% !important;
   text-align: center !important;
 }
 
-/* #tracking-protection-icon-container, #identity-box {
-  display: none;
+#tracking-protection-icon-container, #identity-icon-label {
+  display: none !important;
+} 
+
+/* #identity-box:hover #identity-icon-label {
+  display: initial !important;
 } */
 
 #back-button > .toolbarbutton-icon{
