@@ -45,8 +45,7 @@ https://dwm.suckless.org/patches/movestack/
 https://dwm.suckless.org/patches/vanitygaps/
 
 ---
-
-# Some useful scripts
+# Scripts
 
 https://github.com/redi-b/dotfiles/tree/master/scripts
 
@@ -58,6 +57,9 @@ Add this line to your ```.bashrc``` or ```.zshrc``` and reopen terminal:
 export PATH="/path/to/directory/:$PATH"
 ```
 - NOTE: Some scripts are used in dwm (to run them with keyboard shortcuts).
+
+<details>
+   <summary>List of scripts</summary>
 
 ## [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
 
@@ -111,7 +113,7 @@ Launches a dmenu which opens the selected app's manual in zathura
    - ```Mod + v```
 
 #### Dependencies
-   
+
    - ```zathura```   -  ```$ sudo pacman -S zathura```
    - ```zathura-pdf-mupdf```  -  ```$ sudo pacman -S zathura-pdf-mupdf```
    - Update your manual database (which is used to run the ```apropos``` or ```man -k``` commands)
@@ -204,7 +206,8 @@ Sets a random background from the ```~/wallpapers``` directory
 
    - ```feh``` -  ```$ sudo pacman -S feh```
 
-
+</details>
+   
 ---
 
 # Install zsh & oh-my-zsh
