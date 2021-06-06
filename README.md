@@ -1,4 +1,4 @@
-![screenshot](https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png)
+![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/screenshot.png)
 
 # Softwares
 
@@ -304,3 +304,4 @@ There are steps on the github page above to install the themes. After installati
 - ```zsh``` 
 
 </details>
+<!-- https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png -->
