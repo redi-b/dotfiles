@@ -21,7 +21,12 @@ nnoremap <silent><TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent><S-TAB> :bprevious<CR>
 " ALT-TAB will delete buffer
-nnoremap <silent><M-TAB> :bdelete<CR>
+nnoremap <silent><M-TAB> :bdelete!<CR>
+
+" open terminal-emulator and
+nnoremap <silent><Leader>t :split term://zsh<CR>
+" exit terminal mode 
+tnoremap <silent><Esc> <C-\><C-n><CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>

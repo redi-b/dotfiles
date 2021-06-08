@@ -1,19 +1,21 @@
 #!/bin/bash
 
 keyword=$(xclip -out -selection primary)
-browser="firefox"
 # 1=google 2=duckduckgo 3=bing
-search_engine=3
-
+search_engine=1
+# use default browser if the env variable "BROWSER" is not set 
+[[ -n $BROWSER ]] && use_browser="$BROWSER" || use_browser="xdg-open"
 
 if [[ $search_engine -eq 1 ]]; then
   notify-send "Google" "Search for '$keyword'" -t 3000
-  $browser "https://google.com/search?q=$(echo $keyword | tr " " "+")"
+  $use_browser "https://google.com/search?q=$(echo $keyword | tr " " "+")"
+  exit
 elif [[ $search_engine -eq 2 ]]; then
   notify-send "Duckduckgo" "Search for '$keyword'" -t 3000
-  firefox "https://duckduckgo.com/?q=$(echo $keyword | tr " " "+")"
+  $use_browser "https://duckduckgo.com/?q=$(echo $keyword | tr " " "+")"
+  exit
 elif [[ $search_engine -eq 3 ]]; then
   notify-send "Bing" "Search for '$keyword'" -t 3000
-  $browser "https://bing.com/search?q=$(echo $keyword | tr " " "+")"
+  $use_browser "https://bing.com/search?q=$(echo $keyword | tr " " "+")"
+  exit
 fi
-
