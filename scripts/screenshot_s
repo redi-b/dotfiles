@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[[ -d $HOME/Pictures/Screenshots ]] || mkdir -p $HOME/Pictures/Screenshots
+
+file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png" 
+import -silent -quiet $file && notify-send "Screenshot" "Saved to Pictures" -i $file 

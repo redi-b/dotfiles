@@ -1,0 +1,8 @@
+#!/bin/bash
+
+networks=$(iwctl station wlan0 get-networks | cut -d'>' -f2 | sed -e '/-/d' -e '/^$/d' -e '/^[[:space:]]*$/d' | awk '{print $1}')
+netarr=($networks)
+unset netarr[0]
+
+echo -e ${netarr[@]}
+echo ${netarr[2]}

@@ -15,7 +15,7 @@ prefix_len = len(prefix)    # this is the where the 'index' begins
 # to "wall3.jpg"
 changes = {}
 
-def check_changes():
+def checkChanges():
     filenames = os.listdir(main_dir)
     # First, we split the file extension (jpg).
     # Then we sort the list by the 'index' which starts
@@ -40,11 +40,11 @@ def check_changes():
 # applies the first changes, then clears it and
 # checks for changes again. It will continue
 # until no more changes are found
-check_changes()
+checkChanges()
 while changes:
 
     for key, item in changes.items():
         os.system(f"mv -v {main_dir}/{key} {main_dir}/{item}")
 
     changes.clear() 
-    check_changes()
+    checkChanges()
