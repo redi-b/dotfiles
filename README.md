@@ -1,4 +1,4 @@
-![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/screenshot.png)
+![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/screenshot.png)
 
 # Softwares
 
@@ -78,7 +78,7 @@ Downloads a random wallpaper from unsplash. You can add or remove the keywords i
 
 Launches an emojipicker. The launcher can be either rofi or dmenu
 (```use_rofi=1``` or ```use_rofi=0```)  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/emoji_launch.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/emoji_launch.png)
 
 #### Hotkey
    - ```Mod + Shift + e```
@@ -94,7 +94,7 @@ Launches an emojipicker. The launcher can be either rofi or dmenu
 #### Description
 
 Toggles the eww widgets.  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/widgets.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/widgets.png)
 
 #### Hotkey
    - ```Mod + w```
@@ -107,7 +107,7 @@ Toggles the eww widgets.
 
 #### Description
 Launches a dmenu which opens the selected app's manual in zathura  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/zathura.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/zathura.png)
 
 #### Hotkey
    - ```Mod + v```
@@ -127,8 +127,8 @@ $ sudo mandb
 #### Description
 
 Launches an application runner or system options.  
-[Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/app_launch.png)  
-[Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/sys_launch.png)
+[Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/app_launch.png)  
+[Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/sys_launch.png)
 
 #### Hotkey
    - ```Mod + o``` - app launcher
@@ -178,7 +178,7 @@ Googles the selected text
 #### Description
 
 Used to search for a package and install the selected one  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/new/searchpkg.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/searchpkg.png)
 
 #### Arguments
    - ```pacman```

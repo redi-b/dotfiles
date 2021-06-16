@@ -70,25 +70,25 @@
 
     <windows>
       <window name="misc">
-          <geometry x="1005px" y="403px" width="355px" height="360px"/>
+          <geometry x="1005px" y="380px" width="355px" height="385px"/>
           <widget>
               <misc/>
           </widget>
       </window>
         <window name="player">
-            <geometry x="1005px" y="288px" width="355px" height="110px"/>
+            <geometry x="1005px" y="268px" width="355px" height="110px"/>
             <widget>
                 <player/>
             </widget>
         </window>
         <window name="profile">
-            <geometry x="1005px" y="183px" width="355px" height="100px"/>
+            <geometry x="1005px" y="165px" width="355px" height="100px"/>
             <widget>
                 <profile/>
             </widget>
         </window>
         <window name="date">
-            <geometry x="1005px" y="40px" width="355px" height="100px"/>
+            <geometry x="1005px" y="25px" width="355px" height="100px"/>
             <widget>
                 <date/>
             </widget>
