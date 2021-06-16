@@ -163,7 +163,7 @@ Screenshot whole screen and copy the selected class to clipboard
 #### Description
 
 Googles the selected text  
-(Can be changed to used duckduckgo and also use a different browser)
+(Browser and search engine can be changed)
 
 #### Hotkey
    - ```Ctrl + Alt + s```
