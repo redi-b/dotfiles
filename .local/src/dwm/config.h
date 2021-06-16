@@ -14,7 +14,7 @@ static const int usealtbar          = 0;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
 // static const char *altbarcmd        = ". ~/.config/polybar/forest/launch.sh "; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=10" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11" };
 static const char dmenufont[]       = "Droid Sans Mono:size=9";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -37,7 +37,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰅬", "󰈹", "󰘦", "󰔁", "󰎆", "󰨞", "󰣇", "󰣇", "󰣇" };
+static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰘦", "󰎆", "󰨞", "󰣇", "󰣇", "󰣇" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -149,18 +149,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY,                       XK_1,      spawn,          SHCMD("notify-send -t 500 1") },
-	{ MODKEY,                       XK_2,      spawn,          SHCMD("notify-send -t 500 2") },
-	{ MODKEY,                       XK_3,      spawn,          SHCMD("notify-send -t 500 3") },
-	{ MODKEY,                       XK_4,      spawn,          SHCMD("notify-send -t 500 4") },
-	{ MODKEY,                       XK_5,      spawn,          SHCMD("notify-send -t 500 5") },
-	{ MODKEY,                       XK_6,      spawn,          SHCMD("notify-send -t 500 6") },
-	{ MODKEY,                       XK_7,      spawn,          SHCMD("notify-send -t 500 7") },
-	{ MODKEY,                       XK_8,      spawn,          SHCMD("notify-send -t 500 8") },
-	{ MODKEY,                       XK_9,      spawn,          SHCMD("notify-send -t 500 9") },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD("amixer sset Master 5%-") },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD("amixer sset Master 5%+") },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol_lower") },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD(". ~/scripts/dwm/vol_raise") },
 	{ 0,                            XF86XK_AudioMute,        spawn, SHCMD("pactl set-sink-mute 0 toggle") },
 	{ 0,                            XF86XK_AudioPlay,        spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,        spawn, SHCMD("playerctl next") },
