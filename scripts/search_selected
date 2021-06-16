@@ -9,13 +9,10 @@ search_engine=1
 if [[ $search_engine -eq 1 ]]; then
   notify-send "Google" "Search for '$keyword'" -t 3000
   $use_browser "https://google.com/search?q=$(echo $keyword | tr " " "+")"
-  exit
 elif [[ $search_engine -eq 2 ]]; then
   notify-send "Duckduckgo" "Search for '$keyword'" -t 3000
   $use_browser "https://duckduckgo.com/?q=$(echo $keyword | tr " " "+")"
-  exit
 elif [[ $search_engine -eq 3 ]]; then
   notify-send "Bing" "Search for '$keyword'" -t 3000
   $use_browser "https://bing.com/search?q=$(echo $keyword | tr " " "+")"
-  exit
 fi
