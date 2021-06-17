@@ -156,6 +156,7 @@ Screenshot whole screen and copy the selected class to clipboard
 #### Dependencies
 
    - ```scrot```  -  ```$ sudo pacman -S scrot```
+   - ```imagemagick```  -  ```$ sudo pacman -S imagemagick```
 
 ## [```search_selected```](https://github.com/redi-b/dotfiles/tree/master/scripts/search_selected)
 
