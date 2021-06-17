@@ -92,9 +92,9 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", "#757575", "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *fmcmd[]  	= { "pcmanfm", NULL };
-static const char *notecmd[] 	= { "xpad", NULL };
+static const char *termcmd[]  = { "st", NULL };		// Terminal
+static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
+static const char *notecmd[] 	= { "xpad", NULL };		// Notepad
 
 #include "movestack.c"
 #include <X11/XF86keysym.h>
