@@ -68,7 +68,7 @@ Downloads a random wallpaper from unsplash. You can add or remove the keywords i
 
 #### Dependencies
 
-   - ```wget```   -  ```$ sudo pacman -S wget```
+   - ```wget```
 
 
 ## [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
@@ -84,8 +84,8 @@ Launches an emojipicker. The launcher can be either rofi or dmenu
 
 #### Dependencies
 
-   - ```python3```   -  ```$ sudo pacman -S python3```
-   - ```rofi```   -   ```$ sudo pacman -S rofi```
+   - ```python3```
+   - ```rofi```
    - Save the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory (or modify the script according to where you put this folder)
 
 ## [```ewwtoggle```](https://github.com/redi-b/dotfiles/tree/master/scripts/ewwtoggle)
@@ -113,13 +113,13 @@ Launches a dmenu which opens the selected app's manual in zathura
 
 #### Dependencies
 
-   - ```zathura```   -  ```$ sudo pacman -S zathura```
-   - ```zathura-pdf-mupdf```  -  ```$ sudo pacman -S zathura-pdf-mupdf```
+   - ```zathura```
+   - ```zathura-pdf-mupdf```
    - Update your manual database (which is used to run the ```apropos``` or ```man -k``` commands)
 
-```bash
-$ sudo mandb
-```
+   ```bash
+   $ sudo mandb
+   ```
 
 ## [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
 
@@ -140,7 +140,7 @@ Launches an application runner or system options.
 
 #### Dependencies
 
-   - ```rofi```   -  ```$ sudo pacman -S rofi```
+   - ```rofi```
    - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
 ## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
@@ -155,8 +155,8 @@ Screenshot whole screen and copy the selected class to clipboard
 
 #### Dependencies
 
-   - ```scrot```  -  ```$ sudo pacman -S scrot```
-   - ```imagemagick```  -  ```$ sudo pacman -S imagemagick```
+   - ```scrot```
+   - ```imagemagick```
 
 ## [```search_selected```](https://github.com/redi-b/dotfiles/tree/master/scripts/search_selected)
 
@@ -170,7 +170,7 @@ Googles the selected text
 
 #### Dependencies
 
-   - ```xclip``` -  ```$ sudo pacman -S xclip```
+   - ```xclip```
 
 
 ## [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
@@ -187,7 +187,7 @@ Used to search for a package and install the selected one
 
 #### Dependencies
 
-   - ```fzf``` -  ```$ sudo pacman -S fzf```
+   - ```fzf```
 
    ```bash
    $ sudo pacman -Fy
@@ -204,7 +204,7 @@ Sets a random background from the ```~/wallpapers``` directory
 
 #### Dependencies
 
-   - ```feh``` -  ```$ sudo pacman -S feh```
+   - ```feh```
 
 </details>
    
