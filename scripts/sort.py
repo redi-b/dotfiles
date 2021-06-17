@@ -27,6 +27,9 @@ def checkChanges():
     for i in filenames:
         fileidx.append(int(i.split(".")[0][prefix_len:]))
 
+    if fileidx[0] != 1:
+        os.system(f"mv -v {main_dir}/{filenames[0]} {main_dir}/{prefix}1{extension}")
+
     for idx, item in enumerate(fileidx):
         # making sure the index isn't out of bounds
         if idx < (len(fileidx) - 1):

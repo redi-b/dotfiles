@@ -210,40 +210,6 @@ Sets a random background from the ```~/wallpapers``` directory
    
 ---
 
-# Install zsh & oh-my-zsh
-
-```bash
-$ sudo pacman -S zsh
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-**Install zsh-auto-suggestions & zsh-syntax-highlighting (optional)**
-
-```bash
-$ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-```
-
-**Logout and re-login to apply the changes**
-
----
-
-# Install polybar
-
-Get the <code>polybar<sup>AUR</sup></code> package (<code>polybar-dwm-module<sup>AUR</sup></code> for dwm)
-
-```bash
-$ yay -S polybar
-```
-
-You can install different themes if you don't want to configure you bar yourself
-
-https://github.com/adi1090x/polybar-themes
-
-There are steps on the github page above to install the themes. After installation you can edit your dwm/config.h to use polybar instead of the default one. Make sure you have installed the dwm-anybar patch.
-
----
-
 # Packages / Applications installed
 
 <details>
