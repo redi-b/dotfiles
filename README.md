@@ -5,12 +5,11 @@
 - OS - [Arch Linux](https://archlinux.org)
 - WM - [dwm](https://dwm.suckless.org)
 - Compositor - [picom (picom-tyrone-git)](https://aur.archlinux.org/packages/picom-tryone-git/)
-- Bar - [Polybar](https://github.com/polybar/polybar) with [polybar-themes](https://github.com/adi1090x/polybar-themes) (modified)
 - Terminal - [st](https://st.suckless.org)
 - Shell - [zsh](https://zsh.org)
 - Lanucher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
 - Editor - [neovim](https://github.com/neovim/neovim)
-- File Manager - [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM)
+- File Manager - [ranger (cli)](https://github.com/ranger/ranger) & [pcmanfm (gui)](https://wiki.archlinux.org/index.php/PCManFM)
 - Clipboard Interface - [xclip](https://github.com/astrand/xclip)
 - Screenshot - [scrot](https://github.com/resurrecting-open-source-projects/scrot)
 - Notifications - [dunst](https://github.com/dunst-project/dunst)
@@ -20,29 +19,29 @@
 
 # dwm patches
 
-1. ```dwm-swapfocus```
+1. ```dwm-vanitygaps```
 
-https://dwm.suckless.org/patches/swapfocus/
+https://dwm.suckless.org/patches/vanitygaps/
 
 2. ```dwm-actualfullscreen```
 
 https://dwm.suckless.org/patches/actualfullscreen/
 
-3. ```dwm-anybar``` (for polybar)
-
-https://dwm.suckless.org/patches/anybar/
-
-5. ```dwm-ewmhtags``` - workspace/desktop information (for polybar)
-
-https://dwm.suckless.org/patches/ewmhtags/
-
-6. ```dwm-movestack```
+3. ```dwm-movestack```
 
 https://dwm.suckless.org/patches/movestack/
 
-7. ```dwm-vanitygaps```
+4. ```dwm-colorbar```
 
-https://dwm.suckless.org/patches/vanitygaps/
+https://dwm.suckless.org/patches/colorbar/
+
+5. ```dwm-anybar``` (optional)
+
+https://dwm.suckless.org/patches/anybar/
+
+6. ```dwm-ewmhtags``` - workspace/desktop information (optional)
+
+https://dwm.suckless.org/patches/ewmhtags/
 
 ---
 # Scripts
