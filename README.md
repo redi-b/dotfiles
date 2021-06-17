@@ -209,6 +209,26 @@ Sets a random background from the ```~/wallpapers``` directory
    
 ---
 
+# Hotkeys
+
+| Key               | Action        |  
+| :-------------    | :----------   |
+| ```Mod + Enter``` | Open Terminal |
+| ```Mod + d```     | Run dmenu     |
+| ```Mod + e```     | Open File Manager |
+| ```Ctrl + Alt + s```     | Open notes (xpad) |
+| ```Mod + o```     | Run applauncher |
+| ```Mod + r```     | Run powermenu   |
+| ```Mod + Shift + e```    | Run emojipicker   |
+| ```Mod + v```     | Open a manual |
+| ```Mod + Shift + l```    | Lockscreen        |
+| ```Mod + Shift + p```    | Screenshot whole screen |
+| ```Mod + Shift + s```    | Screenshot window or selection |
+| ```Mod + w```     | Toggle eww widgets |
+| ```Ctrl + Shift + s```   | Google selected text |
+
+---
+
 # Packages / Applications installed
 
 <details>
