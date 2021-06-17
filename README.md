@@ -9,7 +9,7 @@
 - Shell - [zsh](https://zsh.org)
 - Lanucher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
 - Editor - [neovim](https://github.com/neovim/neovim)
-- File Manager - [ranger (cli)](https://github.com/ranger/ranger) & [pcmanfm (gui)](https://wiki.archlinux.org/index.php/PCManFM)
+- File Manager - [ranger](https://github.com/ranger/ranger)(cli) & [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM)(gui)
 - Clipboard Interface - [xclip](https://github.com/astrand/xclip)
 - Screenshot - [scrot](https://github.com/resurrecting-open-source-projects/scrot)
 - Notifications - [dunst](https://github.com/dunst-project/dunst)
