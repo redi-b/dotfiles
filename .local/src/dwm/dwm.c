@@ -759,7 +759,6 @@ drawbar(Monitor *m)
 	if ((w = m->ww - tw - x) > bh) {
 		if (m->sel) {
 			drw_setscheme(drw, scheme[m == selmon ? SchemeInfoSel : SchemeInfoNorm]);
-			// comment to remove infobar
 			// drw_text(drw, x, 0, w, bh, lrpad / 2, m->sel->name, 0);
 			drw_text(drw, x, 0, w, bh, lrpad / 2, "", 0);
 			if (m->sel->isfloating)
