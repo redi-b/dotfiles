@@ -1,4 +1,4 @@
-![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/redi-b/dotfiles/master/screenshots/screenshot.png)
 
 
 # Softwares
