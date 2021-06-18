@@ -15,9 +15,9 @@ map b recolor
 # theme
 
 # Light/Default mode settings:
-set notification-error-bg       "#f44747"
+set notification-error-bg       "#f44737"
 set notification-error-fg       "#A0A8CD"
-set notification-warning-bg     "#FFFF11"
+set notification-warning-bg     "#FFFF44"
 set notification-warning-fg     "#11121D"
 set notification-bg             "#11121D"
 set notification-fg             "#af88F1"
@@ -34,7 +34,7 @@ set index-fg                    "#A0A8CD"
 set index-active-bg             "#af88e1"
 set index-active-fg             "#282a36"
 
-set inputbar-bg                 "#11FF21"
+set inputbar-bg                 "#009688"
 set inputbar-fg                 "#11121D"
 # set statusbar-bg                "#1588FF"
 set statusbar-bg                "#00796B"
