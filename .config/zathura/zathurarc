@@ -1,5 +1,6 @@
 # Basic Settings
 
+set font "Product Sans 9"
 set highlight-transparency .4
 set zoom-center "true"
 set selection-clipboard clipboard
@@ -35,7 +36,8 @@ set index-active-fg             "#282a36"
 
 set inputbar-bg                 "#11FF21"
 set inputbar-fg                 "#11121D"
-set statusbar-bg                "#1588FF"
+# set statusbar-bg                "#1588FF"
+set statusbar-bg                "#00796B"
 set statusbar-fg                "#ffffff" 
 
 set highlight-color             "#FF5555"
