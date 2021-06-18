@@ -1,4 +1,6 @@
-![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/screenshot.png)
+<!-- ![screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/screenshot.png) -->
+![screenshot](https://user-images.githubusercontent.com/66169993/122575510-819aba80-d059-11eb-9db9-98eb5c0d4517.png)
+
 
 # Softwares
 
