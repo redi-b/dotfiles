@@ -4,8 +4,8 @@
 
 window {
     // color: #88B9C4;
-    color: #FFEE79;
-    font-family: "Inter";
+    color: #009688;
+    font-family: "Product Sans";
 }
 
  .misc, .player, .profile, .date, {
@@ -46,11 +46,11 @@ window {
 .semicolon {
     margin: 0px;
     margin-top: -5px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .minute {
-    margin-left: -40px;
+    margin-left: -50px;
 }
 
 .day {
@@ -70,7 +70,7 @@ window {
 }
 
 .song-title {
-    font-family: "Inter";
+    font-family: "Product Sans";
     font-size: 16px;
     font-weight: 500;
 
@@ -78,7 +78,7 @@ window {
 }
 
 .song-artist {
-    font-family: "Inter";
+    font-family: "Product Sans";
     font-size: 12px;
     font-weight: 400;
 
@@ -121,6 +121,7 @@ window {
 }
 
 .media-player {
+    font-family: "Inter";
     font-size: 10px;
     font-weight: 500;
 
@@ -130,13 +131,13 @@ window {
 
 .vol-slider scale trough highlight {
     all: unset;
-    background-color: #2196F3;
+    background-color: #00796B;
     color: #000000;
     border-radius: 10px;
 }
 
 .label-vol-slider {
-    color: #2196F3;
+    color: #009688;
     font-size: 25px;
 
     margin-top: 0px;
