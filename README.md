@@ -16,6 +16,12 @@
 - Notifications - [dunst](https://github.com/dunst-project/dunst)
 - Music Player - [mocp](https://github.com/jonsafari/mocp)
 
+## Fonts
+
+- Product Sans
+- Hack Nerd Font
+- Material Design Icons
+
 ---
 
 # dwm patches
