@@ -1,14 +1,14 @@
 static struct Config config = {
 	/* font, separate different fonts with comma */
-	.font = "monospace:size=9,DejaVuSansMono:size=9",
+	.font = "Product Sans:size=10,Hack Nerd Font:size=10",
 
 	/* colors */
-	.background_color = "#FFFFFF",
-	.foreground_color = "#2E3436",
-	.selbackground_color = "#3584E4",
+	.background_color = "#00796B",
+	.foreground_color = "#DFD1D0",
+	.selbackground_color = "#009688",
 	.selforeground_color = "#FFFFFF",
 	.separator_color = "#CDC7C2",
-	.border_color = "#E6E6E6",
+	.border_color = "#212121",
 
 	/* sizes in pixels */
 	.width_pixels = 130,        /* minimum width of a menu */
