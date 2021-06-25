@@ -277,7 +277,8 @@ Sets a random background from the ```~/wallpapers``` directory
 | ```Mod + Enter``` | Open Terminal |
 | ```Mod + d```     | Run dmenu     |
 | ```Mod + e```     | Open File Manager |
-| ```Ctrl + Alt + s```     | Open notes (xpad) |
+| ```Ctrl + Alt + s```     | Open stickies (xpad) |
+| ```Mod + Shift + Tab```     | Run task switcher (skippy-xd)  |
 | ```Mod + o```     | Run applauncher |
 | ```Mod + r```     | Run powermenu   |
 | ```Mod + Shift + e```    | Run emojipicker   |
