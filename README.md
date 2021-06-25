@@ -25,19 +25,19 @@
 ### dwm patches
 
 
-1. [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
-2. [anybar](https://dwm.suckless.org/patches/anybar/) (optional)
-3. [barheight](https://dwm.suckless.org/patches/barheight/)
-4. [colorbar](https://dwm.suckless.org/patches/colorbar/)
-5. [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/)
-6. [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) - workspace/desktop information
-7. [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/) - skippy-xd
-8. [layoutmenu](https://dwm.suckless.org/patches/layoutmenu/) - (depends on xmenu)
-9. [movestack](https://dwm.suckless.org/patches/movestack/)
-10. [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar (not currently in use)
-11. [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
-12. [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
-13. [xrdb](https://dwm.suckless.org/patches/xrdb/) - dep for status2d
+- [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
+- [anybar](https://dwm.suckless.org/patches/anybar/) (optional)
+- [barheight](https://dwm.suckless.org/patches/barheight/)
+- [colorbar](https://dwm.suckless.org/patches/colorbar/)
+- [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/)
+- [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) - workspace/desktop information
+- [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/) - skippy-xd
+- [layoutmenu](https://dwm.suckless.org/patches/layoutmenu/) - (depends on xmenu)
+- [movestack](https://dwm.suckless.org/patches/movestack/)
+- [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar (not currently in use)
+- [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
+- [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
+- [xrdb](https://dwm.suckless.org/patches/xrdb/) - dep for status2d
 
 ---
 # Scripts
