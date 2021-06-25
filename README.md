@@ -27,7 +27,7 @@
 
 - [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
 - [anybar](https://dwm.suckless.org/patches/anybar/) (optional)
-- [barheight](https://dwm.suckless.org/patches/barheight/)
+- [bar-height](https://dwm.suckless.org/patches/bar_height/)
 - [colorbar](https://dwm.suckless.org/patches/colorbar/)
 - [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/)
 - [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) - workspace/desktop information
