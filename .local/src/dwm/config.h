@@ -117,6 +117,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = fmcmd } },
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
+	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
 	{ MODKEY,                       XK_o,      spawn,          SHCMD("menulauncher") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
