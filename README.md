@@ -39,6 +39,70 @@
 - [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
 - [xrdb](https://dwm.suckless.org/patches/xrdb/) - dep for status2d
 
+### Packages / Applications installed
+
+<details>
+<summary>It's a long list ;)</summary>
+
+- ```alsa-utils``` 
+- ```ark``` 
+- ```breeze-icons``` 
+- ```clang``` 
+- ```cmake``` 
+- ```cmatrix``` 
+- ```cowsay``` 
+- ```dunst``` 
+- <code>eww-git<sup>AUR</sup></code>
+- ```feh``` 
+- ```figlet``` 
+- ```fortune-mod``` 
+- ```freedownloadmanager``` 
+- ```fzf``` 
+- <code>google-chrome<sup>AUR</sup></code>
+- <code>kvantum-theme-qogir<sup>AUR</sup></code>
+- ```lxappearance``` 
+- ```maim``` 
+- ```mpv``` 
+- ```mtools``` 
+- ```neofetch``` 
+- ```neovim``` 
+- ```nodejs``` 
+- ```noto-fonts``` 
+- ```npm``` 
+- ```os-prober``` 
+- ```pavucontrol``` 
+- ```pcmanfm``` 
+- <code>polybar<sup>AUR</sup></code>
+- ```pulseaudio``` 
+- ```python``` 
+- ```python-pip``` 
+- ```python-pynvim``` 
+- <code>qogir-gtk-theme<sup>AUR</sup></code>
+- ```qt5ct``` 
+- ```rofi``` 
+- ```rustup``` 
+- <code>spotify<sup>AUR</sup></code>
+- ```subversion``` 
+- ```sxiv``` 
+- <code>telegram-desktop<sup>AUR</sup></code>
+- ```tmux``` 
+- ```ttf-hack``` 
+- ```vim``` 
+- <code>visual-studio-code-bin<sup>AUR</sup></code>
+- ```vlc``` 
+- ```wget``` 
+- ```xorg-xev``` 
+- ```xorg-xinit``` 
+- ```xorg-xmodmap``` 
+- ```xorg-xprop``` 
+- ```xorg-xrandr``` 
+- <code>yay<sup>AUR</sup></code>
+- ```zathura``` 
+- ```zathura-pdf-mupdf``` 
+- ```zsh``` 
+
+</details>
+
 ---
 # Scripts
 
@@ -224,69 +288,4 @@ Sets a random background from the ```~/wallpapers``` directory
 | ```Mod + w```     | Toggle eww widgets |
 | ```Ctrl + Shift + s```   | Google selected text |
 
----
-
-# Packages / Applications installed
-
-<details>
-<summary>It's a long list ;)</summary>
-
-- ```alsa-utils``` 
-- ```ark``` 
-- ```breeze-icons``` 
-- ```clang``` 
-- ```cmake``` 
-- ```cmatrix``` 
-- ```cowsay``` 
-- ```dunst``` 
-- <code>eww-git<sup>AUR</sup></code>
-- ```feh``` 
-- ```figlet``` 
-- ```fortune-mod``` 
-- ```freedownloadmanager``` 
-- ```fzf``` 
-- <code>google-chrome<sup>AUR</sup></code>
-- <code>kvantum-theme-qogir<sup>AUR</sup></code>
-- ```lxappearance``` 
-- ```maim``` 
-- ```mpv``` 
-- ```mtools``` 
-- ```neofetch``` 
-- ```neovim``` 
-- ```nodejs``` 
-- ```noto-fonts``` 
-- ```npm``` 
-- ```os-prober``` 
-- ```pavucontrol``` 
-- ```pcmanfm``` 
-- <code>polybar<sup>AUR</sup></code>
-- ```pulseaudio``` 
-- ```python``` 
-- ```python-pip``` 
-- ```python-pynvim``` 
-- <code>qogir-gtk-theme<sup>AUR</sup></code>
-- ```qt5ct``` 
-- ```rofi``` 
-- ```rustup``` 
-- <code>spotify<sup>AUR</sup></code>
-- ```subversion``` 
-- ```sxiv``` 
-- <code>telegram-desktop<sup>AUR</sup></code>
-- ```tmux``` 
-- ```ttf-hack``` 
-- ```vim``` 
-- <code>visual-studio-code-bin<sup>AUR</sup></code>
-- ```vlc``` 
-- ```wget``` 
-- ```xorg-xev``` 
-- ```xorg-xinit``` 
-- ```xorg-xmodmap``` 
-- ```xorg-xprop``` 
-- ```xorg-xrandr``` 
-- <code>yay<sup>AUR</sup></code>
-- ```zathura``` 
-- ```zathura-pdf-mupdf``` 
-- ```zsh``` 
-
-</details>
 <!-- https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png -->
