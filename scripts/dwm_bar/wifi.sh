@@ -1,8 +1,8 @@
 #!/bin/bash
 
 conn=$(iw wlan0 info | grep -Po '(?<=ssid ).*')
-wifi_icon="󰤨"
-nowifi_icon="󰤭"
+wifi_icon="󰤨 "
+nowifi_icon="󰤭 "
 
 update() {
     sum=0
@@ -18,5 +18,5 @@ update() {
 
 rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
 
-[[ -n $conn ]] && printf "$wifi_icon   $conn   󰇚%4sB" $(numfmt --to=iec $rx) || echo "$nowifi_icon   Offline"
+[[ -n $conn ]] && printf "$wifi_icon   $conn   󰇚 %4sB/s" $(numfmt --to=iec $rx) || echo "$nowifi_icon   Offline"
 # [[ -n $conn ]] && printf "$wifi_icon   $conn" || echo "$nowifi_icon   Offline"
