@@ -35,15 +35,20 @@
         </def>
         <def name="misc">
             <box orientation="v" space-evenly="true">
-                <box orientation="h" class="vol-slider" space-evenly="false">
-                    <box class="label-vol-slider"></box>
-                    <scale min="0" max="101" value="{{volume_master}}" onchange="amixer sset Master {}%"/>
-                </box>
                 <box orientation="h" class="sys-btns" space-evenly="true">
                     <button class="shutdown-btn" tooltip="Shutdown" onclick="~/.config/eww/scripts/shutdown"></button> 
                     <button class="reboot-btn" tooltip="Reboot" onclick="~/.config/eww/scripts/reboot"></button>
                     <button class="lock-btn" tooltip="Lock" onclick="~/.config/eww/scripts/lockscreen"></button>
                     <button class="suspend-btn" tooltip="Suspend" onclick="~/.config/eww/scripts/suspend"></button>
+                </box>
+            </box>
+        </def>
+
+        <def name="volume">
+            <box orientation="v" space-evenly="false" style="background: black; opacity: 0.8">
+                <box class="vol-icon" space-evenly="true">{{volume_icon}}</box>
+                <box orientation="h" class="vol-progress" space-evenly="false">
+                    <scale min="0" max="100" active="false" value="{{volume_master}}"/>
                 </box>
             </box>
         </def>
@@ -65,7 +70,9 @@
         <script-var name="media_player" interval="1s">~/.config/eww/scripts/getPlayer</script-var>
 
         <!-- UTILS -->
-        <script-var name="volume_master" interval="1s">~/.config/eww/scripts/getVolumeM</script-var>
+        <script-var name="volume_icon">~/.config/eww/scripts/getvolIcon</script-var>
+        <script-var name="volume_master">~/.config/eww/scripts/getvol</script-var>
+        <script-var name="volume_m" interval="1s">~/.config/eww/scripts/getVolumeH</script-var>
     </variables>
 
     <windows>
@@ -91,6 +98,13 @@
             <geometry x="1005px" y="23px" width="355px" height="100px"/>
             <widget>
                 <date/>
+            </widget>
+        </window>
+
+        <window name="volume">
+            <geometry x="600px" y="364px" width="140px" height="120px"/>
+            <widget>
+                <volume/>
             </widget>
         </window>
     </windows>

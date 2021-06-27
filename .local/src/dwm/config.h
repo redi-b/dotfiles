@@ -81,11 +81,9 @@ static const Layout layouts[] = {
 	{ "###",      nrowgrid },
 	{ "---",      horizgrid },
 	{ ":::",      gaplessgrid },
-	// { "",      centeredmaster },
 	{ "|M|",      centeredmaster },
 	{ ">M>",      centeredfloatingmaster },
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ NULL,       NULL },
+	{ "><>",      NULL },    /* no layout function means floating behavior */{ NULL,       NULL },
 };
 
 /* key definitions */
@@ -131,9 +129,9 @@ static Key keys[] = {
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD("search_selected") },
 
 	// Volume and media control
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol_lower") },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD(". ~/scripts/dwm/vol_raise") },
-	{ 0,                            XF86XK_AudioMute,        spawn, SHCMD("pactl set-sink-mute 0 toggle") },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol down") },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD(". ~/scripts/dwm/vol up") },
+	{ 0,                            XF86XK_AudioMute,        spawn, SHCMD(". ~/scripts/dwm/vol mute") },
 	{ 0,                            XF86XK_AudioPlay,        spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,        spawn, SHCMD("playerctl next") },
 	{ 0,                            XF86XK_AudioPrev,        spawn, SHCMD("playerctl previous") },
@@ -170,7 +168,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[11]} },
+	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[11]} }, // Centered master
 	{ MODKEY|ControlMask,						XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },

@@ -1,0 +1,85 @@
+#!/bin/bash
+
+set_vol_icon() {
+  cur_vol=$(pamixer --get-volume)
+  echo $cur_vol > /tmp/vol
+  [[ $cur_vol -lt 15 ]] && echo " " > /tmp/vol-icon
+  [[ $cur_vol -gt 15 && $cur_vol -lt 50 ]] && echo " " > /tmp/vol-icon
+  (( $cur_vol >= 50 )) && echo " " > /tmp/vol-icon
+  [[ $(pamixer --get-mute) == "true" ]] && echo "婢" > /tmp/vol-icon
+}
+
+toggle_eww() {
+  [[ -n $(eww windows | grep "*volume") ]] && eww close volume
+  eww open volume
+  sleep 2
+  eww close volume
+}
+
+up() {
+  kill -44 $(pidof dwmblocks)
+  pamixer --increase 5
+  set_vol_icon
+  toggle_eww
+}
+
+down() {
+  kill -44 $(pidof dwmblocks)
+  pamixer --decrease 5
+  set_vol_icon
+  toggle_eww
+}
+
+sset() {
+  kill -44 $(pidof dwmblocks)
+  pamixer --set-volume $1
+  set_vol_icon
+  toggle_eww
+}
+
+mute() {
+  kill -44 $(pidof dwmblocks)
+  if [[ $(pamixer --get-mute) == "false" ]]; then 
+    pamixer --mute
+  else
+    pamixer --unmute
+  fi
+  echo $(pamixer --get-mute)
+  set_vol_icon
+  toggle_eww
+}
+
+case $# in
+  1)
+    case $1 in
+      "up")
+        up
+        ;;
+      "down")
+        down
+        ;;
+      "mute")
+        mute 
+        ;;
+      *)
+        echo "Inalid argument!"
+        exit
+        ;;
+    esac
+    ;;
+  2)
+    case $1 in
+      "sset")
+        sset $2
+        ;;
+      *)
+        echo "Invalid argument!"
+        exit
+        ;;
+    esac
+    ;;
+  *)
+    echo "Too many arguments!"
+    exit
+    ;;
+esac

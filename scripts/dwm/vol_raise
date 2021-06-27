@@ -2,3 +2,7 @@
 
 kill -44 $(pidof dwmblocks)
 pamixer --increase 5
+echo $(pamixer --get-volume) > /tmp/vol
+eww open volume
+sleep 1
+eww close volume

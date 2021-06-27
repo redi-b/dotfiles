@@ -157,6 +157,30 @@ window {
     margin-right: 8px;
 }
 
+.vol-icon {
+    font-size: 32px;
+    color: white;
+    margin: 25px 40px;
+
+}
+
+.vol-progress scale trough highlight {
+    all: unset;
+    background-color: #00796B;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.vol-progress trough {
+    all: unset;
+    background-color: #4e4e4e;
+    border-radius: 50px;
+    min-height: 10px;
+    min-width: 120px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
 
 .sys-btns {
     font-size: 25px;

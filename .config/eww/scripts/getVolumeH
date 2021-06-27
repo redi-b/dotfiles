@@ -1,4 +1,5 @@
 #!/bin/bash
 
-vol=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Headphone) | cut -d'%' -f 1)
-echo $(echo $vol | cut -d' ' -f 1)
+# vol=$(awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Headphone) | cut -d'%' -f 1)
+# echo $(echo $vol | cut -d' ' -f 1)
+echo $(pamixer --get-volume)
