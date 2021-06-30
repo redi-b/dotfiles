@@ -1,0 +1,54 @@
+#!/bin/bash
+
+log_dir="/tmp/dunstlog"
+[[ -d $log_dir ]] || mkdir $log_dir
+
+appname=$1
+summary=$2
+body=$3
+icon=$4
+urgency=$5
+timestamp=$(date +'%I:%M %p')
+
+build_notif() {
+  filename="$appname ($timestamp)"
+
+  echo -e "$timestamp\n$appname\n$summary\n$body\n$icon\n$urgency" >> "$log_dir/$filename"
+}
+
+clear_notif() {
+  rm -rf $log_dir/*
+}
+
+widgets="/tmp/eww_notif"
+wid_template="<box orientaion='h' class='notification'
+"
+wid_template="
+  <box orientation='h' class='notification' height='70' spacing='2'> \n
+    <box orientation='v' style='' space-evenly='false' halign='start' valign='center'> \n
+        %s \n
+    </box> \n
+    <box orientation='v' style='' space-evenly='false' halign='start'> \n
+        %s \n
+        %s  \n
+    </box> \n
+    <box orientation='v' style='' space-evenly='false' halign='center' valign='center'> \n
+        %s \n
+    </box>
+    <box orientation='v' style='' space-evenly='false' halign='end'> \n
+        %s \n
+    </box> \n
+  </box> \n
+"
+
+build_widgets() {
+  test=$(printf "$wid_template" "$icon" "$appname" "$summary" "$body" "$timestamp" | sed -e '/^$/d')
+  eww update not_content="$wid_template"
+}
+
+clear_widgets() {
+  echo "" > "$widgets"
+}
+
+build_notif
+build_widgets

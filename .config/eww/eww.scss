@@ -160,7 +160,7 @@ window {
 .vol-icon {
     font-size: 32px;
     color: white;
-    margin: 25px 40px;
+    margin: 5px 20px 10px 20px;
 
 }
 
@@ -177,9 +177,16 @@ window {
     border-radius: 50px;
     min-height: 10px;
     min-width: 120px;
-    margin-top: 0px;
+    margin-top: 15px;
     margin-left: 10px;
     margin-right: 8px;
+}
+
+.notification {
+    background: #FFD4F2;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .sys-btns {

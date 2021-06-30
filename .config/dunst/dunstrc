@@ -250,6 +250,9 @@
     # where there are multiple screens with very different dpi values.
     per_monitor_dpi = false
 
+[log_notifs]
+    script = ~/.config/dunst/logger
+
 [shortcuts]
 
     # Shortcuts are specified as [modifier+][modifier+]...key

@@ -10,9 +10,9 @@ set_vol_icon() {
 }
 
 toggle_eww() {
-  [[ -n $(eww windows | grep "*volume") ]] && eww close volume
+  # [[ -n $(eww windows | grep "*volume") ]] && sleep 4 & set_vol_icon
   eww open volume
-  sleep 2
+  sleep 5
   eww close volume
 }
 
@@ -39,11 +39,7 @@ sset() {
 
 mute() {
   kill -44 $(pidof dwmblocks)
-  if [[ $(pamixer --get-mute) == "false" ]]; then 
-    pamixer --mute
-  else
-    pamixer --unmute
-  fi
+  [[ $(pamixer --get-mute) == "false" ]] && pamixer --mute || pamixer --unmute
   echo $(pamixer --get-mute)
   set_vol_icon
   toggle_eww

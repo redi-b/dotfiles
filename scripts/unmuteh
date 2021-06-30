@@ -1,5 +1,5 @@
 #!/bin/bash
 
-amixer -c 0 set Headphone,0 unmute 50%
-amixer -c 0 set Headphone,1 unmute 50%
+amixer -c 0 set Headphone,0 unmute 81%
+amixer -c 0 set Headphone,1 unmute 81%
 notify-send -t 1000 "Headphone" "Unmuted" --urgency=LOW

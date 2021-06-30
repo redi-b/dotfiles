@@ -15,8 +15,7 @@ StatButtonsColor=35,38,39
 StatFontsColor=255,255,255
 
 [General]
-BaseMode=2
-CalculatorMode=numeral
+CalculatorMode=science
 ShowBitset=true
 
 [UserConstants]

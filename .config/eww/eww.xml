@@ -35,6 +35,9 @@
         </def>
         <def name="misc">
             <box orientation="v" space-evenly="true">
+                <!-- <box orientation="v" space-evenly="false">
+                    {{notifications}}
+                </box> -->
                 <box orientation="h" class="sys-btns" space-evenly="true">
                     <button class="shutdown-btn" tooltip="Shutdown" onclick="~/.config/eww/scripts/shutdown"></button> 
                     <button class="reboot-btn" tooltip="Reboot" onclick="~/.config/eww/scripts/reboot"></button>
@@ -43,9 +46,16 @@
                 </box>
             </box>
         </def>
+        <def name="notification">
+            <box orientation="v" space-evenly="false" style="background: black;">
+                <literal content="{{not_content}}" style="color: white; font-size: 22px"/>
+                {{not_content}}
+            </box>
+        </def>
 
         <def name="volume">
             <box orientation="v" space-evenly="false" style="background: black; opacity: 0.8">
+                <button style="margin: 6px 10px; opacity: 0;" halign="end" onclick="eww close volume"> </button>
                 <box class="vol-icon" space-evenly="true">{{volume_icon}}</box>
                 <box orientation="h" class="vol-progress" space-evenly="false">
                     <scale min="0" max="100" active="false" value="{{volume_master}}"/>
@@ -73,6 +83,9 @@
         <script-var name="volume_icon">~/.config/eww/scripts/getvolIcon</script-var>
         <script-var name="volume_master">~/.config/eww/scripts/getvol</script-var>
         <script-var name="volume_m" interval="1s">~/.config/eww/scripts/getVolumeH</script-var>
+
+        <script-var name="notifications" interval="1s">~/.config/eww/scripts/getNotifs</script-var>
+        <var name="not_content"></var>
     </variables>
 
     <windows>
@@ -105,6 +118,12 @@
             <geometry x="600px" y="364px" width="140px" height="120px"/>
             <widget>
                 <volume/>
+            </widget>
+        </window>
+        <window name="notif">
+            <geometry x="0px" y="0px" width="140px" height="120px"/>
+            <widget>
+                <notification/>
             </widget>
         </window>
     </windows>
