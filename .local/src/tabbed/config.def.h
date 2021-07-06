@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#222222";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
+static const char* normbgcolor  = "#00594b";
+static const char* normfgcolor  = "#eeeeee";
+static const char* selbgcolor   = "#00796b";
 static const char* selfgcolor   = "#ffffff";
 static const char* urgbgcolor   = "#111111";
 static const char* urgfgcolor   = "#cc0000";
@@ -13,6 +13,7 @@ static const char after[]       = ">";
 static const char titletrim[]   = "...";
 static const int  tabwidth      = 200;
 static const Bool foreground    = True;
+static const int barHeight	= 28;
 static       Bool urgentswitch  = False;
 
 /*
