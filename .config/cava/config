@@ -135,8 +135,8 @@ source = auto
 foreground = 'red'
 gradient = 1
 gradient_count = 2
-gradient_color_1 = '#2980B9'
-gradient_color_2 = '#6DD5FA'
+gradient_color_1 = '#00594b'
+gradient_color_2 = '#009688'
 
 [smoothing]
 

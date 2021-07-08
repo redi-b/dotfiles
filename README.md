@@ -34,7 +34,7 @@
 - [focusonnetactive](https://dwm.suckless.org/patches/focusonnetactive/) - skippy-xd
 - [layoutmenu](https://dwm.suckless.org/patches/layoutmenu/) - (depends on xmenu)
 - [movestack](https://dwm.suckless.org/patches/movestack/)
-- [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar (not currently in use)
+- [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar 
 - [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
 - [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
 - [xrdb](https://dwm.suckless.org/patches/xrdb/) - dep. for status2d

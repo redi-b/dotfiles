@@ -1,5 +1,6 @@
 #!/bin/bash
 
+bg="^b#E64A19^"
 vol=$(pamixer --get-volume)
 
 if [[ $vol -gt 60 ]]; then
@@ -12,4 +13,4 @@ fi
 
 [[ $(pamixer --get-mute) == true ]] && icon="󰖁"
 
-echo "$icon  $vol%"
+echo "$bg   $icon  $vol%"
