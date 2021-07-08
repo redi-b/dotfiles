@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bg="^b#E64A19^"
+bg="^b#EE5A24^"
 vol=$(pamixer --get-volume)
 
 if [[ $vol -gt 60 ]]; then

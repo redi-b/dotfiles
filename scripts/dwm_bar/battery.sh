@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bg="^b#7B1FA2^"
+bg="^b#8e44ad^"
 
 echo "$bg        $(cat /sys/class/power_supply/BAT0/capacity)%"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bg="^b#006988^"
+bg="^b#227093^"
 dt="󰃭   $(date '+%A %B %d,  %Y')"
 
 echo "$bg  $dt"

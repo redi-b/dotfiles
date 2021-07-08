@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bg="^b#FF4081^"
+bg="^b#ff5252^"
 tm="󰥔   $(date '+%I:%M %P')"
 
 echo "$bg   $tm  "

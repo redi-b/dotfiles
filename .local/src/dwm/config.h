@@ -15,12 +15,12 @@ static const int usealtbar          = 0;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
 // static const char *altbarcmd        = ". ~/.config/polybar/forest/launch.sh "; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=10" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=12" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 static char normbgcolor[]           = "#00594B";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
+static char normfgcolor[]           = "#eeeeee";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#00796B";
 static char selbgcolor[]            = "#005577";
@@ -43,16 +43,17 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" };
+static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
+// static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const char *tagsel[][2] = {
-	{ "#9b59b6", "#009688" },
-	{ "#EE5A24", "#009688" },
-	{ "#009432", "#009688" },
-	{ "#27ae60", "#00594B" },
+	{ "#ff6b6b", "#00594B" },
+	{ "#EE5A24", "#00594B" },
+	{ "#009432", "#00594B" },
+	{ "#ffc048", "#00594B" },
 	{ "#1289A7", "#00594B" },
-	{ "#227093", "#00594B" },
+	{ "#05c46b", "#00594B" },
 	{ "#A3CB38", "#00594B" },
 	{ "#1B9CFC", "#00594B" },
 	{ "#1B9CFC", "#00594B" },
@@ -80,20 +81,20 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[ ] =",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
-	{ "[@]",      spiral },
-	{ "[\\]",     dwindle },
-	{ "H[]",      deck },
-	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
-	{ "HHH",      grid },
-	{ "###",      nrowgrid },
-	{ "---",      horizgrid },
-	{ ":::",      gaplessgrid },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
-	{ "><>",      NULL },    /* no layout function means floating behavior */{ NULL,       NULL },
+	{ "充",      tile },    /* first entry is default */
+	{ "类",      monocle },
+	{ "侀",      spiral },
+	{ "﵁ ",     dwindle },
+	{ " ",      deck },
+	{ "ﰦ ",      bstack },
+	{ "ﰧ ",      bstackhoriz },
+	{ "﩯 ",      grid },
+	{ "全",      nrowgrid },
+	// { "---",      horizgrid },
+	// { ":::",      gaplessgrid },
+	{ "頻",      centeredmaster },
+	{ "恵",      centeredfloatingmaster },
+	{ "缾",      NULL },    /* no layout function means floating behavior */{ NULL,       NULL },
 };
 
 /* key definitions */
@@ -178,7 +179,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[11]} }, // Centered master
+	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[9]} }, // Centered master
 	{ MODKEY|ControlMask,						XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
