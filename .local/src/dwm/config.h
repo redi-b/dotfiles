@@ -15,7 +15,7 @@ static const int usealtbar          = 0;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
 // static const char *altbarcmd        = ". ~/.config/polybar/forest/launch.sh "; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=10", "Hack Nerd Font:size=10" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=10" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 static char normbgcolor[]           = "#00594B";
@@ -47,9 +47,9 @@ static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "�
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const char *tagsel[][2] = {
-	{ "#9b59b6", "#00594B" },
-	{ "#EE5A24", "#00594B" },
-	{ "#009432", "#00594B" },
+	{ "#9b59b6", "#009688" },
+	{ "#EE5A24", "#009688" },
+	{ "#009432", "#009688" },
 	{ "#27ae60", "#00594B" },
 	{ "#1289A7", "#00594B" },
 	{ "#227093", "#00594B" },
