@@ -102,13 +102,13 @@
             </widget>
         </window>
         <window name="profile">
-            <geometry x="1005px" y="160px" width="355px" height="100px"/>
+            <geometry x="1005px" y="161px" width="355px" height="100px"/>
             <widget>
                 <profile/>
             </widget>
         </window>
         <window name="date">
-            <geometry x="1005px" y="23px" width="355px" height="100px"/>
+            <geometry x="1005px" y="25px" width="355px" height="100px"/>
             <widget>
                 <date/>
             </widget>

@@ -19,22 +19,19 @@
   /*--mff-urlbar-selected-fg: #ebdbb2;*/
 
   /* Everforest */
-  /* --mff-bg: #2b3339; */
-  --mff-bg: #00796B;
-  /* --mff-urlbar-bg: #3a454a */
-  --mff-urlbar-bg: #009688;
-  --mff-icon-color: #f3e6ca;
-  --mff-sidebar-color: #f3e6ca;
-  --mff-tab-color: #f3e6ca;
+  --mff-bg: #2b3339;
+  --mff-urlbar-bg: #3a454a;
+  --mff-icon-color: #d3c6aa;
+  --mff-sidebar-color: #d3c6aa;
+  --mff-tab-color: #d3c6aa;
   --mff-tab-pinned-bg: #2f383e;
   /* --mff-tab-selected-bg: #a7c080; */
-  /* --mff-tab-selected-bg: #1588FF; */
-  --mff-tab-selected-bg: #009688;
+  --mff-tab-selected-bg: #1588FF;
   --mff-tab-selected-fg: #ffffff;
   --mff-tab-soundplaying-bg: #7faab3;
-  --mff-urlbar-color: #fcf1e5;
-  --mff-urlbar-focused-color: #f3e6ca;
-  --mff-urlbar-results-color: #f3e6ca;
+  --mff-urlbar-color: #fbf1c7;
+  --mff-urlbar-focused-color: #d3c6aa;
+  --mff-urlbar-results-color: #d3c6aa;
   --mff-urlbar-results-url-color: #fbf1c7;
   --mff-urlbar-selected-bg: #7fbbb3;
   --mff-urlbar-selected-fg: #2f383e;

@@ -44,6 +44,20 @@ static const char *colors[][3]      = {
 
 /* tagging */
 static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" };
+static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+static const char *tagsel[][2] = {
+	{ "#9b59b6", "#00594B" },
+	{ "#EE5A24", "#00594B" },
+	{ "#009432", "#00594B" },
+	{ "#27ae60", "#00594B" },
+	{ "#1289A7", "#00594B" },
+	{ "#227093", "#00594B" },
+	{ "#A3CB38", "#00594B" },
+	{ "#1B9CFC", "#00594B" },
+	{ "#1B9CFC", "#00594B" },
+};
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -176,6 +190,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_n,      togglealttag,   {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
