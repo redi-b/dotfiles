@@ -37,7 +37,6 @@
 - [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar 
 - [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
 - [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
-- [xrdb](https://dwm.suckless.org/patches/xrdb/) - dep. for status2d
 
 ---
 # Scripts
