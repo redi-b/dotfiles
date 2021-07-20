@@ -23,7 +23,7 @@
                     <box class="song-art" style="background-image: url('{{art}}');" height="80">{{song_art}}</box>
                 </box>
                 <box class="song-data" orientation="v" space-evenly="false">
-                    <box class="song-title" tooltip="{{song_title_full}} - {{ song_artist }}">{{song_title}}</box>
+                    <box class="song-title" tooltip="{{song_title_full}} - {{ song_artist_full }}">{{song_title}}</box>
                     <box class="song-artist">{{song_artist}}</box>
                     <box class="player-btn" orientation="h" halign="center">
                         <button onclick="playerctl previous" tooltip="Previous"></button>
@@ -76,6 +76,7 @@
         <script-var name="song_title" interval="2s">~/.config/eww/scripts/getSongTitle</script-var>
         <script-var name="song_title_full" interval="2s">~/.config/eww/scripts/getFullSongTitle</script-var>
         <script-var name="song_artist" interval="2s">~/.config/eww/scripts/getSongArtist</script-var>
+        <script-var name="song_artist_full" interval="2s">~/.config/eww/scripts/getFullSongArtist</script-var>
         <script-var name="player_status" interval="1s">~/.config/eww/scripts/getPlayerStatus</script-var>
         <script-var name="media_player" interval="1s">~/.config/eww/scripts/getPlayer</script-var>
 

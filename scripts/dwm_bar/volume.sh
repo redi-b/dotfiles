@@ -1,10 +1,10 @@
 #!/bin/bash
 
-bg="^b#EE5A24^"
+bg="^b#E64A19^"
 vol=$(pamixer --get-volume)
 
 if [[ $vol -gt 60 ]]; then
-  icon="󰕾 "
+  icon="󰕾"
 elif [[ $vol -lt 61 && $vol -gt 15 ]]; then
   icon="󰖀 "
 else

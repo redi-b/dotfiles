@@ -10,7 +10,9 @@ H[  ]       Deck 	4
 [===]    B.S Horizontal 	6
 [HHH]   Grid 	7
 [###]    Row Grid 	8
-|M|         Centered Master 	9
->M>      Centered F. Master 	10
-><>        Floating 	11
+[---]      Horizontal Grid 	9
+[ : : : ]     Gapless Grid 	10
+|M|         Centered Master 	11
+>M>      Centered F. Master 	12
+><>        Floating 	13
 EOF
