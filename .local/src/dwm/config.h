@@ -12,21 +12,14 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 20;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
-<<<<<<< HEAD
-static const char *altbarclass      = ""; /* Alternate bar class name */
-static const char *altbarcmd        = ". .config/polybar/forest/launch.sh"; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=12" };
-=======
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
-// static const char *altbarcmd        = ". ~/.config/polybar/forest/launch.sh "; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=10" };
->>>>>>> parent of b62539a (new screenshot, dwm, scripts)
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=12" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 static char normbgcolor[]           = "#00594B";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
+static char normfgcolor[]           = "#eeeeee";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#00796B";
 static char selbgcolor[]            = "#005577";
@@ -44,7 +37,6 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-<<<<<<< HEAD
 static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -58,20 +50,6 @@ static const char *tagsel[][2] = {
 	{ "#f368e0", "#00594B" },
 	{ "#388E3C", "#00594B" },
 	{ "#7f8c8d", "#00594B" },
-=======
-static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" };
-static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-
-static const char *tagsel[][2] = {
-	{ "#9b59b6", "#009688" },
-	{ "#EE5A24", "#009688" },
-	{ "#009432", "#009688" },
-	{ "#27ae60", "#00594B" },
-	{ "#1289A7", "#00594B" },
-	{ "#227093", "#00594B" },
-	{ "#A3CB38", "#00594B" },
-	{ "#1B9CFC", "#00594B" },
->>>>>>> parent of b62539a (new screenshot, dwm, scripts)
 	{ "#1B9CFC", "#00594B" },
 };
 
@@ -97,7 +75,6 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-<<<<<<< HEAD
 	{ " |    充",      tile },    /* first entry is default */
 	{ " |    类",      monocle },
 	{ " |    侀",      spiral },
@@ -107,22 +84,6 @@ static const Layout layouts[] = {
 	{ " |    恵",      centeredfloatingmaster },
 	{ " |    缾",      NULL },    /* no layout function means floating behavior */
 	{ NULL,          NULL },
-=======
-	{ "[ ] =",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
-	{ "[@]",      spiral },
-	{ "[\\]",     dwindle },
-	{ "H[]",      deck },
-	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
-	{ "HHH",      grid },
-	{ "###",      nrowgrid },
-	{ "---",      horizgrid },
-	{ ":::",      gaplessgrid },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
-	{ "><>",      NULL },    /* no layout function means floating behavior */{ NULL,       NULL },
->>>>>>> parent of b62539a (new screenshot, dwm, scripts)
 };
 
 /* key definitions */
@@ -210,11 +171,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[2]} },
-<<<<<<< HEAD
 	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[5]} }, // Centered master
-=======
-	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[11]} }, // Centered master
->>>>>>> parent of b62539a (new screenshot, dwm, scripts)
 	{ MODKEY|ControlMask,						XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
