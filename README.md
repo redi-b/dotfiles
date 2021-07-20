@@ -8,7 +8,7 @@
 - Compositor - [picom (picom-tyrone-git)](https://aur.archlinux.org/packages/picom-tryone-git/)
 - Terminal - [st](https://st.suckless.org)
 - Shell - [zsh](https://zsh.org)
-- Lanucher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
+- Launcher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
 - Editor - [neovim](https://github.com/neovim/neovim)
 - File Manager - [ranger](https://github.com/ranger/ranger) - (cli) & [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM) - (gui)
 - Clipboard Interface - [xclip](https://github.com/astrand/xclip)
