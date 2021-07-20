@@ -1,3 +1,10 @@
 #!/bin/bash
 
-echo $(playerctl metadata artist) 
+artist=$(playerctl metadata artist) 
+count=$(echo -n "$artist" | wc -c)
+
+if [ "$count" -le 35 ]; then
+  echo $artist
+else
+  echo ${artist:0:35}...
+fi

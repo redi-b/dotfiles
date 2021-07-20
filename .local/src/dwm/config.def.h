@@ -15,49 +15,49 @@ static const int usealtbar          = 0;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
 // static const char *altbarcmd        = ". ~/.config/polybar/forest/launch.sh "; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=10" };
-static const char dmenufont[]       = "Droid Sans Mono:size=9";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=12" };
+static const char dmenufont[]       = "Product Sans:size=10";
 
-static char normbgcolor[]           = "#222222";
+static char normbgcolor[]           = "#00594B";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
+static char normfgcolor[]           = "#eeeeee";
 static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
+static char selbordercolor[]        = "#00796B";
 static char selbgcolor[]            = "#005577";
 
 
-static const char status_bg[]       = "#00796B";
-static const char seltag_bg[]       = "#009688";
+// static const char status_bg[]       = "#00796B";
+// static const char seltag_bg[]       = "#009688";
+static const char status_bg[]       = "#00594B";
+static const char seltag_bg[]       = "#00796B";
 
 static const char *colors[][3]      = {
 	/*               			fg         bg         border   */
   [SchemeNorm] 			= { normfgcolor, normbgcolor, normbordercolor },
   [SchemeSel]  			= { selfgcolor,  selbgcolor,  selbordercolor  },
-	[SchemeStatus]    =	{ col_gray4, status_bg, "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]   =	{ col_gray4, seltag_bg, "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
-  [SchemeTagsNorm]  = { col_gray3, status_bg, "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-  [SchemeInfoSel]   =	{ col_gray4, status_bg, "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
-  [SchemeInfoNorm]  = { col_gray3, status_bg, "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	[SchemeStatus]    =	{ selfgcolor, status_bg, "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]   =	{ selfgcolor, seltag_bg, "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+  [SchemeTagsNorm]  = { normfgcolor, status_bg, "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+  [SchemeInfoSel]   =	{ selfgcolor, status_bg, "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+  [SchemeInfoNorm]  = { normfgcolor, status_bg, "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
 /* tagging */
-static const char *tags[] = { "󰅬", "󰈹", "󰅴", "󰓇", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" };
+static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
+// static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
+static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const char *tagsel[][2] = {
-	{ "#ffffff", "#ff0000" },
-	{ "#ffffff", "#ff7f00" },
-	{ "#000000", "#ffff00" },
-	{ "#000000", "#00ff00" },
-	{ "#ffffff", "#0000ff" },
-	{ "#ffffff", "#4b0082" },
-	{ "#ffffff", "#9400d3" },
-	{ "#000000", "#ffffff" },
-	{ "#ffffff", "#000000" },
+	{ "#ff6b6b", "#00594B" },
+	//{ "#EE5A24", "#00594B" },
+	{ "#0abde3", "#00594B" },
+	{ "#009432", "#00594B" },
+	{ "#ffc048", "#00594B" },
+	{ "#1289A7", "#00594B" },
+	{ "#f368e0", "#00594B" },
+	{ "#388E3C", "#00594B" },
+	{ "#7f8c8d", "#00594B" },
+	{ "#1B9CFC", "#00594B" },
 };
 
 static const Rule rules[] = {
@@ -73,7 +73,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
@@ -82,22 +82,21 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[ ] =",      tile },    /* first entry is default */
-	{ "[M]",      monocle },
-	{ "[@]",      spiral },
-	{ "[\\]",     dwindle },
-	{ "H[]",      deck },
-	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
-	{ "HHH",      grid },
-	{ "###",      nrowgrid },
-	{ "---",      horizgrid },
-	{ ":::",      gaplessgrid },
-	// { "",      centeredmaster },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ NULL,       NULL },
+	{ " |    充",      tile },    /* first entry is default */
+	{ " |    类",      monocle },
+	{ " |    侀",      spiral },
+	{ " |    ﵁ ",      dwindle },
+	{ " |     ",      deck },
+	{ " |    ﰦ ",      bstack },
+	{ " |    ﰧ ",      bstackhoriz },
+	{ " |    﩯 ",      grid },
+	{ " |    全",      nrowgrid },
+	// { "---",      horizgrid },
+	// { ":::",      gaplessgrid },
+	{ " |    頻",      centeredmaster },
+	{ " |    恵",      centeredfloatingmaster },
+	{ " |    缾",      NULL },    /* no layout function means floating behavior */
+	{ NULL,          NULL },
 };
 
 /* key definitions */
@@ -113,7 +112,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", "#757575", "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", "#00594B", "-nf", normfgcolor, "-sb", "#009688", "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
@@ -129,25 +128,29 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = fmcmd } },
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
+	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
-	{ MODKEY,                       XK_o,      spawn,          SHCMD("menulauncher") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("unmuteh") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("emojipick") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("manpdf") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("screenshot") },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screenshot_s") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("ewwtoggle") },
-	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD("search_selected") },
+	{ MODKEY,                       XK_o,      spawn,          SHCMD(". ~/scripts/menulauncher") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD(". ~/scripts/menulauncher powermenu") },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot") },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD(". ~/scripts/ewwtoggle") },
+	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
+	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
+	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
 
 	// Volume and media control
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol_lower") },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD(". ~/scripts/dwm/vol_raise") },
-	{ 0,                            XF86XK_AudioMute,        spawn, SHCMD("pactl set-sink-mute 0 toggle") },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol down") },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, SHCMD(". ~/scripts/dwm/vol up") },
+	{ 0,                            XF86XK_AudioMute,        spawn, SHCMD(". ~/scripts/dwm/vol mute") },
 	{ 0,                            XF86XK_AudioPlay,        spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,        spawn, SHCMD("playerctl next") },
 	{ 0,                            XF86XK_AudioPrev,        spawn, SHCMD("playerctl previous") },
+	{ 0,                            XF86XK_PowerOff,         spawn, SHCMD("menulauncher powermenu") },
 
 	// Basic controls
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -179,9 +182,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[11]} },
+	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ControlMask,           XK_m,      setlayout,      {.v = &layouts[9]} }, // Centered master
 	{ MODKEY|ControlMask,						XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
@@ -214,6 +217,7 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button3,        layoutmenu,     {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	{ ClkRootWin,           0,              Button3,        spawn,          SHCMD("rclkmenu") },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },

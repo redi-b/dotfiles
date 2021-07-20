@@ -43,19 +43,20 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
+static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const char *tagsel[][2] = {
 	{ "#ff6b6b", "#00594B" },
-	{ "#EE5A24", "#00594B" },
+	//{ "#EE5A24", "#00594B" },
+	{ "#0abde3", "#00594B" },
 	{ "#009432", "#00594B" },
 	{ "#ffc048", "#00594B" },
 	{ "#1289A7", "#00594B" },
-	{ "#05c46b", "#00594B" },
-	{ "#A3CB38", "#00594B" },
-	{ "#1B9CFC", "#00594B" },
+	{ "#f368e0", "#00594B" },
+	{ "#388E3C", "#00594B" },
+	{ "#7f8c8d", "#00594B" },
 	{ "#1B9CFC", "#00594B" },
 };
 
@@ -81,20 +82,21 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "充",      tile },    /* first entry is default */
-	{ "类",      monocle },
-	{ "侀",      spiral },
-	{ "﵁ ",     dwindle },
-	{ " ",      deck },
-	{ "ﰦ ",      bstack },
-	{ "ﰧ ",      bstackhoriz },
-	{ "﩯 ",      grid },
-	{ "全",      nrowgrid },
+	{ " |    充",      tile },    /* first entry is default */
+	{ " |    类",      monocle },
+	{ " |    侀",      spiral },
+	{ " |    ﵁ ",      dwindle },
+	{ " |     ",      deck },
+	{ " |    ﰦ ",      bstack },
+	{ " |    ﰧ ",      bstackhoriz },
+	{ " |    﩯 ",      grid },
+	{ " |    全",      nrowgrid },
 	// { "---",      horizgrid },
 	// { ":::",      gaplessgrid },
-	{ "頻",      centeredmaster },
-	{ "恵",      centeredfloatingmaster },
-	{ "缾",      NULL },    /* no layout function means floating behavior */{ NULL,       NULL },
+	{ " |    頻",      centeredmaster },
+	{ " |    恵",      centeredfloatingmaster },
+	{ " |    缾",      NULL },    /* no layout function means floating behavior */
+	{ NULL,          NULL },
 };
 
 /* key definitions */
@@ -128,16 +130,18 @@ static Key keys[] = {
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
 	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
-	{ MODKEY,                       XK_o,      spawn,          SHCMD("menulauncher") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD("menulauncher powermenu") },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("unmuteh") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("emojipick") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD("manpdf") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("screenshot") },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screenshot_s") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("ewwtoggle") },
-	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD("search_selected") },
+	{ MODKEY,                       XK_o,      spawn,          SHCMD(". ~/scripts/menulauncher") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD(". ~/scripts/menulauncher powermenu") },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot") },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD(". ~/scripts/ewwtoggle") },
+	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
+	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
+	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
 
 	// Volume and media control
 	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol down") },
@@ -146,6 +150,7 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioPlay,        spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,        spawn, SHCMD("playerctl next") },
 	{ 0,                            XF86XK_AudioPrev,        spawn, SHCMD("playerctl previous") },
+	{ 0,                            XF86XK_PowerOff,         spawn, SHCMD("menulauncher powermenu") },
 
 	// Basic controls
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
