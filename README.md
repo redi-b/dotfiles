@@ -138,15 +138,15 @@ Launches an application runner or system options.
    - ```rofi```
    - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
-## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screencopy)
+## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot_w) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot_s)
 
 #### Description
 
-Screenshot whole screen and copy the selected class to clipboard
+Screenshot whole screen and copy the selected portion to clipboard
 
 #### Hotkey
-   - ```Mod + Shift + p``` - screenshot
-   - ```Mod + Shift + s``` - screencopy
+   - ```Mod + Shift + p``` - screenshot window 
+   - ```Mod + Shift + s``` - copy to clipboard 
 
 #### Dependencies
 

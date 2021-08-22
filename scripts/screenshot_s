@@ -1,6 +1,12 @@
 #!/bin/bash
 
-[[ -d $HOME/Pictures/Screenshots ]] || mkdir -p $HOME/Pictures/Screenshots
+# file=$(mktemp --suffix '.png')
+file="/tmp/$(date +'%Y-%m-%d_%k:%M:%S').png"
+import -silent -quiet $file &&
+  xclip -selection clipboard -t image/png $file &&
+    notify-send "Screenshot" "Copied to clipboard" -i $file 
 
-file=$(mktemp --suffix '.png')
-import -silent -quiet $file && xclip -selection clipboard -t image/png $file && notify-send "Screenshot" "Copied to clipboard" -i $file 
+# file="/tmp/$(date +'%Y-%m-%d_%k:%M:%S').png"
+# scrot --select --silent $file &&
+#   xclip -selection clipboard -target image/png -i $file &&
+#     notify-send "Screenshot" "Copied to Clipboard" -i $file

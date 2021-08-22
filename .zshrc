@@ -114,3 +114,4 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 alias dotconfig='/usr/bin/git --git-dir=/home/rediet/dotfiles.git/ --work-tree=/home/rediet'
 alias st="tabbed -r 2 st -w ''"
+alias ssr='simplescreenrecorder'

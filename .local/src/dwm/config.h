@@ -60,8 +60,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "Spotify",  NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "spotify",  NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "xpad",     NULL,       NULL,       0,            1,           -1 },
 };
 
@@ -123,7 +123,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot") },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD(". ~/scripts/ewwtoggle") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },

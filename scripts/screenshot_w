@@ -2,5 +2,6 @@
 
 [[ -d $HOME/Pictures/Screenshots ]] || mkdir -p $HOME/Pictures/Screenshots
 
-# maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot" "Copied to Clipboard" -i flameshot
-scrot --select --silent '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot" "Copied to Clipboard"
+file="$HOME/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png" 
+scrot --silent $file &&
+  notify-send "Screenshot" "Saved to Pictures" -i $file 
