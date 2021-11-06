@@ -63,6 +63,8 @@ static const Rule rules[] = {
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "spotify",  NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "xpad",     NULL,       NULL,       0,            1,           -1 },
+	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,           -1 },
+
 };
 
 /* layout(s) */
