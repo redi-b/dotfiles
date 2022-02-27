@@ -131,6 +131,8 @@ static Key keys[] = {
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
+	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
+	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/stopscreenr") },
 
 	// Volume, media and system controls
 	{ 0,                            XF86XK_AudioLowerVolume, spawn, SHCMD(". ~/scripts/dwm/vol down") },
