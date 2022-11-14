@@ -3,6 +3,11 @@
 bg="^b#388E3C^"
 
 conn=$(iw wlan0 info | grep -Po '(?<=ssid ).*')
+conn_len=${#conn}
+if [ $conn_len -gt 9 ]
+then
+    conn="${conn:0:6}..."
+fi
 wifi_icon="󰤨 "
 nowifi_icon="󰤭 "
 
