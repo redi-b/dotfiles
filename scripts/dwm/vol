@@ -1,48 +1,36 @@
 #!/bin/bash
 
-set_vol_icon() {
-  cur_vol=$(pamixer --get-volume)
-  echo $cur_vol > /tmp/vol
-  [[ $cur_vol -lt 15 ]] && echo " " > /tmp/vol-icon
-  [[ $cur_vol -gt 15 && $cur_vol -lt 50 ]] && echo " " > /tmp/vol-icon
-  (( $cur_vol >= 50 )) && echo " " > /tmp/vol-icon
-  [[ $(pamixer --get-mute) == "true" ]] && echo "婢" > /tmp/vol-icon
-}
-
-toggle_eww() {
-  # [[ -n $(eww windows | grep "*volume") ]] && sleep 4 & set_vol_icon
-  eww open volume
-  sleep 5
-  eww close volume
-}
+cur_vol=$(pamixer --get-volume)
 
 up() {
   kill -44 $(pidof dwmblocks)
   pamixer --increase 5
-  set_vol_icon
-  toggle_eww
+  # volnoti-show $(pamixer --get-volume)
 }
 
 down() {
   kill -44 $(pidof dwmblocks)
   pamixer --decrease 5
-  set_vol_icon
-  toggle_eww
+  # volnoti-show $(pamixer --get-volume)
 }
 
 sset() {
   kill -44 $(pidof dwmblocks)
   pamixer --set-volume $1
-  set_vol_icon
-  toggle_eww
+  # volnoti-show $(pamixer --get-volume)
 }
 
 mute() {
   kill -44 $(pidof dwmblocks)
   [[ $(pamixer --get-mute) == "false" ]] && pamixer --mute || pamixer --unmute
-  echo $(pamixer --get-mute)
-  set_vol_icon
-  toggle_eww
+  # if [[ $(pamixer --get-mute) == "false" ]];
+  # then
+    # pamixer --mute
+    # volnoti-show -m
+  # else
+    # pamixer --unmute
+    # volnoti-show $(pamixer --get-volume)
+  # fi
 }
 
 case $# in

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-bg="^b#388E3C^"
+source "/home/rediet/scripts/dwm_bar/color.sh"
 
-conn=$(iw wlan0 info | grep -Po '(?<=ssid ).*')
+conn=$(nmcli -t -f NAME c show --active)
 conn_len=${#conn}
 if [ $conn_len -gt 9 ]
 then
@@ -26,4 +26,4 @@ update() {
 rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
 
 [[ -n $conn ]] && out=$(printf "$wifi_icon   $conn   󰇚 %4sB" $(numfmt --to=iec $rx)) || out=$(echo "$nowifi_icon   Offline")
-echo "$bg   " "$out"
+echo "$bg   " "$out  "

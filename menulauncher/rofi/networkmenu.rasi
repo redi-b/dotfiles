@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Product Sans 10";
+	font:							"Terminus 9";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -28,7 +28,7 @@ window {
 	border:							0px;
 	border-color:					@ac;
     border-radius:                  12px;
-	width:							550px;
+	width:							400px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -36,10 +36,19 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						14px 15px 14px 15px;
+	padding: 						10px 15px 10px 15px;
+	background-color: 				@bg2;
+	text-color: 					#FFFFFF;
+	font:							"Terminus 9";
+}
+
+textbox-prompt-colon {
+	padding: 						8px 15px 10px 15px;
+	font:							"Iosevka Nerd Font 8";
 	background-color: 				@bg1;
 	text-color: 					#FFFFFF;
-	font:							"Iosevka Nerd Font 12";
+	expand: false;
+	str: "直";
 }
 
 entry {
@@ -49,14 +58,13 @@ entry {
     expand:                         true;
     horizontal-align:               0;
     placeholder:                    "Search...";
-    padding:                        14px;
+    padding:                        10px;
     border-radius:                  0px 12px 12px 0px;
     blink:                          true;
-    font: "Product Sans 12";
 }
 
 inputbar {
-	children: 						[ prompt, entry ];
+	children: 						[ textbox-prompt-colon, prompt ];
     background-color:               @bg2;
     text-color:                     #FFFFFF;
     expand:                         false;
@@ -70,7 +78,7 @@ listview {
     background-color:               @al;
     padding:                        10px 10px 10px 10px;
     columns:                        1;
-    lines:                          7;
+    lines:                          8;
     spacing:                        5px;
     cycle:                          true;
     dynamic:                        true;
@@ -92,7 +100,7 @@ element {
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
-    padding:                        10px;
+    padding:                        6px 6px 6px -5px;
 }
 
 element-icon {
@@ -113,7 +121,7 @@ element-text {
 
 element selected {
     background-color:               @bg3;
-    text-color:                     @fg;
+    text-color:                     @bg;
 	border:							0px 0px 0px 0px;
     border-radius:                  12px;
     border-color:                  	@bg1;

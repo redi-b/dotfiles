@@ -11,14 +11,14 @@
 window {
     width:      			320px;
     padding:    			25px;
-    border:					1px;
-    border-radius:          0px;
-    border-color:           @ac;
+    border:					0px;
+    border-radius:          12px;
+    border-color:           @bg1;
     location:               center;
     y-offset:               -2em;
 }
 
 entry {
     expand: 				true;
-    text-color:				@ac;
+    text-color:				@bg2;
 }

@@ -1,7 +1,8 @@
 #!/bin/bash
 
-bg="^b#ff5252^"
-# tm="󰥔   $(date '+%I:%M %P')"
-tm="    $(date '+%I:%M %P')"
+source "/home/rediet/scripts/dwm_bar/color.sh"
 
-echo "$bg   $tm  "
+tm="󰥔   $(date '+%I:%M %P')"
+# tm="    $(date '+%I:%M %P')"
+
+echo "$bg  $tm  "

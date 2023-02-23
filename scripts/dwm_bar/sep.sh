@@ -2,6 +2,7 @@
 
 source "/home/rediet/scripts/dwm_bar/color.sh"
 
-dt="   $(date '+%A %b %d,  %Y')"
+# sbg="^b#087bdf^"
+sbg="^b#333e4e^"
 
-echo "$bg  $dt  "
+echo "$sbg $bg"

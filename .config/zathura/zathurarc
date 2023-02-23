@@ -34,10 +34,11 @@ set index-fg                    "#A0A8CD"
 set index-active-bg             "#af88e1"
 set index-active-fg             "#282a36"
 
-set inputbar-bg                 "#009688"
+set inputbar-bg                 "#1588ff"
 set inputbar-fg                 "#11121D"
 # set statusbar-bg                "#1588FF"
-set statusbar-bg                "#00796B"
+# set statusbar-bg                "#00796B"
+set statusbar-bg                "#005577"
 set statusbar-fg                "#ffffff" 
 
 set highlight-color             "#FF5555"

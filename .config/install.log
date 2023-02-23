@@ -1,0 +1,10 @@
+[01:21:02 2023-02-04] FETCHING Version 2.16.1
+[01:21:02 2023-02-04] CREATING /home/rediet/.spicetify
+[01:21:02 2023-02-04] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.16.1/spicetify-2.16.1-linux-amd64.tar.gz
+[01:21:39 2023-02-04] EXTRACTING /home/rediet/.spicetify/spicetify.tar.gz
+[01:21:39 2023-02-04] SETTING EXECUTABLE PERMISSIONS TO /home/rediet/.spicetify/spicetify
+[01:21:39 2023-02-04] REMOVING /home/rediet/.spicetify/spicetify.tar.gz
+[01:21:39 2023-02-04] APPENDING /home/rediet/.spicetify to PATH in /home/rediet/.zshrc
+[01:21:39 2023-02-04] Restart your shell to have spicetify in your PATH.
+[01:21:39 2023-02-04] spicetify v2.16.1 was installed successfully to /home/rediet/.spicetify
+[01:21:39 2023-02-04] Run 'spicetify --help' to get started

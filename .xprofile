@@ -1,7 +1,8 @@
 dunst &
-eww daemon &
 picom &
 dwmblocks &
 setbg &
 lxsession &
-unmuteh &
+xinput disable "G2Touch Multi-Touch by G2TSP" &
+python3 ~/scripts/volume_not.py | xob &
+python3 ~/scripts/brightness_not.py | xob &

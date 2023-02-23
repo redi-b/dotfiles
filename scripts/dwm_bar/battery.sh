@@ -1,5 +1,14 @@
 #!/bin/bash
 
-bg="^b#8e44ad^"
+source "/home/rediet/scripts/dwm_bar/color.sh"
 
-echo "$bg        $(cat /sys/class/power_supply/BAT0/capacity)%"
+status="$(cat /sys/class/power_supply/BAT1/status)"
+
+if [[ $status == "Discharging" ]];
+then
+  icon="󰁹"
+else
+  icon="󰂄"
+fi
+
+echo "$bg  $icon  $(cat /sys/class/power_supply/BAT1/capacity)%  "

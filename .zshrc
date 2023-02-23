@@ -101,7 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias spotify="spotify --no-zygote"
-alias mocp="mocp -T green_theme"
 
 export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
@@ -112,6 +111,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
-alias dotconfig='/usr/bin/git --git-dir=/home/rediet/dotfiles.git/ --work-tree=/home/rediet'
-alias st="tabbed -r 2 st -w ''"
-alias ssr='simplescreenrecorder'
+alias dotconfig='/usr/bin/git --git-dir=/home/rediet/dotfiles/ --work-tree=/home/rediet'
+# alias st="tabbed -r 2 st -w ''"
+# alias ssr='simplescreenrecorder'
+export PATH="$HOME/.spicetify:$PATH"

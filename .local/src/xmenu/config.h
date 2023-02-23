@@ -3,9 +3,9 @@ static struct Config config = {
 	.font = "Product Sans:size=10,Hack Nerd Font:size=10",
 
 	/* colors */
-	.background_color = "#00796B",
+	.background_color =  "#222f3e",
 	.foreground_color = "#DFD1D0",
-	.selbackground_color = "#009688",
+	.selbackground_color = "#005577",
 	.selforeground_color = "#FFFFFF",
 	.separator_color = "#CDC7C2",
 	.border_color = "#212121",
