@@ -152,8 +152,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD(". ~/scripts/ewwtoggle") },
-	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },

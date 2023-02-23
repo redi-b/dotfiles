@@ -1,4 +1,4 @@
-![screenshot](https://raw.githubusercontent.com/redi-b/dotfiles/master/screenshots/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/redi-b/dotfiles/new/screenshots/screenshot.png)
 
 
 # Softwares
@@ -16,7 +16,7 @@
 - Notifications - [dunst](https://github.com/dunst-project/dunst)
 - Music Player - [mocp](https://github.com/jonsafari/mocp)
 
-### Fonts
+### Main Fonts
 
 - Product Sans
 - Hack Nerd Font
@@ -41,7 +41,7 @@
 ---
 # Scripts
 
-https://github.com/redi-b/dotfiles/tree/master/scripts
+https://github.com/redi-b/dotfiles/tree/new/scripts
 
 Add the directory to path to use them.
 
@@ -55,7 +55,7 @@ export PATH="/path/to/directory/:$PATH"
 <details>
    <summary><b>List of scripts</b></summary>
 
-## [```download_wall```](https://github.com/redi-b/dotfiles/tree/master/scripts/download_wall)
+## [```download_wall```](https://github.com/redi-b/dotfiles/tree/new/scripts/download_wall)
 
 #### Description
 
@@ -66,13 +66,13 @@ Downloads a random wallpaper from unsplash. You can add or remove the keywords i
    - ```wget```
 
 
-## [```emojipick```](https://github.com/redi-b/dotfiles/tree/master/scripts/emojipick)
+## [```emojipick```](https://github.com/redi-b/dotfiles/tree/new/scripts/emojipick)
 
 #### Description
 
 Launches an emojipicker. The launcher can be either rofi or dmenu
 (```use_rofi=1``` or ```use_rofi=0```)  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/emoji_launch.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/new/screenshots/emoji_launch.png)
 
 #### Hotkey
    - ```Mod + Shift + e```
@@ -81,27 +81,13 @@ Launches an emojipicker. The launcher can be either rofi or dmenu
 
    - ```python3```
    - ```rofi```
-   - Save the [emojipicker](https://github.com/redi-b/dotfiles/tree/master/emojipicker) folder and save it in your home directory (or modify the script according to where you put this folder)
+   - Save the [emojipicker](https://github.com/redi-b/dotfiles/tree/new/emojipicker) folder and save it in your home directory (or modify the script according to where you put this folder)
 
-## [```ewwtoggle```](https://github.com/redi-b/dotfiles/tree/master/scripts/ewwtoggle)
-
-#### Description
-
-Toggles the eww widgets.  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/widgets.png)
-
-#### Hotkey
-   - ```Mod + w```
-
-#### Dependencies
-
-   - <code>eww<sup>AUR</sup></code>
-
-## [```manpdf```](https://github.com/redi-b/dotfiles/tree/master/scripts/manpdf)
+## [```manpdf```](https://github.com/redi-b/dotfiles/tree/new/scripts/manpdf)
 
 #### Description
 Launches a dmenu which opens the selected app's manual in zathura  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/zathura.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/new/screenshots/zathura.png)
 
 #### Hotkey
    - ```Mod + v```
@@ -116,13 +102,13 @@ Launches a dmenu which opens the selected app's manual in zathura
    $ sudo mandb
    ```
 
-## [```menulauncher```](https://github.com/redi-b/dotfiles/tree/master/scripts/menulauncher)
+## [```menulauncher```](https://github.com/redi-b/dotfiles/tree/new/scripts/menulauncher)
 
 #### Description
 
 Launches an application runner or system options.  
-[Screenshot-1](https://github.com/redi-b/dotfiles/blob/master/screenshots/app_launch.png)  
-[Screenshot-2](https://github.com/redi-b/dotfiles/blob/master/screenshots/sys_launch.png)
+[Screenshot-1](https://github.com/redi-b/dotfiles/blob/new/screenshots/app_launch.png)  
+[Screenshot-2](https://github.com/redi-b/dotfiles/blob/new/screenshots/sys_launch.png)
 
 #### Hotkey
    - ```Mod + o``` - app launcher
@@ -136,9 +122,9 @@ Launches an application runner or system options.
 #### Dependencies
 
    - ```rofi```
-   - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/master/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
+   - Save the [menulauncher](https://github.com/redi-b/dotfiles/tree/new/menulauncher) folder in your home directory (or modify the script according to where you put this folder)
 
-## [```screenshot```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot_w) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/master/scripts/screenshot_s)
+## [```screenshot```](https://github.com/redi-b/dotfiles/tree/new/scripts/screenshot_w) & [```screencopy```](https://github.com/redi-b/dotfiles/tree/new/scripts/screenshot_s)
 
 #### Description
 
@@ -153,7 +139,7 @@ Screenshot whole screen and copy the selected portion to clipboard
    - ```scrot```
    - ```imagemagick```
 
-## [```search_selected```](https://github.com/redi-b/dotfiles/tree/master/scripts/search_selected)
+## [```search_selected```](https://github.com/redi-b/dotfiles/tree/new/scripts/search_selected)
 
 #### Description
 
@@ -168,12 +154,12 @@ Googles the selected text
    - ```xclip```
 
 
-## [```searchpkg```](https://github.com/redi-b/dotfiles/tree/master/scripts/searchpkg)
+## [```searchpkg```](https://github.com/redi-b/dotfiles/tree/new/scripts/searchpkg)
 
 #### Description
 
 Used to search for a package and install the selected one  
-[Screenshot](https://github.com/redi-b/dotfiles/blob/master/screenshots/searchpkg.png)
+[Screenshot](https://github.com/redi-b/dotfiles/blob/new/screenshots/searchpkg.png)
 
 #### Arguments
    - ```pacman```
@@ -191,11 +177,27 @@ Used to search for a package and install the selected one
    - NOTE: Only run these commands once
 
 
-## [```setbg```](https://github.com/redi-b/dotfiles/tree/master/scripts/setbg)
+## [```setbg```](https://github.com/redi-b/dotfiles/tree/new/scripts/setbg)
 
 #### Description
 
 Sets a random background from the ```~/wallpapers``` directory
+
+#### Hotkey
+   - ```Mod + Alt + s```
+
+#### Dependencies
+
+   - ```feh```
+
+## [```network```](https://github.com/redi-b/dotfiles/tree/new/scripts/network)
+
+#### Description
+
+Sets a random background from the ```~/wallpapers``` directory
+
+#### Hotkey
+   - ```Mod + Alt + s```
 
 #### Dependencies
 
@@ -221,7 +223,6 @@ Sets a random background from the ```~/wallpapers``` directory
 | ```Mod + Shift + l```    | Lockscreen        |
 | ```Mod + Shift + p```    | Screenshot whole screen |
 | ```Mod + Shift + s```    | Screenshot window or selection |
-| ```Mod + w```     | Toggle eww widgets |
 | ```Ctrl + Shift + s```   | Google selected text |
 
 <!-- https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png -->

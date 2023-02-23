@@ -1,4 +1,6 @@
 #!/bin/bash
 
-ffmpeg -video_size 1366x768 -framerate 25 -f x11grab -i :0.0 "$(date +%Y-%m-%d_%H-%M-%S).mp4" &
+dir=$HOME/Videos
+[[ -d $dir ]] || mkdir -p $dir 
+ffmpeg -video_size 1366x768 -framerate 25 -f x11grab -i :0.0 "$dir/$(date +%Y-%m-%d_%H-%M-%S).mp4" &
 notify-send "Screen record started"
