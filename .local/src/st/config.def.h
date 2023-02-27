@@ -9,9 +9,9 @@
 static char *font  = "Hack Nerd Font:pixelsize=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Material Design Icons:pixelsize=12:antialias=true:autohint=true", */
+	"Material Design Icons:pixelsize=12:antialias=true:autohint=true",
 };
-+
+
 static int borderpx = 24;
 
 /*

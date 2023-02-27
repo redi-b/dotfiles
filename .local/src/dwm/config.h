@@ -132,6 +132,8 @@ static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
 static const char *notecmd[] 	= { "xpad", NULL };		// Notepad
 
+#include "selfrestart.c"
+
 #include "movestack.c"
 #include <X11/XF86keysym.h>
 static Key keys[] = {
@@ -154,8 +156,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
-	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/stopscreenr") },
+	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
 	{ MODKEY,					              XK_z,      spawn,          SHCMD("networkmanager_dmenu") },
 
 	// Volume, media and system controls
@@ -224,6 +225,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+  { MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
@@ -244,4 +246,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
