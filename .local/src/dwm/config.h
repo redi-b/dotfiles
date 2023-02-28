@@ -25,7 +25,6 @@ static const char dmenufont[]       = "Product Sans:size=10";
 // static char selbgcolor[]            = "#005577";
 // static char seltag_bg[]             = "#00796B";
 
-// static char normbgcolor[]           = "#0458bf";
 static char normbgcolor[]           = "#222f3e";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#eeeeee";
@@ -131,7 +130,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "
 static const char *termcmd[]  = { "st", NULL };
 static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
-static const char *notecmd[] 	= { "xpad", NULL };		// Notepad
+static const char *notecmd[] 	= { "xpad", "-n", NULL };		// Notepad
 
 #include "movestack.c"
 #include <X11/XF86keysym.h>
@@ -156,6 +155,8 @@ static Key keys[] = {
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
 	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD(". ~/scripts/dmenumount") },
+	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD(". ~/scripts/dmenuumount") },
 	{ MODKEY,					              XK_z,      spawn,          SHCMD("networkmanager_dmenu") },
 
 	// Volume, media and system controls

@@ -4,6 +4,6 @@ dwmblocks &
 setbg &
 lxsession &
 xinput disable "G2Touch Multi-Touch by G2TSP" &
-python3 ~/scripts/volume_not.py | xob &
-python3 ~/scripts/brightness_not.py | xob &
-xautolock -time 5 -locker "betterlockscreen --off 60 -l" -detectsleep &
+python3 ~/scripts/python/volume_not.py | xob &
+python3 ~/scripts/python/brightness_not.py | xob &
+xautolock -time 8 -locker "betterlockscreen --off 60 -l" -detectsleep &
