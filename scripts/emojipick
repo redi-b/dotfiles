@@ -28,7 +28,7 @@ enable_favorites=1
 
 if [[ "$use_rofi" -eq 1 ]]
 then
-    dmenu_app='rofi -dmenu -theme ~/emojipicker/launcher.rasi -font'
+    dmenu_app='rofi -dmenu -theme ~/emojipicker/launcher.rasi -i -font'
     font="$font_family $font_size"
 else
     dmenu_app='dmenu -l 15 -x 380 -y 180 -z 600 -h 28 -fn'
