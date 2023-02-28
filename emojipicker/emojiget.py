@@ -30,6 +30,13 @@ jfile = pathlib.Path(cdir / 'emoji.json')
 jfile_filtered = pathlib.Path(cdir / 'emoji_filtered.json')
 ifile = ''
 
+
+def get_order(item):
+    if not item['order']:
+        return 5000
+    return int(item['order'])
+
+
 if args.wipe:
     jfile.unlink(missing_ok=True)
     jfile_filtered.unlink(missing_ok=True)
@@ -51,19 +58,21 @@ else:
         # Source: overatgithub/emoji.json
         # Alternate = 'https://gist.githubusercontent.com/thingsiplay/1f500459bc117cf0b63e1f5c11e03963/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json'
         jurl = 'https://gist.githubusercontent.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json'
+        # jurl = 'https://gist.githubusercontent.com/thingsiplay/1f500459bc117cf0b63e1f5c11e03963/raw/d8e4b78cfe66862cf3809443c1dba017f37b61db/emojis.json'
         jresponse = urllib.request.urlopen(jurl)
         jdata = jresponse.read()
         jtext = jdata.decode('utf-8')
         jfile.write_text(jtext)
 
-    emojis = json.loads(jtext)
+    emojis = json.loads(jtext)["emojis"]
+    emojis = sorted(emojis, key=get_order)
 
     # The alternate filter by "skin" compared to the "order" method will
     # include more stuff in the end, but makes it very slow and unusable in
     # dmenu. There is no problem in rofi, if you want switch. But remember
     # to wipe the cache with -w option.
-    #emojis['emojis'] = [em for em in emojis['emojis'] if not 'skin' in em['name']]
-    emojis['emojis'] = [em for em in emojis['emojis'] if em['order'] != '']
+    # emojis = [em for em in emojis if not 'skin' in em['name']]
+    # emojis = [em for em in emojis if em['order'] != '']
 
     jfile_filtered.write_text(json.dumps(emojis))
 
@@ -72,11 +81,14 @@ if args.input and ifile.exists():
 else:
     output = ''
 
-for index, emoji in enumerate(emojis['emojis']):
+for index, emoji in enumerate(emojis):
     if args.filter in emoji['name']:
         output += emoji['emoji']
         if not args.no_name:
-            output += ' ' + emoji['name'] + ' ~ ' + emoji['category']
+            # output += ' ' + emoji['name'] + ' ~ ' + emoji['category']
+            # output += f"    {emoji['name'].capitalize()} |{emoji['shortname'][1:-1]}|"
+            # output += f"    {emoji['shortname'][1:-1].capitalize().replace('_', ' ')}"
+            output += f"    {emoji['name'].capitalize()}  ({emoji['shortname'][1:-1]})"
         if args.limit > 0 and index >= args.limit - 1:
             break
         output += '\n'

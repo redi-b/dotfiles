@@ -9,8 +9,11 @@
 emojiget='/home/rediet/emojipicker/emojiget.py'
 
 # Name-Size
-font_family='"Noto Color Emoji"'
-font_size="9"
+# font_family='"Noto Color Emoji"'
+# font_size="9"
+
+font_family='"Apple Color Emoji"'
+font_size="11"
 
 # Path to personal emojis file to display them at top of the dmenu list.
 favorites=~/.myemojis
@@ -20,7 +23,7 @@ use_rofi=1
 copy_to_clipboard=1
 show_notification=1
 print_emoji=1
-lower_case=1
+lower_case=0
 enable_favorites=1
 
 if [[ "$use_rofi" -eq 1 ]]

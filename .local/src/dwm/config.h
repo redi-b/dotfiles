@@ -79,16 +79,17 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      												instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     													NULL,       NULL,       0,            1,           -1 },
-	{ "firefox",  													NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "Google-Chrome",  										NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "spotify",  													NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "xpad",     													NULL,       NULL,       0,            1,           -1 },
-	{ "mpv",     										  			NULL,       NULL,       0,            1,           -1 },
-	{ "Windscribe",     										NULL,       NULL,       0,            1,           -1 },
-	{ "Protonvpn",     										  NULL,       NULL,       0,            1,           -1 },
-	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,           -1 },
+	/* class      												instance    title       tags mask		iscentered 		isfloating   monitor */
+	{ "Gimp",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Firefox",  													NULL,       NULL,       1 << 1,       0,						0,           -1 },
+	{ "Google-chrome",  										NULL,       NULL,       1 << 1,       0,						0,           -1 },
+	{ "Spotify",  													NULL,       NULL,       1 << 2,       0,						0,           -1 },
+	{ "xpad",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "kcalc",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
 
 };
 
@@ -132,8 +133,6 @@ static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
 static const char *notecmd[] 	= { "xpad", NULL };		// Notepad
 
-#include "selfrestart.c"
-
 #include "movestack.c"
 #include <X11/XF86keysym.h>
 static Key keys[] = {
@@ -151,7 +150,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
@@ -225,7 +224,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-  { MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
+	{ MODKEY|Mod1Mask,              XK_q,      spawn,          SHCMD("pkill x") },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
