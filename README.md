@@ -32,61 +32,97 @@ $ yay -S betterlockscreen networkmanager-dmenu-git simple-mtpfs
 <details>
 
    <summary><b>List of Programs</b></summary>
-
-   - bat
-   - betterlockscreen<sup>AUR</sup>
-   - brightnessctl
-   - dunst
-   - feh
-   - ffmpegthumbnailer
-   - fzf
-   - iw
-   - kvantum-theme-qogir-git
-   - lsxession
-   - maim
-   - ncdu
-   - neovim
-   - networkmanager-dmenu-git<sup>AUR</sup>
-   - ntfs-3g
-   - pamixer
-   - pavucontrol
-   - pcmanfm
-   - playerctl
-   - picom-ibhagwan-git<sup>AUR</sup>
-   - qogir-gtk-theme
-   - ranger
-   - rofi
-   - rofi-emoji
-   - scrot
-   - simple-mtpfs<sup>AUR</sup>
-   - subversion
-   - sxiv
-   - ueburzug
-   - unzip
-   - xautolock
-   - xob<sup>AUR</sup>
-   - xorg-xinput
-   - xpad
-   - zathura
-   - zathura-pdf-mupdf
+   <table>
+      <tr>
+         <td>bat</td>
+         <td>lxsession</td>
+         <td>playerctl</td>
+         <td>sxiv</td>
+      </tr>
+      <tr>
+         <td>betterlockscreen<sup>AUR</sup></td>
+         <td>maim</td>
+         <td>picom-ibhagwan-git<sup>AUR</sup></td>
+         <td>ueberzug</td>
+      </tr>
+      <tr>
+         <td>brightnessctl</td>
+         <td>ncdu</td>
+         <td>qogir-gtk-theme</td>
+         <td>unzip</td>
+      </tr>
+      <tr>
+         <td>dunst</td>
+         <td>neovim</td>
+         <td>ranger</td>
+         <td>xautolock</td>
+      </tr>
+      <tr>
+         <td>feh</td>
+         <td>networkmanager-dmenu-git<sup>AUR</sup></td>
+         <td>rofi</td>
+         <td>xob<sup>AUR</sup></td>
+      </tr>
+      <tr>
+         <td>ffmpegthumbnailer</td>
+         <td>ntfs-3g</td>
+         <td>rofi-emoji</td>
+         <td>xorg-xinput</td>
+      </tr>
+      <tr>
+         <td>fzf</td>
+         <td>pamixer</td>
+         <td>scrot</td>
+         <td>xpad</td>
+      </tr>
+      <tr>
+         <td>iw</td>
+         <td>pavucontrol</td>
+         <td>simple-mtpfs<sup>AUR</sup></td>
+         <td>zathura</td>
+      </tr>
+      <tr>
+         <td>kvantum-theme-qogir-git</td>
+         <td>pcmanfm</td>
+         <td>subversion</td>
+         <td>zathura-pdf-mupdf</td>
+      </tr>
+   
+   </table>
 
    <details>
-      <summary>Optional Applications/Programs</summary>
-      - firefox
-      - freedownloadmanager
-      - google-chrome
-      - kcalc
-      - kvantum
-      - lxappearnace
-      - okular
-      - spicetify
-      - spotify
-      - sublime-text-3
-      - sxiv
-      - telegram-desktop
-      - tldr
-      - visual-studio-code-bin
-      - vlc
+      <summary><h4>Optional Programs/Applications</h4></summary>
+   <table>
+      <tr>
+         <td>firefox</td>
+         <td>spicetify</td>
+         <td>vlc</td>
+      </tr>
+      <tr>
+         <td>freedownloadmanager</td>
+         <td>spotify</td>
+      </tr>
+      <tr>
+         <td>google-chrome</td>
+         <td>sublime-text-3</td>
+      </tr>
+      <tr>
+         <td>kcalc</td>
+         <td>sxiv</td>
+      </tr>
+      <tr>
+         <td>kvantum</td>
+         <td>telegram-desktop</td>
+      </tr>
+      <tr>
+         <td>lxappearance</td>
+         <td>tldr</td>
+      </tr>
+      <tr>
+         <td>okular</td>
+         <td>visual-studio-code-bin</td>
+      </tr>
+   </table>
    </details>
 
 </details>
@@ -299,3 +335,4 @@ Sets a random background from the ```~/wallpapers``` directory
 | ```Ctrl + Shift + s```   | Google selected text |
 
 <!-- https://user-images.githubusercontent.com/66169993/120075666-e8f0ca80-c0aa-11eb-84ab-3db62b4f442c.png -->
+
