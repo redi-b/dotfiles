@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# cat /tmp/eww_notif.xml
-echo '<box style="background: white;" height="30" width="30"> </box>'

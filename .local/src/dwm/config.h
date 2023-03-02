@@ -144,12 +144,8 @@ static Key keys[] = {
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
 	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
-	{ MODKEY,                       XK_o,      spawn,          SHCMD(". ~/scripts/menulauncher") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD(". ~/scripts/menulauncher powermenu") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
@@ -158,6 +154,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD(". ~/scripts/dmenumount") },
 	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD(". ~/scripts/dmenuumount") },
 	{ MODKEY,					              XK_z,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
+
+	// Launchers
+	{ MODKEY,                       XK_o,      spawn,          SHCMD("rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launcher/launcher.rasi") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD("powermenu") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/emojilauncher/launcher.rasi") },
 
 	// Volume, media and system controls
 	{ 0,                            XF86XK_AudioLowerVolume,  spawn, SHCMD(". ~/scripts/dwm/vol down") },
