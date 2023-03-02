@@ -5,7 +5,7 @@
 
 - OS - [Arch Linux](https://archlinux.org)
 - WM - [dwm](https://dwm.suckless.org)
-- Compositor - [picom (picom-tyrone-git)](https://aur.archlinux.org/packages/picom-tryone-git/)
+- Compositor - [picom (picom-ibhagwan-git)](https://aur.archlinux.org/packages/picom-ibhagwan-git/)
 - Terminal - [st](https://st.suckless.org)
 - Shell - [zsh](https://zsh.org)
 - Launcher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
@@ -22,12 +22,84 @@
 - Hack Nerd Font
 - Material Design Icons
 
+### Additional Programs and Dependencies
+
+```bash
+$ sudo pacman -S brightnessctl fzf iw lxsession maim ncdu neovim ntfs-3g pamixer pavucontrol playerctl qogir-gtk-theme rofi-emoji ueberzug xautolock xorg-xinput xpad zathura zathura-pdf-mupdf
+$ yay -S betterlockscreen networkmanager-dmenu-git simple-mtpfs
+```
+
+<details>
+
+   <summary><b>List of Programs</b></summary>
+
+   - bat
+   - betterlockscreen<sup>AUR</sup>
+   - brightnessctl
+   - dunst
+   - feh
+   - ffmpegthumbnailer
+   - fzf
+   - iw
+   - kvantum-theme-qogir-git
+   - lsxession
+   - maim
+   - ncdu
+   - neovim
+   - networkmanager-dmenu-git<sup>AUR</sup>
+   - ntfs-3g
+   - pamixer
+   - pavucontrol
+   - pcmanfm
+   - playerctl
+   - picom-ibhagwan-git<sup>AUR</sup>
+   - qogir-gtk-theme
+   - ranger
+   - rofi
+   - rofi-emoji
+   - scrot
+   - simple-mtpfs<sup>AUR</sup>
+   - subversion
+   - sxiv
+   - ueburzug
+   - unzip
+   - xautolock
+   - xob<sup>AUR</sup>
+   - xorg-xinput
+   - xpad
+   - zathura
+   - zathura-pdf-mupdf
+
+   <details>
+      <summary>Optional Applications/Programs</summary>
+      - firefox
+      - freedownloadmanager
+      - google-chrome
+      - kcalc
+      - kvantum
+      - lxappearnace
+      - okular
+      - spicetify
+      - spotify
+      - sublime-text-3
+      - sxiv
+      - telegram-desktop
+      - tldr
+      - visual-studio-code-bin
+      - vlc
+   </details>
+
+</details>
+
+
 ### dwm patches
 
 
 - [actualfullscreen](https://dwm.suckless.org/patches/actualfullscreen/)
+- [alternative-tags](https://dwm.suckless.org/patches/alternativetags/) (optional)
 - [anybar](https://dwm.suckless.org/patches/anybar/) (optional)
 - [bar-height](https://dwm.suckless.org/patches/bar_height/)
+- [center](https://dwm.suckless.org/patches/center/)
 - [colorbar](https://dwm.suckless.org/patches/colorbar/)
 - [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/)
 - [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) - workspace/desktop information
@@ -35,6 +107,7 @@
 - [layoutmenu](https://dwm.suckless.org/patches/layoutmenu/) - (depends on xmenu)
 - [movestack](https://dwm.suckless.org/patches/movestack/)
 - [status2d](https://dwm.suckless.org/patches/status2d/) - for colored text in bar 
+- [sticky](https://dwm.suckless.org/patches/sticky/)
 - [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/)
 - [warp](https://dwm.suckless.org/patches/warp/) - skippy-xd
 
