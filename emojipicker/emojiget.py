@@ -95,4 +95,4 @@ for index, emoji in enumerate(emojis):
 if args.lower_case:
     output = output.lower()
 if output:
-    print(output)
+    print(output.strip())
