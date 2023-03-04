@@ -8,6 +8,7 @@ if [[ -n $(pgrep ffmpeg) ]];
 then
   killall ffmpeg && notify-send -t 5000 "Screen recording saved to Videos" "$filename"
 else
-  ffmpeg -video_size 1366x768 -framerate 25 -f x11grab -i :0.0 "$dir/$filename" & 
+  # ffmpeg -video_size 1366x768 -framerate 25 -f x11grab -i :0.0 "$dir/$filename" & 
+  ffmpeg -video_size 1366x768 -framerate 25 -f x11grab -i :0.0 -f pulse -ac 2 -i default "$dir/$filename" &
   notify-send -t 1000 "Screen recording started"
 fi

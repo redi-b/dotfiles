@@ -106,7 +106,7 @@ export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 export EDITOR="nvim"
-export BROWSER="firefox"
+# export BROWSER="firefox"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 source /usr/share/fzf/completion.zsh
@@ -115,3 +115,4 @@ alias dotconfig='/usr/bin/git --git-dir=/home/rediet/dotfiles/ --work-tree=/home
 # alias st="tabbed -r 2 st -w ''"
 # alias ssr='simplescreenrecorder'
 export PATH="$HOME/.spicetify:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

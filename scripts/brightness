@@ -1,0 +1,54 @@
+#!/bin/bash
+
+max_brightness=$(brightnessctl | grep Max | awk '{print $3}')
+max_brightness_d=$(($max_brightness / 100))
+
+up() {
+  brightnessctl set +10%
+  cur_brightness=$(brightnessctl get)
+  echo $(($cur_brightness / $max_brightness_d)) >> /tmp/xobbrightness
+}
+
+down() {
+  brightnessctl set 10%-
+  cur_brightness=$(brightnessctl get)
+  echo $(($cur_brightness / $max_brightness_d)) >> /tmp/xobbrightness
+}
+
+sset() {
+  brightnessctl set "$1%"
+  cur_brightness=$(brightnessctl get)
+  echo $(($cur_brightness / $max_brightness_d)) >> /tmp/xobbrightness
+}
+
+case $# in
+  1)
+    case $1 in
+      "up")
+        up
+        ;;
+      "down")
+        down
+        ;;
+      *)
+        echo "Inalid argument!"
+        exit
+        ;;
+    esac
+    ;;
+  2)
+    case $1 in
+      "sset")
+        sset $2
+        ;;
+      *)
+        echo "Invalid argument!"
+        exit
+        ;;
+    esac
+    ;;
+  *)
+    echo "Too many arguments!"
+    exit
+    ;;
+esac

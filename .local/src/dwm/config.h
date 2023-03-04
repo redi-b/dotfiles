@@ -88,6 +88,7 @@ static const Rule rules[] = {
 	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
 
 };
@@ -168,8 +169,8 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioPlay,         spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,         spawn, SHCMD("playerctl next") },
 	{ 0,                            XF86XK_AudioPrev,         spawn, SHCMD("playerctl previous") },
-	{ 0,                            XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
-	{ 0,                            XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
+	{ 0,                            XF86XK_MonBrightnessUp,   spawn, SHCMD(". ~/scripts/brightness up") },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, SHCMD(". ~/scripts/brightness down") },
 	{ 0,                            XF86XK_PowerOff,          spawn, SHCMD(". ~/scripts/menulauncher powermenu") },
 
 	// Basic controls

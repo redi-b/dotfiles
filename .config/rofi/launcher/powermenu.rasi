@@ -1,16 +1,7 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
-
 configuration {
-	font:							"Product Sans 10";
+	font:							"Hack Nerd Font 10";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"Hack Nerd Font 12";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
