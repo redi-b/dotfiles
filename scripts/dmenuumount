@@ -4,7 +4,7 @@
 # Provides you with mounted partitions, select one to unmount.
 # Drives mounted at /, /boot and /home will not be options to unmount.
 
-DMENU_STYLE="dmenu -x 480 -y 280 -z 400"
+DMENU_STYLE="dmenu -c -z 600"
 
 unmountusb() {
 	[ -z "$drives" ] && exit

@@ -2,7 +2,7 @@
 
 source "/home/rediet/scripts/dwm_bar/color.sh"
 
-conn=$(nmcli -t -f NAME c show --active)
+conn=$(nmcli -t -f NAME c show --active | head -n 1)
 conn_len=${#conn}
 if [ $conn_len -gt 9 ]
 then

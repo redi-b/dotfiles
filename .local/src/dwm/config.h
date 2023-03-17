@@ -89,6 +89,7 @@ static const Rule rules[] = {
 	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
 	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
+	{ "lxqt-openssh-askpass",						    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
 
 };
@@ -127,7 +128,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-c", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
