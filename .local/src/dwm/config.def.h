@@ -14,7 +14,7 @@ static const int user_bh            = 30;        /* 0 means that dwm will calcul
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=13" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=13", "Apple Color Emoji:size=10" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 // static char normbgcolor[]           = "#00594B";
@@ -25,7 +25,6 @@ static const char dmenufont[]       = "Product Sans:size=10";
 // static char selbgcolor[]            = "#005577";
 // static char seltag_bg[]             = "#00796B";
 
-// static char normbgcolor[]           = "#0458bf";
 static char normbgcolor[]           = "#222f3e";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#eeeeee";
@@ -46,7 +45,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
+static const char *tags[] = { " ", "爵 ", "阮 ", "切 ", " ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -54,8 +53,8 @@ static const char *tagsel[][2] = {
 	{ "#ff6b6b", normbgcolor},
 	{ "#0abde3", normbgcolor},
 	{ "#009432", normbgcolor},
-	{ "#ffc048", normbgcolor},
 	{ "#1289A7", normbgcolor},
+	{ "#55efc4", normbgcolor},
 	{ "#f368e0", normbgcolor},
 	{ "#388E3C", normbgcolor},
 	{ "#7f8c8d", normbgcolor},
@@ -79,16 +78,20 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      												instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     													NULL,       NULL,       0,            1,           -1 },
-	{ "firefox",  													NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "Google-Chrome",  										NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "spotify",  													NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "xpad",     													NULL,       NULL,       0,            1,           -1 },
-	{ "mpv",     										  			NULL,       NULL,       0,            1,           -1 },
-	{ "Windscribe",     										NULL,       NULL,       0,            1,           -1 },
-	{ "Protonvpn",     										  NULL,       NULL,       0,            1,           -1 },
-	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,           -1 },
+	/* class      												instance    title       tags mask		iscentered 		isfloating   monitor */
+	{ "Gimp",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Firefox",  													NULL,       NULL,       1 << 1,       0,						0,           -1 },
+	{ "Google-chrome",  										NULL,       NULL,       1 << 1,       0,						0,           -1 },
+	{ "Spotify",  													NULL,       NULL,       1 << 2,       0,						0,           -1 },
+	{ "xpad",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "kcalc",     													NULL,       NULL,       0,            1,						1,           -1 },
+	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
+	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 3,       1,						1,           -1 },
+	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
+	{ "lxqt-openssh-askpass",						    NULL,       NULL,       0,            1,						1,           -1 },
+	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
 
 };
 
@@ -126,13 +129,11 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-x", "380", "-y", "180", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-c", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
 static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
-static const char *notecmd[] 	= { "xpad", NULL };		// Notepad
-
-#include "selfrestart.c"
+static const char *notecmd[] 	= { "xpad", "-n", NULL };		// Notepad
 
 #include "movestack.c"
 #include <X11/XF86keysym.h>
@@ -146,19 +147,22 @@ static Key keys[] = {
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
 	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
-	{ MODKEY,                       XK_o,      spawn,          SHCMD(". ~/scripts/menulauncher") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD(". ~/scripts/menulauncher powermenu") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD(". ~/scripts/emojipick") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD(". ~/scripts/betterlockscreen -l") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
 	{ MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD(". ~/scripts/setbg") },
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
-	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/stopscreenr") },
+	{ MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD(". ~/scripts/recordscreen") },
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD(". ~/scripts/dmenumount") },
+	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD(". ~/scripts/dmenuumount") },
 	{ MODKEY,					              XK_z,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
+
+	// Launchers
+	{ MODKEY,                       XK_o,      spawn,          SHCMD("rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launcher/launcher.rasi") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD("powermenu") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/emojilauncher/launcher.rasi") },
 
 	// Volume, media and system controls
 	{ 0,                            XF86XK_AudioLowerVolume,  spawn, SHCMD(". ~/scripts/dwm/vol down") },
@@ -167,8 +171,8 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioPlay,         spawn, SHCMD("playerctl play-pause") },
 	{ 0,                            XF86XK_AudioNext,         spawn, SHCMD("playerctl next") },
 	{ 0,                            XF86XK_AudioPrev,         spawn, SHCMD("playerctl previous") },
-	{ 0,                            XF86XK_MonBrightnessUp,   spawn, SHCMD("brightnessctl set +10%") },
-	{ 0,                            XF86XK_MonBrightnessDown, spawn, SHCMD("brightnessctl set 10%-") },
+	{ 0,                            XF86XK_MonBrightnessUp,   spawn, SHCMD(". ~/scripts/brightness up") },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, SHCMD(". ~/scripts/brightness down") },
 	{ 0,                            XF86XK_PowerOff,          spawn, SHCMD(". ~/scripts/menulauncher powermenu") },
 
 	// Basic controls
@@ -226,7 +230,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-    { MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
+	{ MODKEY|Mod1Mask,              XK_q,      spawn,          SHCMD("pkill x") },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 

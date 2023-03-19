@@ -25,5 +25,5 @@ update() {
 
 rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
 
-[[ -n $conn ]] && out=$(printf "$wifi_icon   $conn   󰇚 %4sB" $(numfmt --to=iec $rx)) || out=$(echo "$nowifi_icon   Offline")
+[[ -n $conn ]] && out=$(printf "$wifi_icon   $conn   󰇚 %4sB/s" $(numfmt --to=iec $rx)) || out=$(echo "$nowifi_icon   Offline")
 echo "$bg   " "$out  "

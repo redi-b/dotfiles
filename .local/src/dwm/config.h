@@ -14,7 +14,7 @@ static const int user_bh            = 30;        /* 0 means that dwm will calcul
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=13" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=13", "Apple Color Emoji:size=10" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 // static char normbgcolor[]           = "#00594B";
@@ -45,7 +45,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", "爵 ", "阮 ", " ", "切 ", " ", " ", " ", " " }; 	// nerd fonts
+static const char *tags[] = { " ", "爵 ", "阮 ", "切 ", " ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -53,9 +53,10 @@ static const char *tagsel[][2] = {
 	{ "#ff6b6b", normbgcolor},
 	{ "#0abde3", normbgcolor},
 	{ "#009432", normbgcolor},
-	{ "#ffc048", normbgcolor},
 	{ "#1289A7", normbgcolor},
-	{ "#f368e0", normbgcolor},
+	{ "#55efc4", normbgcolor},
+	{ "#f7d794", normbgcolor},
+	// { "#4a69bd", normbgcolor},
 	{ "#388E3C", normbgcolor},
 	{ "#7f8c8d", normbgcolor},
 	{ "#1B9CFC", normbgcolor},
@@ -88,6 +89,7 @@ static const Rule rules[] = {
 	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 3,       1,						1,           -1 },
 	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "lxqt-openssh-askpass",						    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
