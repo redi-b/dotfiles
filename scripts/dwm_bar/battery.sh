@@ -2,7 +2,7 @@
 
 source "/home/rediet/scripts/dwm_bar/color.sh"
 
-status="$(cat /sys/class/power_supply/BAT1/status)"
+status="$(cat /sys/class/power_supply/BAT0/status)"
 
 if [[ $status == "Discharging" ]];
 then
@@ -11,4 +11,4 @@ else
   icon="󰂄"
 fi
 
-echo "$bg  $icon  $(cat /sys/class/power_supply/BAT1/capacity)%  "
+echo "$bg  $icon  $(cat /sys/class/power_supply/BAT0/capacity)%  "

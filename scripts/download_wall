@@ -1,12 +1,12 @@
 #!/bin/bash
 
-keywords=("night" "scenery" "dark" "neon")
+keywords=("art" "dark" "abstract" "windows11")
 
 RANDOM=$$$(date +%s)
 keyword=${keywords[$RANDOM % ${#keywords[@]} ]}
 
 # URL="https://source.unsplash.com/featured/1920x1280/?$keyword"
-URL="https://source.unsplash.com/featured/1366x768/?$keyword"
+URL="https://source.unsplash.com/featured/1366x768/?$keyword+wallpaper"
 
 dir=$HOME/wallpapers
 [[ -d $dir ]] || mkdir -p $dir 

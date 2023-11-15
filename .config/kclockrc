@@ -1,0 +1,5 @@
+[TimerPresets]
+timerPresets=[]
+
+[Timezones]
+UTC-04:00=true

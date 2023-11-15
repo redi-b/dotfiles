@@ -1,0 +1,16 @@
+[Default Applications]
+application/octet-stream=mpv.desktop
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
+
+[Added Associations]
+application/octet-stream=mpv.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+video/x-matroska=vlc.desktop;
+video/mp4=vlc.desktop;
+text/plain=sublime_text.desktop;

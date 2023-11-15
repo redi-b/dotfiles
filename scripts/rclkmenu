@@ -6,7 +6,7 @@ Applications
 	IMG:/usr/share/icons/breeze-dark/apps/48/kcalc.svg				  Calculator				kcalc	
 	IMG:/usr/share/icons/hicolor/48x48/apps/spotify.png				  Spotify						spotify
 	IMG:/usr/share/icons/hicolor/48x48/apps/telegram.png			  Telegram Desktop	telegram-desktop
-	IMG:/usr/share/icons/hicolor/48x48/apps/sublime-text-3.png	Sublime Text 3		subl3
+	IMG:/usr/share/icons/hicolor/48x48/apps/sublime-text.png  	Sublime Text    	subl
 Launch Terminal 		st
 Screenshot
 	Window						screenshot

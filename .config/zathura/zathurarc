@@ -6,8 +6,8 @@ set zoom-center "true"
 set selection-clipboard clipboard
 set render-loading "false"
 map <Space> toggle_index
-map K zoom in
-map J zoom out
+map J next page
+map K previous page
 map p print
 map b recolor
 

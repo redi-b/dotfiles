@@ -1,0 +1,17 @@
+#!/bin/bash
+
+[[ -z "$(greenclip print)" ]] && 
+  MENU="" || 
+  MENU="$(greenclip print | awk NF)\n"
+
+TEXT=$(echo -e "$MENU""<span color='#f32013'>CLEAR HISTORY</span>" | 
+  rofi -i -no-custom -markup-rows -dmenu -format p -theme ~/.config/rofi/launcher/clipboard.rasi)
+
+if [[ "$TEXT" == "CLEAR HISTORY" ]];
+then
+  killall greenclip && greenclip clear && greenclip daemon & 
+  notify-send "Clipboard History Cleared" -t 3000
+else
+  echo $TEXT | xclip -sel clip
+  xdotool type "$TEXT"
+fi

@@ -1,4 +1,5 @@
 #!/bin/bash
 
-name=""
-man -k . | awk '{print $1}' | dmenu -x 380 -y 130 -z 600 -p "Manuals " | xargs man -Tpdf | zathura -
+manual=$(man -k . | awk '{print $1}' | 
+  rofi -i -no-custom -matching prefix -dmenu -p "Manuals" -theme ~/.config/rofi/launcher/manuallauncher.rasi)
+[[ -n "$manual" ]] && man -Tpdf $manual | zathura -

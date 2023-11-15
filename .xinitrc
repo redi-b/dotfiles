@@ -1,5 +1,5 @@
 [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-exec startdwm
+exec startdwm 
 dwmblocks &

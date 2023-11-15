@@ -3,8 +3,9 @@ picom &
 dwmblocks &
 setbg &
 lxsession &
-xinput disable "G2Touch Multi-Touch by G2TSP" &
+greenclip daemon &
+# xinput disable "G2Touch Multi-Touch by G2TSP" &
 python3 ~/scripts/python/volume_not.py | xob &
-mkfifo /tmp/xobbrightness &
-tail -f /tmp/xobbrightness | xob &
+# mkfifo /tmp/xobbrightness &
+# tail -f /tmp/xobbrightness | xob &
 xautolock -time 8 -locker "betterlockscreen --off 60 -l" -detectsleep &

@@ -1,6 +1,6 @@
 configuration {
-	modes: "window,drun,run,ssh,emoji";
-	font: "Product Sand 12";
+	modes: "window,drun,run,ssh,emoji,json-menu";
+	font: "Product Sans 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/

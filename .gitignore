@@ -1,0 +1,24 @@
+.config/BraveSoftware
+.config/Code
+.config/MongoDB Compass
+.config/Notion
+.config/Postman
+.config/QtProject.conf
+.config/Softdeluxe
+.config/archlinux-tweak-tool
+.config/autostart
+.config/dconf
+.config/google-chrome
+.config/gtk-*
+.config/libfm
+.config/menus
+.config/nextjs-nodejs
+.config/pulse
+.config/qBittorrent
+.config/spotify
+.config/xfce4
+.config/sublime-text
+.config/xob/content-*
+.config/xob/info-*
+.config/yay
+.config/nvim/autoload/

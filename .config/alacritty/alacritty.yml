@@ -119,7 +119,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -138,7 +138,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -157,7 +157,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -176,7 +176,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -251,7 +251,7 @@ colors:
   normal:
     black:   '0x1c1f24'
     red:     '0xff6c6b'
-    green:   '0x98be65'
+    green:   '0x00ff36'
     yellow:  '0xda8548'
     blue:    '0x51afef'
     magenta: '0xc678dd'
@@ -261,7 +261,7 @@ colors:
   # Bright colors
   bright:
     black:   '0x5b6268'
-    red:     '0xda8548'
+    red:     '0xff4120'
     green:   '0x4db5bd'
     yellow:  '0xecbe7b'
     blue:    '0x3071db'   # This is 2257a0 in Doom Emacs but I lightened it.

@@ -14,7 +14,7 @@ static const int user_bh            = 30;        /* 0 means that dwm will calcul
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=11", "Hack Nerd Font:size=13", "Apple Color Emoji:size=10" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=10", "Hack Nerd Font:size=12", "Apple Color Emoji:size=10" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 // static char normbgcolor[]           = "#00594B";
@@ -45,7 +45,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", "爵 ", "阮 ", "切 ", " ", " ", " ", " ", " " }; 	// nerd fonts
+static const char *tags[] = { " ", "󰖟 ", " ", " ", " ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -53,8 +53,8 @@ static const char *tagsel[][2] = {
 	{ "#ff6b6b", normbgcolor},
 	{ "#0abde3", normbgcolor},
 	{ "#009432", normbgcolor},
-	{ "#1289A7", normbgcolor},
 	{ "#55efc4", normbgcolor},
+	{ "#1289A7", normbgcolor},
 	{ "#f7d794", normbgcolor},
 	// { "#4a69bd", normbgcolor},
 	{ "#388E3C", normbgcolor},
@@ -81,7 +81,7 @@ static const Rule rules[] = {
 	 */
 	/* class      												instance    title       tags mask		iscentered 		isfloating   monitor */
 	{ "Gimp",     													NULL,       NULL,       0,            1,						1,           -1 },
-	{ "Firefox",  													NULL,       NULL,       1 << 1,       0,						0,           -1 },
+	{ "firefox",  													NULL,       NULL,       1 << 1,       0,						0,           -1 },
 	{ "Google-chrome",  										NULL,       NULL,       1 << 1,       0,						0,           -1 },
 	{ "Spotify",  													NULL,       NULL,       1 << 2,       0,						0,           -1 },
 	{ "xpad",     													NULL,       NULL,       0,            1,						1,           -1 },
@@ -89,9 +89,10 @@ static const Rule rules[] = {
 	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
-	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 3,       1,						1,           -1 },
+	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 4,       1,						1,           -1 },
 	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "lxqt-openssh-askpass",						    NULL,       NULL,       0,            1,						1,           -1 },
+	{ "org.gnome.clocks",   						    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "com.github.sgpthomas.hourglass",     NULL,       NULL,       0,            1,						1,           -1 },
 
 };
@@ -106,8 +107,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ " |    充",      tile },    /* first entry is default */
-	{ " |    类",      monocle },
+	{ " |     ",      tile },    /* first entry is default */
+	{ " |     ",      monocle },
 	{ " |    侀",      spiral },
 	{ " |    﩯 ",      grid },
 	{ " |    全",      nrowgrid },
@@ -133,7 +134,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-c", "-z", "600", "-l", "18", "-h", "22", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *layoutmenu_cmd = ". ~/.local/src/dwm/layoutmenu.sh";
-static const char *fmcmd[]  	= { "pcmanfm", NULL };	// File manager
+static const char *fmcmd[]  	= { "thunar", NULL };	// File manager
 static const char *notecmd[] 	= { "xpad", "-n", NULL };		// Notepad
 
 #include "movestack.c"
@@ -149,7 +150,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
-	{ MODKEY,                       XK_v,      spawn,          SHCMD(". ~/scripts/manpdf") },
+	{ MODKEY,                       XK_x,      spawn,          SHCMD(". ~/scripts/manpdf") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD(". ~/scripts/screenshot_s") },
 	{ ControlMask|ShiftMask,        XK_s,      spawn,          SHCMD(". ~/scripts/search_selected") },
@@ -161,9 +162,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("betterlockscreen -l") },
 
 	// Launchers
-	{ MODKEY,                       XK_o,      spawn,          SHCMD("rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launcher/launcher.rasi") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD("powermenu") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/emojilauncher/launcher.rasi") },
+	{ MODKEY,                       XK_o,      spawn,          SHCMD("rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/launcher/applauncher.rasi") },
+  { MODKEY,                       XK_r,      spawn,          SHCMD("powermenu") },
+  { MODKEY,                       XK_v,      spawn,          SHCMD("clipboard") },
+	{ MODKEY,                       XK_period, spawn,          SHCMD("rofi -modi emoji -show emoji -emoji-format '{emoji}' -emoji-file ~/.local/share/fonts/all_emojis.txt -theme ~/.config/rofi/launcher/emojilauncher.rasi") },
 
 	// Volume, media and system controls
 	{ 0,                            XF86XK_AudioLowerVolume,  spawn, SHCMD(". ~/scripts/dwm/vol down") },
@@ -217,7 +219,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|Mod1Mask,              XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_n,      togglealttag,   {0} },

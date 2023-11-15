@@ -1,7 +1,7 @@
 configuration {
-	font:							"Hack Nerd Font 10";
+	font:							"Product Sans 10";
     show-icons:                     true;
-	icon-theme: 					"Hack Nerd Font 12";
+	icon-theme: 					"Hack Nerd Font 14";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
@@ -18,8 +18,8 @@ window {
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@ac;
-    border-radius:                  12px;
-	width:							260px;
+    border-radius:                  8px;
+	width:							280px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -30,12 +30,12 @@ prompt {
 	padding: 						14px 15px 12px 15px;
 	background-color: 				@bg2;
 	text-color: 					#FFFFFF;
-	font:							"Product Sans 10";
+	font:							"Product Sans 11";
 }
 
 textbox-prompt-colon {
 	padding: 						12px 15px 12px 15px;
-	font:							"Iosevka Nerd Font 12";
+	font:							"Iosevka Nerd Font 14";
 	background-color: 				@bg1;
 	text-color: 					#FFFFFF;
 	expand: false;
@@ -60,7 +60,7 @@ inputbar {
     text-color:                     #FFFFFF;
     expand:                         false;
 	border:							0px;
-    border-radius:                  12px;
+    border-radius:                  8px;
 	border-color:					@ac;
     spacing:                        0px;
 }
@@ -91,13 +91,13 @@ element {
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
-    padding:                        6px 6px 6px -20px;
+    padding:                        6px 2px;
 }
 
 element-icon {
     background-color:               transparent;
     text-color:               		inherit;
-    size:                           24px;
+    size:                           26px;
     border:                         0px;
 }
 
@@ -107,12 +107,12 @@ element-text {
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;
-    margin:                         0px 2.5px 0px 2.5px;
+    margin:                         0px 6px;
 }
 
 element selected {
     background-color:               @bg3;
 	border:							0px 0px 0px 0px;
-    border-radius:                  12px;
+    border-radius:                  4px;
     border-color:                  	@bg1;
 }
