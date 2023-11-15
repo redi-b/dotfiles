@@ -1,16 +1,16 @@
-![screenshot](https://raw.githubusercontent.com/redi-b/dotfiles/new/screenshots/screenshot.png)
+<!-- ![screenshot](https://raw.githubusercontent.com/redi-b/dotfiles/new/screenshots/screenshot.png) -->
 
 
 # Softwares
 
 - OS - [Arch Linux](https://archlinux.org)
 - WM - [dwm](https://dwm.suckless.org)
-- Compositor - [picom (picom-ibhagwan-git)](https://aur.archlinux.org/packages/picom-ibhagwan-git/)
+- Compositor - picom
 - Terminal - [st](https://st.suckless.org)
 - Shell - [zsh](https://zsh.org)
 - Launcher - [dmenu](https://dwm.suckless.org) & [rofi](https://github.com/davatorium/rofi)
 - Editor - [neovim](https://github.com/neovim/neovim)
-- File Manager - [ranger](https://github.com/ranger/ranger) - (cli) & [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM) - (gui)
+- File Manager - [ranger](https://github.com/ranger/ranger) - (cli) & [thunar](https://wiki.archlinux.org/title/thunar) - (gui)
 - Clipboard Interface - [xclip](https://github.com/astrand/xclip)
 - Screenshot - [scrot](https://github.com/resurrecting-open-source-projects/scrot)
 - Notifications - [dunst](https://github.com/dunst-project/dunst)
@@ -91,7 +91,7 @@ $ yay -S betterlockscreen networkmanager-dmenu-git simple-mtpfs
    </table>
 
    <details>
-      <summary><h4>Optional Programs/Applications</h4></summary>
+      <summary><b>Optional Programs/Applications</b></summary>
    <table>
       <tr>
          <td>firefox</td>
