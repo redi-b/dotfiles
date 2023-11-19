@@ -29,8 +29,8 @@ initial_idle=$(xprintidle | bc)
 echo "Initial idle:"
 echo "$initial_idle"
 
-# Dim the screen if there's been no X activity for more than 2 minutes and there's no sound playing
-if [[ "$initial_idle" -gt 120000 ]] && [[ $(grep -r "RUNNING" /proc/asound | wc -l) -eq 0 ]]; then
+# Dim the screen if there's been no X activity for more than 5 minutes and there's no sound playing
+if [[ "$initial_idle" -gt 300000 ]] && [[ $(grep -r "RUNNING" /proc/asound | wc -l) -eq 0 ]]; then
   echo "Dimming screen"
   xcalib -co 80 -a
 
@@ -40,10 +40,10 @@ if [[ "$initial_idle" -gt 120000 ]] && [[ $(grep -r "RUNNING" /proc/asound | wc 
   do
     idle=$(xprintidle | bc)
 
-    # Suspend 20 seconds after screen dims
-    if [ "$idle" -gt $(($initial_idle + 20000)) ];
+    # Lock 1 minute after screen dims
+    if [ "$idle" -gt $(($initial_idle + 60000)) ];
     then
-      echo "Suspending"
+      echo "Locking"
       systemctl suspend && betterlockscreen -l
     fi
     sleep 0.1

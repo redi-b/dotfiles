@@ -1,0 +1,9 @@
+# Put inside /etc/systemd/system
+[Unit]
+Description=Suspend if user is idle
+
+[Timer]
+OnCalendar=minutely
+
+[Install]
+WantedBy=timers.target
