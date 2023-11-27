@@ -8,4 +8,4 @@ greenclip daemon &
 python3 ~/scripts/python/volume_not.py | xob &
 # mkfifo /tmp/xobbrightness &
 # tail -f /tmp/xobbrightness | xob &
-xautolock -time 8 -locker "betterlockscreen --off 60 -l" -detectsleep &
+xautolock -time 10 -locker "lockSuspend" -detectsleep &

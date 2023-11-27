@@ -8,6 +8,7 @@ x-scheme-handler/unknown=google-chrome.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
 x-scheme-handler/mailto=google-chrome.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 
 [Added Associations]
 application/octet-stream=mpv.desktop;

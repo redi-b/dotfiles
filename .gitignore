@@ -18,7 +18,10 @@
 .config/spotify
 .config/xfce4
 .config/sublime-text
-.config/xob/content-**
-.config/xob/info-**
+.config/xob/content-*
+.config/xob/info-*
 .config/yay
 .config/nvim/autoload/
+.config/libreoffice
+.config/teams-for-linux
+**.o

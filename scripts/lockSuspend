@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# to be run with xautolock
+
+# if there is no sound running, lock the screen and if the screen
+# stays locked for 15 minutes, suspend the system
+if [[ $(grep -r "RUNNING" /proc/asound | wc -l) -eq 0 ]]; then
+  betterlockscreen -l && killall lockSuspend &
+  sleep 15m && [[ "$(xprintidle | bc)" -gt "200" ]] && systemctl suspend
+fi

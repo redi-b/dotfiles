@@ -44,7 +44,7 @@ if [[ "$initial_idle" -gt 300000 ]] && [[ $(grep -r "RUNNING" /proc/asound | wc 
     if [ "$idle" -gt $(($initial_idle + 60000)) ];
     then
       echo "Locking"
-      systemctl suspend && betterlockscreen -l
+      betterlockscreen -l
     fi
     sleep 0.1
   done
