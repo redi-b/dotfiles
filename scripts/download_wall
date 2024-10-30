@@ -1,18 +1,42 @@
 #!/bin/bash
 
-keywords=("art" "dark" "abstract" "windows11")
-
-RANDOM=$$$(date +%s)
-keyword=${keywords[$RANDOM % ${#keywords[@]} ]}
-
-# URL="https://source.unsplash.com/featured/1920x1280/?$keyword"
-URL="https://source.unsplash.com/featured/1366x768/?$keyword+wallpaper"
-
 dir=$HOME/wallpapers
 [[ -d $dir ]] || mkdir -p $dir 
 wno=$(($(ls ~/wallpapers | wc -l) + 1))
 filename="$dir/wall$wno.jpg"
 
-wget $URL -O $filename --quiet
+function handle_interrupt {
+  echo -e "\nDownload cancelled! Exiting..."
+  rm -f $filename
+  exit 0
+}
+trap handle_interrupt SIGINT
+
+keywords=("art" "dark" "abstract" "nature")
+RANDOM=$$$(date +%s)
+keyword=${keywords[$RANDOM % ${#keywords[@]} ]}
+
+echo "Downloading..."
+
+# URL="https://source.unsplash.com/featured/1920x1280/?$keyword"
+# URL="https://source.unsplash.com/featured/1366x768/?$keyword+wallpaper"
+URL="https://api.unsplash.com/photos/random/?client_id=Ce1KOA0aTTW0kZK-3XMMTnJ4quvZCQE4w6uffbqq4QE&?query=$keyword+wallpaper&count=1&orientation=landscape"
+response=$(curl -sf $URL)
+
+if [[ $? -ne 0 ]]; then
+  echo "Error: failed to get wallpaper"
+  exit -1
+fi
+
+photo=$(jq -r '.[0] | .urls | .raw' <<< "$response")
+
+wget $photo -O $filename --quiet -T 30
+
+if [[ $? -ne 0 ]]; then
+  echo "Error: failed to download wallpaper"
+  rm -f $filename 
+  exit -1
+fi
 
 echo "Wallpaper downloaded -> $filename"
+

@@ -11,7 +11,9 @@ if [[ "$TEXT" == "CLEAR HISTORY" ]];
 then
   killall greenclip && greenclip clear && greenclip daemon & 
   notify-send "Clipboard History Cleared" -t 3000
-else
+fi
+if [[ -n $TEXT ]];
+then
   echo $TEXT | xclip -sel clip
   xdotool type "$TEXT"
 fi

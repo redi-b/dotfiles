@@ -106,14 +106,20 @@ export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 export EDITOR="nvim"
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 export SUDO_ASKPASS=/usr/bin/lxqt-openssh-askpass
 # export BROWSER="firefox"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+
 alias dotconfig='/usr/bin/git --git-dir=/home/rediet/dotfiles/ --work-tree=/home/rediet'
 # alias st="tabbed -r 2 st -w ''"
 # alias ssr='simplescreenrecorder'
 export PATH="$HOME/.spicetify:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/dev/platform-tools:$PATH"
 export PATH="$HOME/.local/bin:$PATH"

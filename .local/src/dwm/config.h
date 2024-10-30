@@ -14,7 +14,7 @@ static const int user_bh            = 30;        /* 0 means that dwm will calcul
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *altbarcmd        = ""; /* Alternate bar launch command */
-static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=10", "Hack Nerd Font:size=12", "Apple Color Emoji:size=10" };
+static const char *fonts[]          = { "Product Sans:size=10", "Material Design Icons:size=10", "Hack Nerd Font:size=10", "Apple Color Emoji:size=10" };
 static const char dmenufont[]       = "Product Sans:size=10";
 
 // static char normbgcolor[]           = "#00594B";
@@ -45,7 +45,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ", "󰖟 ", " ", " ", " ", " ", " ", " ", " " }; 	// nerd fonts
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", " " }; 	// nerd fonts
 // static const char *tags[] = { "󰅬", "󰈹", "󰓇", "󰅴", "󰔁", "󰨞", "󰥔", "󰣇", "󰣇" }; 	// material design icons
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -89,7 +89,9 @@ static const Rule rules[] = {
 	{ "mpv",     										  			NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Windscribe",     										NULL,       NULL,       0,            1,						1,           -1 },
 	{ "Protonvpn",     										  NULL,       NULL,       0,            1,						1,           -1 },
-	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 4,       1,						1,           -1 },
+	{ "MEGAsync",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "TicTacToe",     										  NULL,       NULL,       0,            1,						1,           -1 },
+	{ "TelegramDesktop",     							  NULL,       NULL,       1 << 4,       1,						0,           -1 },
 	{ "deepin-camera", 									    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "lxqt-openssh-askpass",						    NULL,       NULL,       0,            1,						1,           -1 },
 	{ "org.gnome.clocks",   						    NULL,       NULL,       0,            1,						1,           -1 },
@@ -149,6 +151,7 @@ static Key keys[] = {
 	{ ControlMask|Mod1Mask,         XK_s,      spawn,          {.v = notecmd } },
 	{ MODKEY|ShiftMask,	            XK_Tab,    spawn,          SHCMD("skippy-xd") },
 
+	{ MODKEY,                       XK_w,      spawn,          SHCMD(". ~/scripts/stopscr") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD(". ~/scripts/unmuteh") },
 	{ MODKEY,                       XK_x,      spawn,          SHCMD(". ~/scripts/manpdf") },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD(". ~/scripts/screenshot_w") },
